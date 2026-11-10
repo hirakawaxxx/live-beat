@@ -91,7 +91,13 @@ export function createAudioEngine() {
     const buffer = buffers.get(padId);
     if (!buffer) throw new Error(`AudioEngine: pad "${padId}" is not loaded`);
 
-    const next = boundaryTime(ctx);
+    // Re-ON while a stop is pending: start exactly where the old source stops
+    // so there is no silent bar gap.
+    const previous = active.get(padId);
+    const next =
+      previous && previous.stopping && previous.stopTime > ctx.currentTime
+        ? previous.stopTime
+        : boundaryTime(ctx);
     const offset = positiveMod(next - transportOrigin, buffer.duration);
 
     const source = ctx.createBufferSource();
@@ -101,9 +107,8 @@ export function createAudioEngine() {
     source.connect(gain);
     gain.connect(masterGain);
 
-    const previous = active.get(padId);
     if (previous) retiring.add(previous);
-    const entry = { source, gain };
+    const entry = { source, gain, startTime: next, stopTime: null };
     source.onended = () => disposeEntry(padId, entry);
     source.start(next, offset);
     active.set(padId, entry);
@@ -113,10 +118,21 @@ export function createAudioEngine() {
     const ctx = requireContext();
     const entry = active.get(padId);
     if (!entry) return;
-    // Stop at the next bar boundary; if it has not started yet, this cancels it.
-    entry.source.stop(boundaryTime(ctx));
+    // Start still pending: cancel outright (no sound), regardless of lead time.
+    if (entry.startTime > ctx.currentTime) {
+      try {
+        entry.source.stop();
+      } catch {
+        // already stopped
+      }
+      disposeEntry(padId, entry);
+      return;
+    }
+    // Already sounding: stop at the next bar boundary.
+    const stopTime = boundaryTime(ctx);
+    entry.source.stop(stopTime);
     // Mark as stopping so a later "on" creates a fresh source.
-    const stopping = { ...entry, stopping: true };
+    const stopping = { ...entry, stopping: true, stopTime };
     stopping.source.onended = () => disposeEntry(padId, stopping);
     active.set(padId, stopping);
   }
