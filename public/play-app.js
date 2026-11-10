@@ -66,57 +66,86 @@ const init = async () => {
   const engine = createAudioEngine();
   engine.setBpm(pack.bpm);
 
-  const pads = pack.sides.A;
-  const buttons = new Map(pads.map((pad) => [pad.id, createPadButton(pad)]));
-  gridEl.replaceChildren(...buttons.values());
-
-  sideABtn.setAttribute('aria-pressed', 'true');
-  sideBBtn.disabled = true; // Task 8
+  const sideButtons = { A: sideABtn, B: sideBBtn };
   recordBtn.disabled = true; // Task 9
 
   const active = new Set();
-  const failed = new Set();
-  let readyPromise = null;
+  const failed = new Set(); // pad ids are unique across sides
+  const sideLoads = new Map(); // side -> in-flight/finished load promise
+  let currentSide = 'A';
+  let buttons = new Map();
+  // Bumped by STOP and side switches; stale in-flight taps compare against it.
+  let generation = 0;
 
-  const loadAllPads = async () => {
+  const sidePads = (side) => pack.sides[side];
+
+  const renderPads = (side) => {
+    buttons = new Map(
+      sidePads(side).map((pad) => {
+        const btn = createPadButton(pad);
+        if (failed.has(pad.id)) btn.disabled = true;
+        return [pad.id, btn];
+      }),
+    );
+    gridEl.replaceChildren(...buttons.values());
+  };
+
+  const updateSideButtons = () => {
+    Object.entries(sideButtons).forEach(([side, btn]) => {
+      btn.setAttribute('aria-pressed', String(side === currentSide));
+    });
+  };
+
+  const sideStatus = (side) => {
+    const hasFailed = sidePads(side).some((pad) => failed.has(pad.id));
+    return hasFailed ? `Side ${side} · ${MESSAGES.partial}` : `Side ${side}`;
+  };
+
+  const loadSide = async (side) => {
     await engine.resume();
+    const pads = sidePads(side);
     const results = await Promise.allSettled(pads.map((pad) => engine.loadPad(pad.id, pad.src)));
     results.forEach((result, i) => {
       if (result.status === 'fulfilled') return;
       console.error(result.reason);
-      const pad = pads[i];
-      failed.add(pad.id);
-      const btn = buttons.get(pad.id);
+      failed.add(pads[i].id);
+      const btn = side === currentSide ? buttons.get(pads[i].id) : null;
+      if (!btn) return;
       btn.disabled = true;
       btn.setAttribute('aria-pressed', 'false');
     });
-    setStatus(failed.size > 0 ? MESSAGES.partial : '');
   };
 
-  // First user gesture: resume the context, then load every pad (once).
-  const ensureReady = () => {
-    if (!readyPromise) {
-      setStatus(MESSAGES.loading);
-      readyPromise = loadAllPads().catch((err) => {
-        readyPromise = null; // allow retry on next tap
+  // User gesture: resume the context, then load every pad of the side (once per side).
+  const ensureReady = (side) => {
+    if (!sideLoads.has(side)) {
+      if (side === currentSide) setStatus(MESSAGES.loading);
+      const promise = loadSide(side).catch((err) => {
+        sideLoads.delete(side); // allow retry on next tap
         throw err;
       });
+      sideLoads.set(side, promise);
     }
-    return readyPromise;
+    return sideLoads.get(side);
   };
 
   const renderPressed = (padId) => {
-    buttons.get(padId).setAttribute('aria-pressed', String(active.has(padId)));
+    buttons.get(padId)?.setAttribute('aria-pressed', String(active.has(padId)));
   };
 
   const onPadClick = async (padId) => {
+    const side = currentSide;
+    const gen = generation;
     try {
-      await ensureReady();
+      await ensureReady(side);
     } catch (err) {
       console.error(err);
-      setStatus(MESSAGES.audio);
+      if (gen === generation) setStatus(MESSAGES.audio);
       return;
     }
+    // STOP or a side switch happened while loading: drop this tap.
+    if (gen !== generation) return;
+    setStatus(sideStatus(side));
     if (failed.has(padId)) return;
     const on = !active.has(padId);
     try {
@@ -131,13 +160,44 @@ const init = async () => {
     renderPressed(padId);
   };
 
+  const switchSide = async (next) => {
+    if (next === currentSide) return;
+    generation += 1;
+    const gen = generation;
+    engine.stopAll();
+    active.clear();
+    currentSide = next;
+    renderPads(next);
+    updateSideButtons();
+    try {
+      await ensureReady(next); // click is a user gesture; also preloads the new side
+    } catch (err) {
+      console.error(err);
+      if (gen === generation) setStatus(MESSAGES.audio);
+      return;
+    }
+    if (gen !== generation) return;
+    // Pads that failed while this side was not displayed are disabled on render only.
+    renderPads(next);
+    setStatus(sideStatus(next));
+  };
+
+  renderPads(currentSide);
+  updateSideButtons();
+  setStatus(sideStatus(currentSide));
+
   gridEl.addEventListener('click', (event) => {
     const btn = event.target.closest('button[data-pad-id]');
     if (!btn || btn.disabled) return;
     void onPadClick(btn.dataset.padId);
   });
 
+  Object.entries(sideButtons).forEach(([side, btn]) => {
+    btn.addEventListener('click', () => void switchSide(side));
+  });
+
   stopBtn.addEventListener('click', () => {
+    generation += 1;
     engine.stopAll();
     const ids = [...active];
     active.clear();
