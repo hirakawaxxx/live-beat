@@ -271,6 +271,8 @@ const init = async () => {
     const ids = [...active];
     active.clear();
     ids.forEach(renderPressed);
+    // Drop a stale "loading" message when STOP cancels an in-flight load.
+    if (statusEl.textContent === MESSAGES.loading) setStatus(sideStatus(currentSide));
   });
 };
 

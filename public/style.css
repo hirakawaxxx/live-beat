@@ -84,6 +84,16 @@ main {
   min-height: var(--tap-min);
   color: var(--color-text);
   text-decoration: none;
+  box-shadow: var(--elevation-2);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pack-card:focus-visible {
+  box-shadow: var(--elevation-2), var(--shadow-glow);
+}
+
+@media (hover: hover) {
+  .pack-card:hover { box-shadow: var(--elevation-3); }
 }
 
 #transport {

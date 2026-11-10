@@ -13,7 +13,7 @@ const createPackCard = (pack) => {
   bpm.textContent = `${pack.bpm} BPM`;
 
   const a = document.createElement('a');
-  a.className = 'ui-card ui-card--selectable pack-card';
+  a.className = 'ui-card pack-card';
   a.href = `/play.html?pack=${encodeURIComponent(pack.id)}`;
   a.append(title, bpm);
   return a;
