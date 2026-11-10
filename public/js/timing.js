@@ -9,3 +9,24 @@ export function nextBarTime(currentTime, originTime, barDur) {
   const n = Math.max(0, bars);
   return originTime + n * barDur;
 }
+
+export function beatDurationSec(bpm) {
+  return 60 / bpm;
+}
+
+export function beatsForDuration(durationSec, bpm) {
+  return Math.round(durationSec / beatDurationSec(bpm));
+}
+
+// Same grid math as nextBarTime, for an arbitrary cycle length.
+export function nextCycleTime(currentTime, originTime, cycleDur) {
+  return nextBarTime(currentTime, originTime, cycleDur);
+}
+
+// Nothing active: next bar. Otherwise: next boundary of the longest active loop cycle.
+export function quantizeOnTime({ currentTime, originTime, barDur, activeCycleDurs }) {
+  if (!activeCycleDurs || activeCycleDurs.length === 0) {
+    return nextBarTime(currentTime, originTime, barDur);
+  }
+  return nextCycleTime(currentTime, originTime, Math.max(...activeCycleDurs));
+}
