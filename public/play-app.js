@@ -1,5 +1,6 @@
 import { assertCatalog } from './js/pack-schema.js';
 import { createAudioEngine } from './js/audio-engine.js';
+import { createRecorder } from './js/recorder.js';
 
 const gridEl = document.querySelector('#pad-grid');
 const statusEl = document.querySelector('#status');
@@ -8,6 +9,9 @@ const stopBtn = document.querySelector('#btn-stop');
 const sideABtn = document.querySelector('#btn-side-a');
 const sideBBtn = document.querySelector('#btn-side-b');
 const recordBtn = document.querySelector('#btn-record');
+const recordingResult = document.querySelector('#recording-result');
+const recordingAudio = document.querySelector('#recording-audio');
+const recordingDownload = document.querySelector('#recording-download');
 
 const MESSAGES = {
   noPack: 'パックが指定されていません。ライブラリから選んでください。',
@@ -16,6 +20,8 @@ const MESSAGES = {
   audio: '音声を開始できませんでした。もう一度タップしてください。',
   loading: '音を読み込み中…',
   partial: '一部の音が読み込めませんでした。',
+  recordUnsupported: 'このブラウザでは録音できません',
+  recordFailed: '録音に失敗しました。',
 };
 
 const setStatus = (text) => {
@@ -67,7 +73,63 @@ const init = async () => {
   engine.setBpm(pack.bpm);
 
   const sideButtons = { A: sideABtn, B: sideBBtn };
-  recordBtn.disabled = true; // Task 9
+  recordBtn.disabled = true; // enabled once audio is ready and MediaRecorder exists
+  recordBtn.setAttribute('aria-pressed', 'false');
+
+  const recordSupported = typeof MediaRecorder !== 'undefined';
+  let recorder = null;
+  let recording = false;
+  let recordingUrl = null;
+
+  const extensionFor = (mime) => {
+    if (mime.includes('ogg')) return 'ogg';
+    if (mime.includes('mp4')) return 'm4a';
+    return 'webm';
+  };
+
+  const showRecording = (blob) => {
+    if (recordingUrl) URL.revokeObjectURL(recordingUrl);
+    recordingUrl = URL.createObjectURL(blob);
+    recordingAudio.src = recordingUrl;
+    recordingDownload.href = recordingUrl;
+    recordingDownload.download = `${pack.id}-${Date.now()}.${extensionFor(blob.type)}`;
+    recordingResult.hidden = false;
+  };
+
+  const renderRecordButton = () => {
+    recordBtn.textContent = recording ? '録音停止' : '録音';
+    recordBtn.setAttribute('aria-pressed', String(recording));
+  };
+
+  // Called after the first successful user-gesture audio start (context exists).
+  const enableRecording = () => {
+    if (!recordSupported || recorder) return;
+    recorder = createRecorder(engine.getContext(), engine.getMasterGain());
+    recordBtn.disabled = false;
+  };
+
+  const toggleRecording = async () => {
+    if (!recorder) return;
+    recordBtn.disabled = true;
+    try {
+      if (!recording) {
+        recorder.start();
+        recording = true;
+      } else {
+        const blob = await recorder.stop();
+        recording = false;
+        showRecording(blob);
+      }
+    } catch (err) {
+      console.error(err);
+      recording = false;
+      recorder.clear();
+      setStatus(MESSAGES.recordFailed);
+    } finally {
+      renderRecordButton();
+      recordBtn.disabled = false;
+    }
+  };
 
   const active = new Set();
   const failed = new Set(); // pad ids are unique across sides
@@ -98,7 +160,10 @@ const init = async () => {
 
   const sideStatus = (side) => {
     const hasFailed = sidePads(side).some((pad) => failed.has(pad.id));
-    return hasFailed ? `Side ${side} · ${MESSAGES.partial}` : `Side ${side}`;
+    const parts = [`Side ${side}`];
+    if (hasFailed) parts.push(MESSAGES.partial);
+    if (!recordSupported) parts.push(MESSAGES.recordUnsupported);
+    return parts.join(' · ');
   };
 
   const loadSide = async (side) => {
@@ -143,6 +208,7 @@ const init = async () => {
       if (gen === generation) setStatus(MESSAGES.audio);
       return;
     }
+    enableRecording();
     // STOP or a side switch happened while loading: drop this tap.
     if (gen !== generation) return;
     setStatus(sideStatus(side));
@@ -176,6 +242,7 @@ const init = async () => {
       if (gen === generation) setStatus(MESSAGES.audio);
       return;
     }
+    enableRecording();
     if (gen !== generation) return;
     // Pads that failed while this side was not displayed are disabled on render only.
     renderPads(next);
@@ -195,6 +262,8 @@ const init = async () => {
   Object.entries(sideButtons).forEach(([side, btn]) => {
     btn.addEventListener('click', () => void switchSide(side));
   });
+
+  recordBtn.addEventListener('click', () => void toggleRecording());
 
   stopBtn.addEventListener('click', () => {
     generation += 1;

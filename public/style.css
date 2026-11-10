@@ -121,6 +121,22 @@ main {
   color: var(--color-on-primary);
 }
 
+#recording-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+#recording-result[hidden] {
+  display: none;
+}
+
+#recording-result audio {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
 .pad {
   --pad-tint: var(--color-primary);
   position: relative;
