@@ -1,6 +1,7 @@
 import { assertCatalog } from './js/pack-schema.js';
 import { createAudioEngine } from './js/audio-engine.js';
 import { createRecorder } from './js/recorder.js';
+import { createRing, updateRing } from './js/ring.js';
 
 const gridEl = document.querySelector('#pad-grid');
 const statusEl = document.querySelector('#status');
@@ -24,6 +25,8 @@ const MESSAGES = {
   recordFailed: '録音に失敗しました。',
 };
 
+const DEFAULT_RING_BEATS = 16; // Pulse loops are 4 bars of 4 beats
+
 const setStatus = (text) => {
   statusEl.textContent = text;
 };
@@ -33,9 +36,14 @@ const createPadButton = (pad) => {
   btn.type = 'button';
   btn.className = `ui-button pad pad--${pad.part}`;
   btn.dataset.padId = pad.id;
+  btn.dataset.state = 'off';
   btn.setAttribute('aria-pressed', 'false');
-  btn.textContent = pad.label;
-  return btn;
+  const ring = createRing(DEFAULT_RING_BEATS);
+  const label = document.createElement('span');
+  label.className = 'pad__label';
+  label.textContent = pad.label;
+  btn.append(ring.svg, label);
+  return { btn, ring };
 };
 
 const loadCatalogPack = async (packId) => {
@@ -136,19 +144,21 @@ const init = async () => {
   const sideLoads = new Map(); // side -> in-flight/finished load promise
   let currentSide = 'A';
   let buttons = new Map();
+  let rings = new Map(); // padId -> ring state (see js/ring.js)
+  let audioReady = false; // the AudioContext exists once a tap loaded a side
   // Bumped by STOP and side switches; stale in-flight taps compare against it.
   let generation = 0;
 
   const sidePads = (side) => pack.sides[side];
 
   const renderPads = (side) => {
-    buttons = new Map(
-      sidePads(side).map((pad) => {
-        const btn = createPadButton(pad);
-        if (failed.has(pad.id)) btn.disabled = true;
-        return [pad.id, btn];
-      }),
-    );
+    const built = sidePads(side).map((pad) => {
+      const { btn, ring } = createPadButton(pad);
+      if (failed.has(pad.id)) btn.disabled = true;
+      return { id: pad.id, btn, ring };
+    });
+    buttons = new Map(built.map(({ id, btn }) => [id, btn]));
+    rings = new Map(built.map(({ id, ring }) => [id, ring]));
     gridEl.replaceChildren(...buttons.values());
   };
 
@@ -194,6 +204,27 @@ const init = async () => {
     return sideLoads.get(side);
   };
 
+  // Ring/state view of the engine transport; called every animation frame.
+  const renderRings = () => {
+    if (audioReady) {
+      const snapshot = engine.getTransportSnapshot();
+      buttons.forEach((btn, padId) => {
+        const info = snapshot.pads[padId];
+        const state = !info || info.state === 'off' ? 'off' : info.state === 'waiting' ? 'waiting' : 'playing';
+        if (btn.dataset.state !== state) btn.dataset.state = state;
+        let ring = rings.get(padId);
+        if (info && info.beats !== ring.segments.length) {
+          // Loop length differs from the default: rebuild the ring with the real beat count.
+          const fresh = createRing(info.beats);
+          ring.svg.replaceWith(fresh.svg);
+          ring = fresh;
+        }
+        rings.set(padId, updateRing(ring, { state, phase: info ? info.phase : 0, beats: ring.segments.length }));
+      });
+    }
+    requestAnimationFrame(renderRings);
+  };
+
   const renderPressed = (padId) => {
     buttons.get(padId)?.setAttribute('aria-pressed', String(active.has(padId)));
   };
@@ -208,6 +239,7 @@ const init = async () => {
       if (gen === generation) setStatus(MESSAGES.audio);
       return;
     }
+    audioReady = true;
     enableRecording();
     // STOP or a side switch happened while loading: drop this tap.
     if (gen !== generation) return;
@@ -242,6 +274,7 @@ const init = async () => {
       if (gen === generation) setStatus(MESSAGES.audio);
       return;
     }
+    audioReady = true;
     enableRecording();
     if (gen !== generation) return;
     // Pads that failed while this side was not displayed are disabled on render only.
@@ -252,6 +285,7 @@ const init = async () => {
   renderPads(currentSide);
   updateSideButtons();
   setStatus(sideStatus(currentSide));
+  requestAnimationFrame(renderRings);
 
   gridEl.addEventListener('click', (event) => {
     const btn = event.target.closest('button[data-pad-id]');

@@ -189,3 +189,61 @@ main {
   outline: var(--focus-width) solid var(--color-focus);
   outline-offset: var(--focus-offset);
 }
+
+/* Beat rings (Soft Mint tokens only) */
+.pad__label {
+  position: relative;
+  z-index: 1;
+}
+
+.pad-ring {
+  position: absolute;
+  inset: var(--space-1);
+  width: calc(100% - var(--space-2));
+  height: calc(100% - var(--space-2));
+  pointer-events: none;
+}
+
+.pad-ring__seg {
+  fill: none;
+  stroke: var(--color-divider);
+  stroke-width: 5;
+  stroke-linecap: butt;
+  transition: stroke 120ms ease-out;
+}
+
+.pad-ring__seg.is-bar {
+  stroke: var(--color-rim);
+  stroke-width: 7;
+}
+
+.pad[data-state="off"] .pad-ring__seg {
+  opacity: 0.55;
+}
+
+.pad[data-state="waiting"] .pad-ring__seg.is-head,
+.pad[data-state="playing"] .pad-ring__seg.is-head {
+  stroke: var(--color-primary-strong);
+  stroke-width: 8;
+}
+
+.pad[data-state="playing"] .pad-ring__seg.is-lit {
+  stroke: var(--color-primary-strong);
+}
+
+.pad[data-state="playing"] .pad-ring__seg.is-lit:not(.is-head) {
+  stroke: var(--color-primary);
+}
+
+.pad[data-state="waiting"] .pad-ring {
+  animation: pad-ring-wait 1.2s ease-in-out infinite;
+}
+
+@keyframes pad-ring-wait {
+  50% { opacity: 0.45; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pad-ring__seg { transition: none; }
+  .pad[data-state="waiting"] .pad-ring { animation: none; }
+}
