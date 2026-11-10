@@ -76,6 +76,16 @@ main {
   gap: var(--space-4);
 }
 
+.pack-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: var(--tap-min);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 #transport {
   display: flex;
   flex-wrap: wrap;
