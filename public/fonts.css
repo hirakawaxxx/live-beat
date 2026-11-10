@@ -1,0 +1,16 @@
+/* Zen Maru Gothic (SIL OFL 1.1, see fonts/OFL.txt), subset by scripts/build-fonts.mjs. */
+@font-face {
+  font-family: "Zen Maru Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/zen-maru-gothic-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Zen Maru Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/zen-maru-gothic-700.woff2") format("woff2");
+}

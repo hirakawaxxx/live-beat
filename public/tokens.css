@@ -1,0 +1,196 @@
+/*
+ * Soft Mint (clay) design tokens.
+ * Self-contained: copy this file and reference the custom properties.
+ */
+
+:root {
+  color-scheme: light dark;
+
+  /* Color: light */
+  --color-bg: #eeede9;
+  --color-surface: #f5f4f1;
+  --color-surface-raised: #fcfbf9;
+  --color-surface-sunken: #e2e1dc;
+  --color-layer: #e4e3de;
+  --color-input: #ffffff;
+  --color-rim: #8e918d;
+  --color-text: #2b302d;
+  --color-text-muted: #575f5b;
+  --color-indicator: #767c78;
+  --color-divider: #d8d7d1;
+
+  --color-primary: #a8e6cf;
+  --color-primary-hover: #b8edd9;
+  --color-primary-soft: #d4f2e5;
+  --color-primary-strong: #2f7f61;
+  --color-on-primary: #134a36;
+  --glow-color: 157 58% 66%;
+
+  --color-focus: #2b8a64;
+
+  --color-disabled-bg: #bebeb9;
+  --color-disabled-text: #f3f3f0;
+
+  --color-success-bg: #cdefdf;
+  --color-success-text: #1d5a40;
+  --color-warning-bg: #faedc2;
+  --color-warning-text: #66490a;
+  --color-error-bg: #f8d5cc;
+  --color-error-text: #8a2c22;
+
+  --color-level-1: #e3e2dd;
+  --color-level-2: #e9e8e4;
+  --color-level-3: #f0efeb;
+  --color-level-4: #f6f5f2;
+  --color-level-5: #fdfcfa;
+
+  /* Clay shadows: light from above. Drop = soft outer shadow, bevel = rounded surface. */
+  --shadow-color: 40 10% 32%;
+  --highlight-color: 0 0% 100%;
+  --highlight-alpha: 0.9;
+  --drop-1: 0 2px 4px hsl(var(--shadow-color) / 0.12), 0 4px 10px -2px hsl(var(--shadow-color) / 0.12);
+  --drop-2: 0 3px 6px hsl(var(--shadow-color) / 0.12), 0 10px 20px -6px hsl(var(--shadow-color) / 0.24);
+  --drop-3: 0 4px 8px hsl(var(--shadow-color) / 0.12), 0 16px 30px -8px hsl(var(--shadow-color) / 0.28);
+  --drop-4: 0 6px 12px hsl(var(--shadow-color) / 0.12), 0 24px 44px -10px hsl(var(--shadow-color) / 0.32);
+  --drop-5: 0 8px 16px hsl(var(--shadow-color) / 0.12), 0 36px 64px -12px hsl(var(--shadow-color) / 0.36);
+  --bevel:
+    inset 0 2px 2px hsl(var(--highlight-color) / var(--highlight-alpha)),
+    inset 0 -3px 6px hsl(var(--shadow-color) / 0.14);
+  --bevel-lg:
+    inset 0 4px 6px hsl(var(--highlight-color) / var(--highlight-alpha)),
+    inset 0 -8px 16px hsl(var(--shadow-color) / 0.16);
+  --elevation-1: var(--drop-1), var(--bevel);
+  --elevation-2: var(--drop-2), var(--bevel);
+  --elevation-3: var(--drop-3), var(--bevel);
+  --elevation-4: var(--drop-4), var(--bevel-lg);
+  --elevation-5: var(--drop-5), var(--bevel-lg);
+  --shadow-inset:
+    inset 0 3px 6px hsl(var(--shadow-color) / 0.22),
+    inset 0 1px 2px hsl(var(--shadow-color) / 0.16),
+    inset 0 -2px 2px hsl(var(--highlight-color) / calc(var(--highlight-alpha) * 0.7)),
+    0 1px 0 hsl(var(--highlight-color) / calc(var(--highlight-alpha) * 0.8));
+  --shadow-stack: 0 10px 0 -5px var(--color-layer);
+  --shadow-glow: 0 0 0 3px hsl(var(--glow-color) / 0.45), 0 0 28px 6px hsl(var(--glow-color) / 0.55);
+  --shadow-glow-soft: 0 0 22px 2px hsl(var(--glow-color) / 0.4);
+
+  /* Typography */
+  --font-sans:
+    "Zen Maru Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI",
+    Meiryo, "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Only weights with an @font-face (500, 700); any other value is synthesized or substituted. */
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+  --font-display: var(--font-weight-bold) 2.5rem / 1.2 var(--font-sans);
+  --font-title: var(--font-weight-bold) 1.75rem / 1.3 var(--font-sans);
+  --font-heading: var(--font-weight-bold) 1.25rem / 1.4 var(--font-sans);
+  --font-body: var(--font-weight-regular) 1rem / 1.7 var(--font-sans);
+  --font-label: var(--font-weight-bold) 0.875rem / 1.5 var(--font-sans);
+  --font-caption: var(--font-weight-regular) 0.75rem / 1.6 var(--font-sans);
+  --letter-spacing-label: 0.02em;
+
+  /* Spacing: 4px base */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-pill: 999px;
+
+  /* Sizing */
+  --tap-min: 44px;
+  --control-height: 52px;
+  --rim-width: 6px;
+  --indicator-width: 6px;
+  --focus-width: 3px;
+  --focus-offset: 3px;
+
+  /* Motion */
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+  --duration-breath: 8s;
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --easing-exit: cubic-bezier(0.4, 0, 1, 1);
+  --easing-breath: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #141716;
+    --color-surface: #1c201e;
+    --color-surface-raised: #252a27;
+    --color-surface-sunken: #0f1211;
+    --color-layer: #191d1b;
+    --color-input: #111413;
+    --color-rim: #68706b;
+    --color-text: #e5eae7;
+    --color-text-muted: #a2aba6;
+    --color-indicator: #808984;
+    --color-divider: #2c322f;
+
+    --color-primary: #8edcb8;
+    --color-primary-hover: #a2e5c6;
+    --color-primary-soft: #21382d;
+    --color-primary-strong: #8edcb8;
+    --color-on-primary: #0c2c20;
+    --glow-color: 152 55% 62%;
+
+    --color-focus: #9be6c4;
+
+    --color-disabled-bg: #3a3f3c;
+    --color-disabled-text: #757c78;
+
+    --color-success-bg: #1c3a2d;
+    --color-success-text: #b0e8cc;
+    --color-warning-bg: #3a3014;
+    --color-warning-text: #f2d88f;
+    --color-error-bg: #43221e;
+    --color-error-text: #f5b8ae;
+
+    --color-level-1: #171a19;
+    --color-level-2: #1c201e;
+    --color-level-3: #222624;
+    --color-level-4: #282d2a;
+    --color-level-5: #2f3531;
+
+    --shadow-color: 0 0% 0%;
+    --highlight-alpha: 0.1;
+    --drop-1: 0 2px 4px hsl(var(--shadow-color) / 0.4), 0 4px 10px -2px hsl(var(--shadow-color) / 0.35);
+    --drop-2: 0 3px 6px hsl(var(--shadow-color) / 0.4), 0 10px 20px -6px hsl(var(--shadow-color) / 0.55);
+    --drop-3: 0 4px 8px hsl(var(--shadow-color) / 0.4), 0 16px 30px -8px hsl(var(--shadow-color) / 0.6);
+    --drop-4: 0 6px 12px hsl(var(--shadow-color) / 0.4), 0 24px 44px -10px hsl(var(--shadow-color) / 0.65);
+    --drop-5: 0 8px 16px hsl(var(--shadow-color) / 0.45), 0 36px 64px -12px hsl(var(--shadow-color) / 0.7);
+    --bevel:
+      inset 0 1px 1px hsl(var(--highlight-color) / 0.12),
+      inset 0 -3px 6px hsl(var(--shadow-color) / 0.35);
+    --bevel-lg:
+      inset 0 2px 3px hsl(var(--highlight-color) / 0.14),
+      inset 0 -8px 16px hsl(var(--shadow-color) / 0.4);
+    --shadow-inset:
+      inset 0 3px 7px hsl(var(--shadow-color) / 0.65),
+      inset 0 1px 2px hsl(var(--shadow-color) / 0.5),
+      inset 0 -1px 1px hsl(var(--highlight-color) / 0.06),
+      0 1px 0 hsl(var(--highlight-color) / 0.06);
+    --shadow-glow: 0 0 0 3px hsl(var(--glow-color) / 0.35), 0 0 28px 4px hsl(var(--glow-color) / 0.35);
+    --shadow-glow-soft: 0 0 20px 1px hsl(var(--glow-color) / 0.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}
