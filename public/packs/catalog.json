@@ -1,0 +1,544 @@
+{
+  "packs": [
+    {
+      "id": "pulse-96",
+      "title": "Pulse 96",
+      "bpm": 96,
+      "license": "Pulse Open Loops / CC0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Copper drums",
+            "part": "drums",
+            "kitSlug": "copper-step",
+            "src": "/packs/96/copper-step/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Copper bass",
+            "part": "bass",
+            "kitSlug": "copper-step",
+            "src": "/packs/96/copper-step/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Copper chords",
+            "part": "chords",
+            "kitSlug": "copper-step",
+            "src": "/packs/96/copper-step/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Copper percussion",
+            "part": "percussion",
+            "kitSlug": "copper-step",
+            "src": "/packs/96/copper-step/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Ember drums",
+            "part": "drums",
+            "kitSlug": "ember-weave",
+            "src": "/packs/96/ember-weave/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Ember bass",
+            "part": "bass",
+            "kitSlug": "ember-weave",
+            "src": "/packs/96/ember-weave/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Ember chords",
+            "part": "chords",
+            "kitSlug": "ember-weave",
+            "src": "/packs/96/ember-weave/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Ember percussion",
+            "part": "percussion",
+            "kitSlug": "ember-weave",
+            "src": "/packs/96/ember-weave/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Glass drums",
+            "part": "drums",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/96/glass-orbit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Glass bass",
+            "part": "bass",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/96/glass-orbit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Glass chords",
+            "part": "chords",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/96/glass-orbit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Glass percussion",
+            "part": "percussion",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/96/glass-orbit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Ion drums",
+            "part": "drums",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/96/ion-bloom/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Ion bass",
+            "part": "bass",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/96/ion-bloom/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Ion chords",
+            "part": "chords",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/96/ion-bloom/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Ion percussion",
+            "part": "percussion",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/96/ion-bloom/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Lunar drums",
+            "part": "drums",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/96/lunar-relay/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Lunar bass",
+            "part": "bass",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/96/lunar-relay/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Lunar chords",
+            "part": "chords",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/96/lunar-relay/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Lunar percussion",
+            "part": "percussion",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/96/lunar-relay/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Prism drums",
+            "part": "drums",
+            "kitSlug": "prism-current",
+            "src": "/packs/96/prism-current/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Prism bass",
+            "part": "bass",
+            "kitSlug": "prism-current",
+            "src": "/packs/96/prism-current/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Prism chords",
+            "part": "chords",
+            "kitSlug": "prism-current",
+            "src": "/packs/96/prism-current/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Prism percussion",
+            "part": "percussion",
+            "kitSlug": "prism-current",
+            "src": "/packs/96/prism-current/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pulse-120",
+      "title": "Pulse 120",
+      "bpm": 120,
+      "license": "Pulse Open Loops / CC0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Copper drums",
+            "part": "drums",
+            "kitSlug": "copper-step",
+            "src": "/packs/120/copper-step/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Copper bass",
+            "part": "bass",
+            "kitSlug": "copper-step",
+            "src": "/packs/120/copper-step/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Copper chords",
+            "part": "chords",
+            "kitSlug": "copper-step",
+            "src": "/packs/120/copper-step/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Copper percussion",
+            "part": "percussion",
+            "kitSlug": "copper-step",
+            "src": "/packs/120/copper-step/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Ember drums",
+            "part": "drums",
+            "kitSlug": "ember-weave",
+            "src": "/packs/120/ember-weave/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Ember bass",
+            "part": "bass",
+            "kitSlug": "ember-weave",
+            "src": "/packs/120/ember-weave/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Ember chords",
+            "part": "chords",
+            "kitSlug": "ember-weave",
+            "src": "/packs/120/ember-weave/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Ember percussion",
+            "part": "percussion",
+            "kitSlug": "ember-weave",
+            "src": "/packs/120/ember-weave/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Glass drums",
+            "part": "drums",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/120/glass-orbit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Glass bass",
+            "part": "bass",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/120/glass-orbit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Glass chords",
+            "part": "chords",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/120/glass-orbit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Glass percussion",
+            "part": "percussion",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/120/glass-orbit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Ion drums",
+            "part": "drums",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/120/ion-bloom/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Ion bass",
+            "part": "bass",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/120/ion-bloom/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Ion chords",
+            "part": "chords",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/120/ion-bloom/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Ion percussion",
+            "part": "percussion",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/120/ion-bloom/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Lunar drums",
+            "part": "drums",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/120/lunar-relay/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Lunar bass",
+            "part": "bass",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/120/lunar-relay/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Lunar chords",
+            "part": "chords",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/120/lunar-relay/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Lunar percussion",
+            "part": "percussion",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/120/lunar-relay/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Prism drums",
+            "part": "drums",
+            "kitSlug": "prism-current",
+            "src": "/packs/120/prism-current/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Prism bass",
+            "part": "bass",
+            "kitSlug": "prism-current",
+            "src": "/packs/120/prism-current/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Prism chords",
+            "part": "chords",
+            "kitSlug": "prism-current",
+            "src": "/packs/120/prism-current/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Prism percussion",
+            "part": "percussion",
+            "kitSlug": "prism-current",
+            "src": "/packs/120/prism-current/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pulse-140",
+      "title": "Pulse 140",
+      "bpm": 140,
+      "license": "Pulse Open Loops / CC0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Copper drums",
+            "part": "drums",
+            "kitSlug": "copper-step",
+            "src": "/packs/140/copper-step/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Copper bass",
+            "part": "bass",
+            "kitSlug": "copper-step",
+            "src": "/packs/140/copper-step/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Copper chords",
+            "part": "chords",
+            "kitSlug": "copper-step",
+            "src": "/packs/140/copper-step/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Copper percussion",
+            "part": "percussion",
+            "kitSlug": "copper-step",
+            "src": "/packs/140/copper-step/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Ember drums",
+            "part": "drums",
+            "kitSlug": "ember-weave",
+            "src": "/packs/140/ember-weave/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Ember bass",
+            "part": "bass",
+            "kitSlug": "ember-weave",
+            "src": "/packs/140/ember-weave/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Ember chords",
+            "part": "chords",
+            "kitSlug": "ember-weave",
+            "src": "/packs/140/ember-weave/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Ember percussion",
+            "part": "percussion",
+            "kitSlug": "ember-weave",
+            "src": "/packs/140/ember-weave/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Glass drums",
+            "part": "drums",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/140/glass-orbit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Glass bass",
+            "part": "bass",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/140/glass-orbit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Glass chords",
+            "part": "chords",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/140/glass-orbit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Glass percussion",
+            "part": "percussion",
+            "kitSlug": "glass-orbit",
+            "src": "/packs/140/glass-orbit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Ion drums",
+            "part": "drums",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/140/ion-bloom/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Ion bass",
+            "part": "bass",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/140/ion-bloom/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Ion chords",
+            "part": "chords",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/140/ion-bloom/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Ion percussion",
+            "part": "percussion",
+            "kitSlug": "ion-bloom",
+            "src": "/packs/140/ion-bloom/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Lunar drums",
+            "part": "drums",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/140/lunar-relay/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Lunar bass",
+            "part": "bass",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/140/lunar-relay/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Lunar chords",
+            "part": "chords",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/140/lunar-relay/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Lunar percussion",
+            "part": "percussion",
+            "kitSlug": "lunar-relay",
+            "src": "/packs/140/lunar-relay/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Prism drums",
+            "part": "drums",
+            "kitSlug": "prism-current",
+            "src": "/packs/140/prism-current/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Prism bass",
+            "part": "bass",
+            "kitSlug": "prism-current",
+            "src": "/packs/140/prism-current/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Prism chords",
+            "part": "chords",
+            "kitSlug": "prism-current",
+            "src": "/packs/140/prism-current/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Prism percussion",
+            "part": "percussion",
+            "kitSlug": "prism-current",
+            "src": "/packs/140/prism-current/percussion.wav"
+          }
+        ]
+      }
+    }
+  ]
+}
