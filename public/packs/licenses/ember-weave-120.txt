@@ -1,0 +1,4 @@
+CC0-1.0
+StudioSphere Pulse dedicates these original synthesized audio parts under CC0.
+Licence and full legal text: https://creativecommons.org/publicdomain/zero/1.0/
+Attribution is not required. Source details: manifest.json.
