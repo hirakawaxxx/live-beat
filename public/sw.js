@@ -86,6 +86,17 @@ async function networkFirst(request, fallbackUrl) {
   }
 }
 
+// Sound assets are immutable: serve from cache if present, otherwise fetch and store once.
+async function cacheFirst(request, cacheName) {
+  const cached = await caches.match(request);
+  if (cached) {
+    return cached;
+  }
+  const response = await fetch(request);
+  await putInCache(cacheName, request, response.clone());
+  return response;
+}
+
 function staleWhileRevalidate(event, cacheName) {
   const { request } = event;
   const refreshed = fetch(request).then(async (response) => {
@@ -114,13 +125,13 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(networkFirst(request, navigationFallback(url)));
     return;
   }
-  // Audio loops: serve from cache after the first listen, refresh in the background.
+  // Audio loops: immutable, so serve from cache after the first listen (cache-first).
   // Range requests (206) are not cacheable, so let the browser handle them directly.
   if (url.pathname.endsWith('.wav')) {
     if (request.headers.has('range')) {
       return;
     }
-    event.respondWith(staleWhileRevalidate(event, RUNTIME_CACHE_NAME));
+    event.respondWith(cacheFirst(request, RUNTIME_CACHE_NAME));
     return;
   }
   // On localhost, always prefer fresh files so edits show up on the next reload.

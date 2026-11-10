@@ -40,9 +40,10 @@ describe('service worker precache', () => {
     assert.deepEqual(missing, []);
   });
 
-  test('caches WAVs at runtime with stale-while-revalidate', () => {
+  test('caches WAVs at runtime cache-first (immutable assets)', () => {
     assert.match(swSource, /\.wav/);
-    assert.match(swSource, /staleWhileRevalidate\(event, RUNTIME_CACHE_NAME\)/);
+    assert.match(swSource, /cacheFirst\(request, RUNTIME_CACHE_NAME\)/);
+    assert.doesNotMatch(swSource, /staleWhileRevalidate\(event, RUNTIME_CACHE_NAME\)/);
   });
 
   test('PRECACHE_REVISION matches the precached files (run `node scripts/sw-revision.mjs`)', () => {
