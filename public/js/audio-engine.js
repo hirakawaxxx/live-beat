@@ -1,4 +1,4 @@
-import { barDurationSec, nextBarTime } from './timing.js';
+import { barDurationSec, beatsForDuration, quantizeOnTime } from './timing.js';
 
 const DEFAULT_BPM = 120;
 const LOOP_BARS = 4;
@@ -29,10 +29,26 @@ export function createAudioEngine() {
     transportOrigin = context ? context.currentTime : null;
   }
 
+  // Loops that still sound or are scheduled to start (cancelled/disposed are removed from `active`).
+  function activeCycleDurs(ctx) {
+    return [...active.values()]
+      .filter((entry) => !entry.stopping || entry.stopTime > ctx.currentTime)
+      .map((entry) => entry.loopDuration);
+  }
+
+  // Joins and leaves land on the longest active loop cycle; with nothing active, on the next bar.
   function boundaryTime(ctx) {
     const barDur = barDurationSec(bpm);
-    let next = nextBarTime(ctx.currentTime, transportOrigin, barDur);
-    if (next - ctx.currentTime < MIN_LEAD_SEC) next += barDur;
+    const durs = activeCycleDurs(ctx);
+    let next = quantizeOnTime({
+      currentTime: ctx.currentTime,
+      originTime: transportOrigin,
+      barDur,
+      activeCycleDurs: durs,
+    });
+    if (next - ctx.currentTime < MIN_LEAD_SEC) {
+      next += durs.length > 0 ? Math.max(...durs) : barDur;
+    }
     return next;
   }
 
@@ -108,7 +124,7 @@ export function createAudioEngine() {
     gain.connect(masterGain);
 
     if (previous) retiring.add(previous);
-    const entry = { source, gain, startTime: next, stopTime: null };
+    const entry = { source, gain, startTime: next, stopTime: null, loopDuration: buffer.duration };
     source.onended = () => disposeEntry(padId, entry);
     source.start(next, offset);
     active.set(padId, entry);
@@ -165,12 +181,56 @@ export function createAudioEngine() {
     if (context) resetTransport();
   }
 
+  function phaseOf(currentTime, cycleDur) {
+    return positiveMod(currentTime - transportOrigin, cycleDur) / cycleDur;
+  }
+
+  // Read-only view for UI rings. Pads missing from `active` are reported as 'off'.
+  function getTransportSnapshot() {
+    const ctx = requireContext();
+    const now = ctx.currentTime;
+    const sounding = [...active.values()].filter(
+      (entry) => entry.startTime <= now && (!entry.stopping || entry.stopTime > now),
+    );
+    // Waiting pads show the master cycle (longest sounding loop, else one bar).
+    const masterCycle = sounding.length > 0
+      ? Math.max(...sounding.map((entry) => entry.loopDuration))
+      : barDurationSec(bpm);
+    const pads = {};
+    for (const [padId, buffer] of buffers) {
+      const entry = active.get(padId);
+      const loopDuration = buffer.duration;
+      let state = 'off';
+      let phase = 0;
+      if (entry && entry.startTime > now) {
+        state = 'waiting';
+        phase = phaseOf(now, masterCycle);
+      } else if (entry && entry.stopping && entry.stopTime > now) {
+        state = 'stopping';
+        phase = phaseOf(now, loopDuration);
+      } else if (entry && !entry.stopping) {
+        state = 'playing';
+        phase = phaseOf(now, loopDuration);
+      }
+      pads[padId] = {
+        state,
+        loopDuration,
+        beats: beatsForDuration(loopDuration, bpm),
+        startTime: entry ? entry.startTime : null,
+        stopTime: entry && entry.stopping ? entry.stopTime : null,
+        phase,
+      };
+    }
+    return { currentTime: now, originTime: transportOrigin, bpm, pads };
+  }
+
   return {
     resume,
     loadPad,
     setBpm,
     togglePad,
     stopAll,
+    getTransportSnapshot,
     getMasterGain: () => requireContext() && masterGain,
     getContext: () => requireContext(),
   };
