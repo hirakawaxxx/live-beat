@@ -110,3 +110,56 @@ main {
 .footer {
   margin-top: auto;
 }
+
+/* Play page */
+#transport .ui-button {
+  padding: 0 var(--space-5);
+}
+
+#transport .ui-button[aria-pressed="true"] {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.pad {
+  --pad-tint: var(--color-primary);
+  position: relative;
+  flex-direction: column;
+  aspect-ratio: 1;
+  min-height: var(--tap-min);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--pad-tint) 28%, var(--color-surface-raised));
+  font: var(--font-caption);
+  text-align: center;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.pad--drums { --pad-tint: #f2a88f; }
+.pad--bass { --pad-tint: #8fb8f2; }
+.pad--chords { --pad-tint: var(--color-primary); }
+.pad--percussion { --pad-tint: #f2d88f; }
+
+.pad[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--pad-tint) 80%, var(--color-surface-raised));
+  color: var(--color-on-primary);
+  border-color: var(--color-primary-strong);
+  box-shadow: var(--elevation-1), var(--shadow-glow-soft);
+}
+
+.pad[aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-strong);
+}
+
+.pad:focus-visible {
+  outline: var(--focus-width) solid var(--color-focus);
+  outline-offset: var(--focus-offset);
+}
