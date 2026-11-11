@@ -17,8 +17,6 @@ export function createAudioEngine() {
   const buffers = new Map();
   // padId -> { source, gain }
   const active = new Map();
-  // entries replaced by a fresh source while still waiting for their stop time
-  const retiring = new Set();
 
   function requireContext() {
     if (!context) throw new Error('AudioEngine: call resume() first');
@@ -29,32 +27,26 @@ export function createAudioEngine() {
     transportOrigin = context ? context.currentTime : null;
   }
 
-  // Loops that still sound or are scheduled to start (cancelled/disposed are removed from `active`).
-  function activeCycleDurs(ctx) {
-    return [...active.values()]
-      .filter((entry) => !entry.stopping || entry.stopTime > ctx.currentTime)
-      .map((entry) => entry.loopDuration);
-  }
-
-  // Joins and leaves land on the longest active loop cycle; with nothing active, on the next bar.
-  function boundaryTime(ctx) {
+  // ON lands on this pad's own loop boundary (shared grid) once anything is active or
+  // scheduled; with nothing active, on the next bar.
+  function joinTime(ctx, padCycleDur) {
     const barDur = barDurationSec(bpm);
-    const durs = activeCycleDurs(ctx);
-    let next = quantizeOnTime({
+    const hasActive = active.size > 0;
+    const next = quantizeOnTime({
       currentTime: ctx.currentTime,
       originTime: transportOrigin,
       barDur,
-      activeCycleDurs: durs,
+      padCycleDur,
+      hasActive,
     });
     if (next - ctx.currentTime < MIN_LEAD_SEC) {
-      next += durs.length > 0 ? Math.max(...durs) : barDur;
+      return next + (hasActive ? padCycleDur : barDur);
     }
     return next;
   }
 
   function disposeEntry(padId, entry) {
     entry.source.onended = null;
-    retiring.delete(entry);
     try {
       entry.source.disconnect();
       entry.gain.disconnect();
@@ -107,13 +99,7 @@ export function createAudioEngine() {
     const buffer = buffers.get(padId);
     if (!buffer) throw new Error(`AudioEngine: pad "${padId}" is not loaded`);
 
-    // Re-ON while a stop is pending: start exactly where the old source stops
-    // so there is no silent bar gap.
-    const previous = active.get(padId);
-    const next =
-      previous && previous.stopping && previous.stopTime > ctx.currentTime
-        ? previous.stopTime
-        : boundaryTime(ctx);
+    const next = joinTime(ctx, buffer.duration);
     const offset = positiveMod(next - transportOrigin, buffer.duration);
 
     const source = ctx.createBufferSource();
@@ -123,52 +109,39 @@ export function createAudioEngine() {
     source.connect(gain);
     gain.connect(masterGain);
 
-    if (previous) retiring.add(previous);
-    const entry = { source, gain, startTime: next, stopTime: null, loopDuration: buffer.duration };
+    const entry = { source, gain, startTime: next, loopDuration: buffer.duration };
     source.onended = () => disposeEntry(padId, entry);
     source.start(next, offset);
     active.set(padId, entry);
   }
 
+  // OFF is immediate: a pending start is cancelled and a sounding loop is cut now.
   function stopPad(padId) {
-    const ctx = requireContext();
+    requireContext();
     const entry = active.get(padId);
     if (!entry) return;
-    // Start still pending: cancel outright (no sound), regardless of lead time.
-    if (entry.startTime > ctx.currentTime) {
-      try {
-        entry.source.stop();
-      } catch {
-        // already stopped
-      }
-      disposeEntry(padId, entry);
-      return;
+    try {
+      entry.source.stop();
+    } catch {
+      // already stopped
     }
-    // Already sounding: stop at the next bar boundary.
-    const stopTime = boundaryTime(ctx);
-    entry.source.stop(stopTime);
-    // Mark as stopping so a later "on" creates a fresh source.
-    const stopping = { ...entry, stopping: true, stopTime };
-    stopping.source.onended = () => disposeEntry(padId, stopping);
-    active.set(padId, stopping);
+    disposeEntry(padId, entry);
   }
 
   function togglePad(padId, on) {
     requireContext();
     const current = active.get(padId);
     if (on) {
-      if (current && !current.stopping) return;
+      if (current) return;
       startPad(padId);
     } else {
-      if (!current || current.stopping) return;
+      if (!current) return;
       stopPad(padId);
     }
   }
 
   function stopAll() {
-    const entries = [...active];
-    for (const entry of retiring) entries.push([null, entry]);
-    for (const [padId, entry] of entries) {
+    for (const [padId, entry] of [...active]) {
       try {
         entry.source.stop();
       } catch {
@@ -177,7 +150,6 @@ export function createAudioEngine() {
       disposeEntry(padId, entry);
     }
     active.clear();
-    retiring.clear();
     if (context) resetTransport();
   }
 
@@ -189,13 +161,7 @@ export function createAudioEngine() {
   function getTransportSnapshot() {
     const ctx = requireContext();
     const now = ctx.currentTime;
-    const sounding = [...active.values()].filter(
-      (entry) => entry.startTime <= now && (!entry.stopping || entry.stopTime > now),
-    );
-    // Waiting pads show the master cycle (longest sounding loop, else one bar).
-    const masterCycle = sounding.length > 0
-      ? Math.max(...sounding.map((entry) => entry.loopDuration))
-      : barDurationSec(bpm);
+    const anySounding = [...active.values()].some((entry) => entry.startTime <= now);
     const pads = {};
     for (const [padId, buffer] of buffers) {
       const entry = active.get(padId);
@@ -203,12 +169,10 @@ export function createAudioEngine() {
       let state = 'off';
       let phase = 0;
       if (entry && entry.startTime > now) {
+        // Waiting pads count down on the grid they will join: own loop if others play, else a bar.
         state = 'waiting';
-        phase = phaseOf(now, masterCycle);
-      } else if (entry && entry.stopping && entry.stopTime > now) {
-        state = 'stopping';
-        phase = phaseOf(now, loopDuration);
-      } else if (entry && !entry.stopping) {
+        phase = phaseOf(now, anySounding ? loopDuration : barDurationSec(bpm));
+      } else if (entry) {
         state = 'playing';
         phase = phaseOf(now, loopDuration);
       }
@@ -217,7 +181,6 @@ export function createAudioEngine() {
         loopDuration,
         beats: beatsForDuration(loopDuration, bpm),
         startTime: entry ? entry.startTime : null,
-        stopTime: entry && entry.stopping ? entry.stopTime : null,
         phase,
       };
     }

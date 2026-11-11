@@ -43,7 +43,7 @@ export function createRing(beats) {
 // DOM is touched only when the visible beat changes.
 export function updateRing(ring, { state, phase, beats }) {
   const head = state === 'off' ? -1 : beatIndexForPhase(phase, beats);
-  const lit = state === 'playing' || state === 'stopping' ? head : -1;
+  const lit = state === 'playing' ? head : -1;
   if (head === ring.head && lit === ring.lit) return ring;
   ring.segments.forEach((segment, i) => {
     segment.classList.toggle('is-lit', i <= lit);

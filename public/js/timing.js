@@ -23,10 +23,9 @@ export function nextCycleTime(currentTime, originTime, cycleDur) {
   return nextBarTime(currentTime, originTime, cycleDur);
 }
 
-// Nothing active: next bar. Otherwise: next boundary of the longest active loop cycle.
-export function quantizeOnTime({ currentTime, originTime, barDur, activeCycleDurs }) {
-  if (!activeCycleDurs || activeCycleDurs.length === 0) {
-    return nextBarTime(currentTime, originTime, barDur);
-  }
-  return nextCycleTime(currentTime, originTime, Math.max(...activeCycleDurs));
+// Nothing active: next bar. Otherwise: next boundary of this pad's own loop cycle
+// on the shared grid (not the longest active cycle).
+export function quantizeOnTime({ currentTime, originTime, barDur, padCycleDur, hasActive }) {
+  if (!hasActive) return nextBarTime(currentTime, originTime, barDur);
+  return nextCycleTime(currentTime, originTime, padCycleDur);
 }
