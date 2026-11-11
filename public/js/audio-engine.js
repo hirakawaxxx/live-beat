@@ -27,21 +27,15 @@ export function createAudioEngine() {
     transportOrigin = context ? context.currentTime : null;
   }
 
-  // ON lands on this pad's own loop boundary (shared grid) once anything is active or
-  // scheduled; with nothing active, on the next bar.
-  function joinTime(ctx, padCycleDur) {
+  // ON always lands on the next bar boundary (4 beats), whether or not other pads play.
+  function joinTime(ctx) {
     const barDur = barDurationSec(bpm);
-    const hasActive = active.size > 0;
     const next = quantizeOnTime({
       currentTime: ctx.currentTime,
       originTime: transportOrigin,
       barDur,
-      padCycleDur,
-      hasActive,
     });
-    if (next - ctx.currentTime < MIN_LEAD_SEC) {
-      return next + (hasActive ? padCycleDur : barDur);
-    }
+    if (next - ctx.currentTime < MIN_LEAD_SEC) return next + barDur;
     return next;
   }
 
@@ -99,7 +93,7 @@ export function createAudioEngine() {
     const buffer = buffers.get(padId);
     if (!buffer) throw new Error(`AudioEngine: pad "${padId}" is not loaded`);
 
-    const next = joinTime(ctx, buffer.duration);
+    const next = joinTime(ctx);
     const offset = positiveMod(next - transportOrigin, buffer.duration);
 
     const source = ctx.createBufferSource();
@@ -161,7 +155,6 @@ export function createAudioEngine() {
   function getTransportSnapshot() {
     const ctx = requireContext();
     const now = ctx.currentTime;
-    const anySounding = [...active.values()].some((entry) => entry.startTime <= now);
     const pads = {};
     for (const [padId, buffer] of buffers) {
       const entry = active.get(padId);
@@ -169,9 +162,9 @@ export function createAudioEngine() {
       let state = 'off';
       let phase = 0;
       if (entry && entry.startTime > now) {
-        // Waiting pads count down on the grid they will join: own loop if others play, else a bar.
+        // Waiting pads count down toward the next bar boundary they will join on.
         state = 'waiting';
-        phase = phaseOf(now, anySounding ? loopDuration : barDurationSec(bpm));
+        phase = phaseOf(now, barDurationSec(bpm));
       } else if (entry) {
         state = 'playing';
         phase = phaseOf(now, loopDuration);

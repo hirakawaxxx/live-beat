@@ -23,9 +23,8 @@ export function nextCycleTime(currentTime, originTime, cycleDur) {
   return nextBarTime(currentTime, originTime, cycleDur);
 }
 
-// Nothing active: next bar. Otherwise: next boundary of this pad's own loop cycle
-// on the shared grid (not the longest active cycle).
-export function quantizeOnTime({ currentTime, originTime, barDur, padCycleDur, hasActive }) {
-  if (!hasActive) return nextBarTime(currentTime, originTime, barDur);
-  return nextCycleTime(currentTime, originTime, padCycleDur);
+// ON always lands on the next bar boundary of the shared grid. Loop length does not matter:
+// the caller derives the buffer offset from the grid so phase stays aligned.
+export function quantizeOnTime({ currentTime, originTime, barDur }) {
+  return nextBarTime(currentTime, originTime, barDur);
 }

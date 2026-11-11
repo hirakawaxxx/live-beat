@@ -52,12 +52,28 @@ describe('audio engine sync rules (120 BPM, bar = 2s)', () => {
     assert.equal(sources[0].starts[0].when, 3);
   });
 
-  test('later pads join on their own loop boundary, not the longest active cycle', () => {
-    engine.togglePad('long', true); // active: 8s loop
+  test('later pads join on the next bar, ignoring their own loop length', () => {
+    engine.togglePad('long', true); // active: 8s loop, starts at 3
     ctx.currentTime = 2; // 1s after origin
-    engine.togglePad('short', true); // own cycle 4s -> origin + 4 = 5
+    engine.togglePad('short', true); // 4s loop still joins the next bar (3), not its cycle (5)
+    assert.equal(sources[1].starts[0].when, 3);
+    assert.equal(sources[1].starts[0].offset, 2); // (3 - origin) mod 4: phase on the shared grid
+  });
+
+  test('long pad joins the next bar with a grid-aligned offset', () => {
+    engine.togglePad('short', true); // starts at 3
+    ctx.currentTime = 4.5;
+    engine.togglePad('long', true); // next bar = 5, offset (5 - 1) mod 8 = 4
     assert.equal(sources[1].starts[0].when, 5);
-    assert.equal(sources[1].starts[0].offset, 0);
+    assert.equal(sources[1].starts[0].offset, 4);
+  });
+
+  test('waiting phase progresses toward the next bar', () => {
+    ctx.currentTime = 1.5;
+    engine.togglePad('short', true); // starts at 3
+    const snap = engine.getTransportSnapshot();
+    assert.equal(snap.pads.short.state, 'waiting');
+    assert.equal(snap.pads.short.phase, 0.25); // 0.5s into a 2s bar
   });
 
   test('OFF stops a sounding pad immediately', () => {

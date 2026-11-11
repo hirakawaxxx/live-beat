@@ -55,37 +55,21 @@ describe('nextCycleTime', () => {
 });
 
 describe('quantizeOnTime', () => {
-  test('uses the next bar when nothing is active', () => {
-    assert.equal(
-      quantizeOnTime({ currentTime: 3, originTime: 0, barDur: 2, padCycleDur: 8, hasActive: false }),
-      4,
-    );
-  });
-  test("uses this pad's own cycle when something is active", () => {
-    assert.equal(
-      quantizeOnTime({ currentTime: 3, originTime: 0, barDur: 2, padCycleDur: 4, hasActive: true }),
-      4,
-    );
-    assert.equal(
-      quantizeOnTime({ currentTime: 3, originTime: 0, barDur: 2, padCycleDur: 8, hasActive: true }),
-      8,
-    );
-  });
-  test('a short pad joins earlier than a long one on the same grid', () => {
-    const base = { currentTime: 9.5, originTime: 1, barDur: 2, hasActive: true };
-    assert.equal(quantizeOnTime({ ...base, padCycleDur: 4 }), 13);
-    assert.equal(quantizeOnTime({ ...base, padCycleDur: 8 }), 17);
+  test('uses the next bar boundary', () => {
+    assert.equal(quantizeOnTime({ currentTime: 3, originTime: 0, barDur: 2 }), 4);
+    assert.equal(quantizeOnTime({ currentTime: 9.5, originTime: 1, barDur: 2 }), 11);
   });
   test('stays on the boundary when already aligned', () => {
-    assert.equal(
-      quantizeOnTime({ currentTime: 8, originTime: 0, barDur: 2, padCycleDur: 4, hasActive: true }),
-      8,
-    );
+    assert.equal(quantizeOnTime({ currentTime: 8, originTime: 0, barDur: 2 }), 8);
   });
-  test('ignores padCycleDur when nothing is active', () => {
-    assert.equal(
-      quantizeOnTime({ currentTime: 9.5, originTime: 1, barDur: 2, padCycleDur: 8, hasActive: false }),
-      11,
-    );
+  test('ignores padCycleDur and hasActive: always bar', () => {
+    for (const padCycleDur of [4, 8, 16]) {
+      for (const hasActive of [false, true]) {
+        assert.equal(
+          quantizeOnTime({ currentTime: 9.5, originTime: 1, barDur: 2, padCycleDur, hasActive }),
+          11,
+        );
+      }
+    }
   });
 });
