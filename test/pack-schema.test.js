@@ -94,7 +94,7 @@ describe('shipped catalog.json', () => {
   });
 
   test('pulse packs follow kit assignment, part order and src convention', () => {
-    const kits = { A: ['copper-step', 'ember-weave', 'glass-orbit'], B: ['ion-bloom', 'lunar-relay', 'prism-current'] };
+    const kits = { A: ['copper-step', 'ember-weave', 'glass-orbit'], B: ['ion-bloom', 'rust-arc', 'velvet-grid'] };
     for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('pulse-'))) {
       for (const side of ['A', 'B']) {
         pack.sides[side].forEach((pad, i) => {

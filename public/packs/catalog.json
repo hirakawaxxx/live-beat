@@ -123,59 +123,59 @@
           },
           {
             "id": "B-4",
-            "label": "Lunar drums",
+            "label": "Rust drums",
             "part": "drums",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/drums.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/96/rust-arc/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Lunar bass",
+            "label": "Rust bass",
             "part": "bass",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/bass.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/96/rust-arc/bass.wav"
           },
           {
             "id": "B-6",
-            "label": "Lunar chords",
+            "label": "Rust chords",
             "part": "chords",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/chords.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/96/rust-arc/chords.wav"
           },
           {
             "id": "B-7",
-            "label": "Lunar percussion",
+            "label": "Rust percussion",
             "part": "percussion",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/percussion.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/96/rust-arc/percussion.wav"
           },
           {
             "id": "B-8",
-            "label": "Prism drums",
+            "label": "Velvet drums",
             "part": "drums",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/drums.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/96/velvet-grid/drums.wav"
           },
           {
             "id": "B-9",
-            "label": "Prism bass",
+            "label": "Velvet bass",
             "part": "bass",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/bass.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/96/velvet-grid/bass.wav"
           },
           {
             "id": "B-10",
-            "label": "Prism chords",
+            "label": "Velvet chords",
             "part": "chords",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/chords.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/96/velvet-grid/chords.wav"
           },
           {
             "id": "B-11",
-            "label": "Prism percussion",
+            "label": "Velvet percussion",
             "part": "percussion",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/percussion.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/96/velvet-grid/percussion.wav"
           }
         ]
       }
@@ -303,59 +303,59 @@
           },
           {
             "id": "B-4",
-            "label": "Lunar drums",
+            "label": "Rust drums",
             "part": "drums",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/drums.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/120/rust-arc/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Lunar bass",
+            "label": "Rust bass",
             "part": "bass",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/bass.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/120/rust-arc/bass.wav"
           },
           {
             "id": "B-6",
-            "label": "Lunar chords",
+            "label": "Rust chords",
             "part": "chords",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/chords.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/120/rust-arc/chords.wav"
           },
           {
             "id": "B-7",
-            "label": "Lunar percussion",
+            "label": "Rust percussion",
             "part": "percussion",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/percussion.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/120/rust-arc/percussion.wav"
           },
           {
             "id": "B-8",
-            "label": "Prism drums",
+            "label": "Velvet drums",
             "part": "drums",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/drums.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/120/velvet-grid/drums.wav"
           },
           {
             "id": "B-9",
-            "label": "Prism bass",
+            "label": "Velvet bass",
             "part": "bass",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/bass.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/120/velvet-grid/bass.wav"
           },
           {
             "id": "B-10",
-            "label": "Prism chords",
+            "label": "Velvet chords",
             "part": "chords",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/chords.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/120/velvet-grid/chords.wav"
           },
           {
             "id": "B-11",
-            "label": "Prism percussion",
+            "label": "Velvet percussion",
             "part": "percussion",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/percussion.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/120/velvet-grid/percussion.wav"
           }
         ]
       }
@@ -483,59 +483,59 @@
           },
           {
             "id": "B-4",
-            "label": "Lunar drums",
+            "label": "Rust drums",
             "part": "drums",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/drums.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/140/rust-arc/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Lunar bass",
+            "label": "Rust bass",
             "part": "bass",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/bass.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/140/rust-arc/bass.wav"
           },
           {
             "id": "B-6",
-            "label": "Lunar chords",
+            "label": "Rust chords",
             "part": "chords",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/chords.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/140/rust-arc/chords.wav"
           },
           {
             "id": "B-7",
-            "label": "Lunar percussion",
+            "label": "Rust percussion",
             "part": "percussion",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/percussion.wav"
+            "kitSlug": "rust-arc",
+            "src": "/packs/140/rust-arc/percussion.wav"
           },
           {
             "id": "B-8",
-            "label": "Prism drums",
+            "label": "Velvet drums",
             "part": "drums",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/drums.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/140/velvet-grid/drums.wav"
           },
           {
             "id": "B-9",
-            "label": "Prism bass",
+            "label": "Velvet bass",
             "part": "bass",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/bass.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/140/velvet-grid/bass.wav"
           },
           {
             "id": "B-10",
-            "label": "Prism chords",
+            "label": "Velvet chords",
             "part": "chords",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/chords.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/140/velvet-grid/chords.wav"
           },
           {
             "id": "B-11",
-            "label": "Prism percussion",
+            "label": "Velvet percussion",
             "part": "percussion",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/percussion.wav"
+            "kitSlug": "velvet-grid",
+            "src": "/packs/140/velvet-grid/percussion.wav"
           }
         ]
       }

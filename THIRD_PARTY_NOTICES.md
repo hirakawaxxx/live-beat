@@ -18,7 +18,7 @@ footer.
 - Source URL pattern:
   `https://pulse.studiosphere.space/open-loops/kits/{slug}-{bpm}/download`
   (slugs: copper-step, ember-weave, glass-orbit, ion-bloom, lunar-relay,
-  prism-current; BPM: 96, 120, 140)
+  prism-current, rust-arc, velvet-grid; BPM: 96, 120, 140)
 - Fetch script: `scripts/fetch-pulse-kits.mjs`
 - Per-kit license text: `public/packs/licenses/{slug}-{bpm}.txt` (CC0-1.0)
 

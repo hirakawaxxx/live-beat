@@ -13,6 +13,7 @@ const BPM_LIST = [96, 120, 140];
 const SLUGS = [
   'copper-step', 'ember-weave', 'glass-orbit',
   'ion-bloom', 'lunar-relay', 'prism-current',
+  'rust-arc', 'velvet-grid',
 ];
 const PARTS = ['drums', 'bass', 'chords', 'percussion'];
 
