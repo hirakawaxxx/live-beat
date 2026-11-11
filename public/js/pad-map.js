@@ -3,7 +3,7 @@
 export const STORAGE_KEY = 'live-beat:pad-map:v1';
 
 const SIDES = ['A', 'B'];
-const PART_ORDER = ['drums', 'bass', 'chords', 'percussion'];
+const PART_ORDER = ['drums', 'bass', 'chords', 'melody', 'percussion', 'voice'];
 
 const isPlainObject = (v) => typeof v === 'object' && v !== null && !Array.isArray(v);
 
@@ -14,8 +14,8 @@ export const toSound = ({ src, label, part, kitSlug }) => ({ src, label, part, k
 
 const allPads = (pack) => SIDES.flatMap((side) => pack.sides[side]);
 
-// Every distinct loop (deduped by src) with a matching bpm, in part order: pack pads first, then
-// catalog.sounds (on-disk kit loops no pack pad uses; see scripts/index-kits.mjs).
+// Every distinct loop (deduped by src) from the packs rendered at `bpm`, in part order. Loops at
+// another tempo would play at the wrong pitch, so they are not offered.
 export function buildSoundIndex(catalog, bpm) {
   const seen = new Set();
   const sounds = [];
@@ -25,11 +25,7 @@ export function buildSoundIndex(catalog, bpm) {
     sounds.push(toSound(sound));
   };
   for (const pack of catalog.packs) {
-    if (pack.bpm !== bpm) continue;
-    allPads(pack).forEach(add);
-  }
-  for (const sound of catalog.sounds ?? []) {
-    if (sound.bpm === bpm) add(sound);
+    if (pack.bpm === bpm) allPads(pack).forEach(add);
   }
   const rank = (part) => {
     const i = PART_ORDER.indexOf(part);
@@ -39,7 +35,11 @@ export function buildSoundIndex(catalog, bpm) {
   return sounds.sort((a, b) => rank(a.part) - rank(b.part));
 }
 
-// Keeps only overrides for known pad slots whose src is in the sound index. Sound fields are
+// A pad slot keeps its part: only sounds of the same part can replace it.
+export const soundsForPad = (soundIndex, pad) => soundIndex.filter((sound) => sound.part === pad.part);
+
+// Keeps only overrides for known pad slots whose src is in the sound index and whose part matches
+// the slot. Sound fields are
 // taken from the index (not from storage) so stale or tampered entries cannot inject data.
 export function normalizeOverrides(raw, pack, soundIndex) {
   const bySrc = new Map(soundIndex.map((sound) => [sound.src, sound]));
@@ -52,7 +52,7 @@ export function normalizeOverrides(raw, pack, soundIndex) {
       const entry = sideRaw[pad.id];
       if (!isPlainObject(entry) || typeof entry.src !== 'string') continue;
       const sound = bySrc.get(entry.src);
-      if (!sound || sound.src === pad.src) continue;
+      if (!sound || sound.src === pad.src || sound.part !== pad.part) continue;
       result[side][pad.id] = { ...sound };
     }
   }

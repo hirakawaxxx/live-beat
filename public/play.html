@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
     <title>演奏 — live-beat</title>
+    <link rel="preload" href="/fonts/zen-maru-gothic-500.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/fonts.css" />
     <link rel="stylesheet" href="/tokens.css" />
     <link rel="stylesheet" href="/components.css" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <meta name="theme-color" content="#eeede9" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#141716" media="(prefers-color-scheme: dark)" />
   </head>
@@ -28,9 +29,14 @@
           <button type="button" class="ui-button" id="btn-side-a" aria-pressed="true">A</button>
           <button type="button" class="ui-button" id="btn-side-b">B</button>
           <button type="button" class="ui-button" id="btn-record" disabled>録音</button>
+          <label id="bpm-control" class="ui-text-label">
+            BPM
+            <input type="range" id="bpm-range" min="102" max="138" step="1" value="120" />
+            <output id="bpm-value" for="bpm-range">120</output>
+          </label>
         </div>
         <div id="pad-grid"></div>
-        <p id="pad-hint" class="ui-text-caption">タップで再生・停止 / 長押し（右クリック）で同じBPMの音に差し替え</p>
+        <p id="pad-hint" class="ui-text-caption">タップで再生・停止 / 長押し（右クリック）で同じ種類の音に差し替え / BPMは微調整用で、変えると音の高さも少し変わります</p>
         <p id="status" role="status" class="ui-text-body ui-text-muted"></p>
         <div id="recording-result" hidden>
           <audio id="recording-audio" controls></audio>

@@ -1,5233 +1,1400 @@
 {
   "packs": [
     {
-      "id": "pulse-96",
-      "title": "Pulse 96",
-      "bpm": 96,
-      "license": "Pulse Open Loops / CC0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Copper drums",
-            "part": "drums",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Copper bass",
-            "part": "bass",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Copper chords",
-            "part": "chords",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Copper percussion",
-            "part": "percussion",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Ember drums",
-            "part": "drums",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Ember bass",
-            "part": "bass",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Ember chords",
-            "part": "chords",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Ember percussion",
-            "part": "percussion",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Glass drums",
-            "part": "drums",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Glass bass",
-            "part": "bass",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Glass chords",
-            "part": "chords",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Glass percussion",
-            "part": "percussion",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Ion drums",
-            "part": "drums",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Ion bass",
-            "part": "bass",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Ion chords",
-            "part": "chords",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Ion percussion",
-            "part": "percussion",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Lunar drums",
-            "part": "drums",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Lunar bass",
-            "part": "bass",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Lunar chords",
-            "part": "chords",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Lunar percussion",
-            "part": "percussion",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/96/lunar-relay/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Prism drums",
-            "part": "drums",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Prism bass",
-            "part": "bass",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Prism chords",
-            "part": "chords",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Prism percussion",
-            "part": "percussion",
-            "kitSlug": "prism-current",
-            "src": "/packs/96/prism-current/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Rust drums",
-            "part": "drums",
-            "kitSlug": "rust-arc",
-            "src": "/packs/96/rust-arc/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Rust bass",
-            "part": "bass",
-            "kitSlug": "rust-arc",
-            "src": "/packs/96/rust-arc/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Rust chords",
-            "part": "chords",
-            "kitSlug": "rust-arc",
-            "src": "/packs/96/rust-arc/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Rust percussion",
-            "part": "percussion",
-            "kitSlug": "rust-arc",
-            "src": "/packs/96/rust-arc/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Velvet drums",
-            "part": "drums",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/96/velvet-grid/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Velvet bass",
-            "part": "bass",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/96/velvet-grid/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Velvet chords",
-            "part": "chords",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/96/velvet-grid/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Velvet percussion",
-            "part": "percussion",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/96/velvet-grid/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Copper drums",
-            "part": "drums",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Copper bass",
-            "part": "bass",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Copper chords",
-            "part": "chords",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Copper percussion",
-            "part": "percussion",
-            "kitSlug": "copper-step",
-            "src": "/packs/96/copper-step/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Ember drums",
-            "part": "drums",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Ember bass",
-            "part": "bass",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Ember chords",
-            "part": "chords",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Ember percussion",
-            "part": "percussion",
-            "kitSlug": "ember-weave",
-            "src": "/packs/96/ember-weave/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Glass drums",
-            "part": "drums",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Glass bass",
-            "part": "bass",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Glass chords",
-            "part": "chords",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Glass percussion",
-            "part": "percussion",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/96/glass-orbit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Ion drums",
-            "part": "drums",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Ion bass",
-            "part": "bass",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Ion chords",
-            "part": "chords",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Ion percussion",
-            "part": "percussion",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/96/ion-bloom/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "pulse-120",
-      "title": "Pulse 120",
+      "id": "originals-am",
+      "title": "Originals Am",
       "bpm": 120,
-      "license": "Pulse Open Loops / CC0",
+      "license": "live-beat original / 音色: MuseScore_General (MIT)",
+      "layout": "blocks",
       "sides": {
         "A": [
           {
             "id": "A-0",
-            "label": "Copper drums",
+            "label": "House",
             "part": "drums",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/drums.wav"
+            "kitSlug": "dawn",
+            "src": "/packs/originals/120/dawn/drums.wav"
           },
           {
             "id": "A-1",
-            "label": "Copper bass",
-            "part": "bass",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/bass.wav"
+            "label": "Boom Bap",
+            "part": "drums",
+            "kitSlug": "harbor",
+            "src": "/packs/originals/120/harbor/drums.wav"
           },
           {
             "id": "A-2",
-            "label": "Copper chords",
-            "part": "chords",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/chords.wav"
+            "label": "Octave",
+            "part": "bass",
+            "kitSlug": "dawn",
+            "src": "/packs/originals/120/dawn/bass.wav"
           },
           {
             "id": "A-3",
-            "label": "Copper percussion",
-            "part": "percussion",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/percussion.wav"
+            "label": "Finger",
+            "part": "bass",
+            "kitSlug": "harbor",
+            "src": "/packs/originals/120/harbor/bass.wav"
           },
           {
             "id": "A-4",
-            "label": "Ember drums",
+            "label": "Rock",
             "part": "drums",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/drums.wav"
+            "kitSlug": "lantern",
+            "src": "/packs/originals/120/lantern/drums.wav"
           },
           {
             "id": "A-5",
-            "label": "Ember bass",
-            "part": "bass",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/bass.wav"
+            "label": "Half Time",
+            "part": "drums",
+            "kitSlug": "meadow",
+            "src": "/packs/originals/120/meadow/drums.wav"
           },
           {
             "id": "A-6",
-            "label": "Ember chords",
-            "part": "chords",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/chords.wav"
+            "label": "Pick 8ths",
+            "part": "bass",
+            "kitSlug": "lantern",
+            "src": "/packs/originals/120/lantern/bass.wav"
           },
           {
             "id": "A-7",
-            "label": "Ember percussion",
-            "part": "percussion",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/percussion.wav"
+            "label": "Sub",
+            "part": "bass",
+            "kitSlug": "meadow",
+            "src": "/packs/originals/120/meadow/bass.wav"
           },
           {
             "id": "A-8",
-            "label": "Glass drums",
-            "part": "drums",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/drums.wav"
+            "label": "Warm Pad",
+            "part": "chords",
+            "kitSlug": "dawn",
+            "src": "/packs/originals/120/dawn/chords.wav"
           },
           {
             "id": "A-9",
-            "label": "Glass bass",
-            "part": "bass",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/bass.wav"
+            "label": "E-Piano",
+            "part": "chords",
+            "kitSlug": "harbor",
+            "src": "/packs/originals/120/harbor/chords.wav"
           },
           {
             "id": "A-10",
-            "label": "Glass chords",
-            "part": "chords",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/chords.wav"
+            "label": "Piano Arp",
+            "part": "melody",
+            "kitSlug": "dawn",
+            "src": "/packs/originals/120/dawn/melody.wav"
           },
           {
             "id": "A-11",
-            "label": "Glass percussion",
-            "part": "percussion",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/percussion.wav"
+            "label": "Guitar Arp",
+            "part": "melody",
+            "kitSlug": "harbor",
+            "src": "/packs/originals/120/harbor/melody.wav"
           },
           {
             "id": "A-12",
-            "label": "Ion drums",
-            "part": "drums",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/drums.wav"
+            "label": "Organ",
+            "part": "chords",
+            "kitSlug": "lantern",
+            "src": "/packs/originals/120/lantern/chords.wav"
           },
           {
             "id": "A-13",
-            "label": "Ion bass",
-            "part": "bass",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/bass.wav"
+            "label": "Strings",
+            "part": "chords",
+            "kitSlug": "meadow",
+            "src": "/packs/originals/120/meadow/chords.wav"
           },
           {
             "id": "A-14",
-            "label": "Ion chords",
-            "part": "chords",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/chords.wav"
+            "label": "Saw Arp",
+            "part": "melody",
+            "kitSlug": "lantern",
+            "src": "/packs/originals/120/lantern/melody.wav"
           },
           {
             "id": "A-15",
-            "label": "Ion percussion",
-            "part": "percussion",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/percussion.wav"
+            "label": "Harp",
+            "part": "melody",
+            "kitSlug": "meadow",
+            "src": "/packs/originals/120/meadow/melody.wav"
           },
           {
             "id": "A-16",
-            "label": "Lunar drums",
-            "part": "drums",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/drums.wav"
+            "label": "Shaker",
+            "part": "percussion",
+            "kitSlug": "dawn",
+            "src": "/packs/originals/120/dawn/percussion.wav"
           },
           {
             "id": "A-17",
-            "label": "Lunar bass",
-            "part": "bass",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/bass.wav"
+            "label": "Tambourine",
+            "part": "percussion",
+            "kitSlug": "harbor",
+            "src": "/packs/originals/120/harbor/percussion.wav"
           },
           {
             "id": "A-18",
-            "label": "Lunar chords",
-            "part": "chords",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/chords.wav"
+            "label": "Aahs",
+            "part": "voice",
+            "kitSlug": "dawn",
+            "src": "/packs/originals/120/dawn/voice.wav"
           },
           {
             "id": "A-19",
-            "label": "Lunar percussion",
-            "part": "percussion",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/120/lunar-relay/percussion.wav"
+            "label": "Oohs",
+            "part": "voice",
+            "kitSlug": "harbor",
+            "src": "/packs/originals/120/harbor/voice.wav"
           },
           {
             "id": "A-20",
-            "label": "Prism drums",
-            "part": "drums",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/drums.wav"
+            "label": "Congas",
+            "part": "percussion",
+            "kitSlug": "lantern",
+            "src": "/packs/originals/120/lantern/percussion.wav"
           },
           {
             "id": "A-21",
-            "label": "Prism bass",
-            "part": "bass",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/bass.wav"
+            "label": "Bongos",
+            "part": "percussion",
+            "kitSlug": "meadow",
+            "src": "/packs/originals/120/meadow/percussion.wav"
           },
           {
             "id": "A-22",
-            "label": "Prism chords",
-            "part": "chords",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/chords.wav"
+            "label": "Synth Voice",
+            "part": "voice",
+            "kitSlug": "lantern",
+            "src": "/packs/originals/120/lantern/voice.wav"
           },
           {
             "id": "A-23",
-            "label": "Prism percussion",
-            "part": "percussion",
-            "kitSlug": "prism-current",
-            "src": "/packs/120/prism-current/percussion.wav"
+            "label": "Aah Line",
+            "part": "voice",
+            "kitSlug": "meadow",
+            "src": "/packs/originals/120/meadow/voice.wav"
           }
         ],
         "B": [
           {
             "id": "B-0",
-            "label": "Rust drums",
+            "label": "Funk",
             "part": "drums",
-            "kitSlug": "rust-arc",
-            "src": "/packs/120/rust-arc/drums.wav"
+            "kitSlug": "nimbus",
+            "src": "/packs/originals/120/nimbus/drums.wav"
           },
           {
             "id": "B-1",
-            "label": "Rust bass",
-            "part": "bass",
-            "kitSlug": "rust-arc",
-            "src": "/packs/120/rust-arc/bass.wav"
+            "label": "Disco",
+            "part": "drums",
+            "kitSlug": "orchard",
+            "src": "/packs/originals/120/orchard/drums.wav"
           },
           {
             "id": "B-2",
-            "label": "Rust chords",
-            "part": "chords",
-            "kitSlug": "rust-arc",
-            "src": "/packs/120/rust-arc/chords.wav"
+            "label": "Slap",
+            "part": "bass",
+            "kitSlug": "nimbus",
+            "src": "/packs/originals/120/nimbus/bass.wav"
           },
           {
             "id": "B-3",
-            "label": "Rust percussion",
-            "part": "percussion",
-            "kitSlug": "rust-arc",
-            "src": "/packs/120/rust-arc/percussion.wav"
+            "label": "Pump",
+            "part": "bass",
+            "kitSlug": "orchard",
+            "src": "/packs/originals/120/orchard/bass.wav"
           },
           {
             "id": "B-4",
-            "label": "Velvet drums",
+            "label": "Break",
             "part": "drums",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/120/velvet-grid/drums.wav"
+            "kitSlug": "pebble",
+            "src": "/packs/originals/120/pebble/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Velvet bass",
-            "part": "bass",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/120/velvet-grid/bass.wav"
+            "label": "Electro",
+            "part": "drums",
+            "kitSlug": "quartz",
+            "src": "/packs/originals/120/quartz/drums.wav"
           },
           {
             "id": "B-6",
-            "label": "Velvet chords",
-            "part": "chords",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/120/velvet-grid/chords.wav"
+            "label": "Walking",
+            "part": "bass",
+            "kitSlug": "pebble",
+            "src": "/packs/originals/120/pebble/bass.wav"
           },
           {
             "id": "B-7",
-            "label": "Velvet percussion",
-            "part": "percussion",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/120/velvet-grid/percussion.wav"
+            "label": "Pulse",
+            "part": "bass",
+            "kitSlug": "quartz",
+            "src": "/packs/originals/120/quartz/bass.wav"
           },
           {
             "id": "B-8",
-            "label": "Copper drums",
-            "part": "drums",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/drums.wav"
+            "label": "Vibes",
+            "part": "chords",
+            "kitSlug": "nimbus",
+            "src": "/packs/originals/120/nimbus/chords.wav"
           },
           {
             "id": "B-9",
-            "label": "Copper bass",
-            "part": "bass",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/bass.wav"
+            "label": "Rhodes",
+            "part": "chords",
+            "kitSlug": "orchard",
+            "src": "/packs/originals/120/orchard/chords.wav"
           },
           {
             "id": "B-10",
-            "label": "Copper chords",
-            "part": "chords",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/chords.wav"
+            "label": "Marimba",
+            "part": "melody",
+            "kitSlug": "nimbus",
+            "src": "/packs/originals/120/nimbus/melody.wav"
           },
           {
             "id": "B-11",
-            "label": "Copper percussion",
-            "part": "percussion",
-            "kitSlug": "copper-step",
-            "src": "/packs/120/copper-step/percussion.wav"
+            "label": "Flute",
+            "part": "melody",
+            "kitSlug": "orchard",
+            "src": "/packs/originals/120/orchard/melody.wav"
           },
           {
             "id": "B-12",
-            "label": "Ember drums",
-            "part": "drums",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/drums.wav"
+            "label": "Skank",
+            "part": "chords",
+            "kitSlug": "pebble",
+            "src": "/packs/originals/120/pebble/chords.wav"
           },
           {
             "id": "B-13",
-            "label": "Ember bass",
-            "part": "bass",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/bass.wav"
+            "label": "Brass",
+            "part": "chords",
+            "kitSlug": "quartz",
+            "src": "/packs/originals/120/quartz/chords.wav"
           },
           {
             "id": "B-14",
-            "label": "Ember chords",
-            "part": "chords",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/chords.wav"
+            "label": "Glocken",
+            "part": "melody",
+            "kitSlug": "pebble",
+            "src": "/packs/originals/120/pebble/melody.wav"
           },
           {
             "id": "B-15",
-            "label": "Ember percussion",
-            "part": "percussion",
-            "kitSlug": "ember-weave",
-            "src": "/packs/120/ember-weave/percussion.wav"
+            "label": "Square",
+            "part": "melody",
+            "kitSlug": "quartz",
+            "src": "/packs/originals/120/quartz/melody.wav"
           },
           {
             "id": "B-16",
-            "label": "Glass drums",
-            "part": "drums",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/drums.wav"
+            "label": "Cowbell",
+            "part": "percussion",
+            "kitSlug": "nimbus",
+            "src": "/packs/originals/120/nimbus/percussion.wav"
           },
           {
             "id": "B-17",
-            "label": "Glass bass",
-            "part": "bass",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/bass.wav"
+            "label": "Claves",
+            "part": "percussion",
+            "kitSlug": "orchard",
+            "src": "/packs/originals/120/orchard/percussion.wav"
           },
           {
             "id": "B-18",
-            "label": "Glass chords",
-            "part": "chords",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/chords.wav"
+            "label": "Ooh Pulse",
+            "part": "voice",
+            "kitSlug": "nimbus",
+            "src": "/packs/originals/120/nimbus/voice.wav"
           },
           {
             "id": "B-19",
-            "label": "Glass percussion",
-            "part": "percussion",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/120/glass-orbit/percussion.wav"
+            "label": "Choir Pad",
+            "part": "voice",
+            "kitSlug": "orchard",
+            "src": "/packs/originals/120/orchard/voice.wav"
           },
           {
             "id": "B-20",
-            "label": "Ion drums",
-            "part": "drums",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/drums.wav"
+            "label": "Cabasa",
+            "part": "percussion",
+            "kitSlug": "pebble",
+            "src": "/packs/originals/120/pebble/percussion.wav"
           },
           {
             "id": "B-21",
-            "label": "Ion bass",
-            "part": "bass",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/bass.wav"
+            "label": "Blocks",
+            "part": "percussion",
+            "kitSlug": "quartz",
+            "src": "/packs/originals/120/quartz/percussion.wav"
           },
           {
             "id": "B-22",
-            "label": "Ion chords",
-            "part": "chords",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/chords.wav"
+            "label": "Voice Arp",
+            "part": "voice",
+            "kitSlug": "pebble",
+            "src": "/packs/originals/120/pebble/voice.wav"
           },
           {
             "id": "B-23",
-            "label": "Ion percussion",
-            "part": "percussion",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/120/ion-bloom/percussion.wav"
+            "label": "Ooh Sigh",
+            "part": "voice",
+            "kitSlug": "quartz",
+            "src": "/packs/originals/120/quartz/voice.wav"
           }
         ]
       }
     },
     {
-      "id": "pulse-140",
-      "title": "Pulse 140",
-      "bpm": 140,
-      "license": "Pulse Open Loops / CC0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Copper drums",
-            "part": "drums",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Copper bass",
-            "part": "bass",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Copper chords",
-            "part": "chords",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Copper percussion",
-            "part": "percussion",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Ember drums",
-            "part": "drums",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Ember bass",
-            "part": "bass",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Ember chords",
-            "part": "chords",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Ember percussion",
-            "part": "percussion",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Glass drums",
-            "part": "drums",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Glass bass",
-            "part": "bass",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Glass chords",
-            "part": "chords",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Glass percussion",
-            "part": "percussion",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Ion drums",
-            "part": "drums",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Ion bass",
-            "part": "bass",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Ion chords",
-            "part": "chords",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Ion percussion",
-            "part": "percussion",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Lunar drums",
-            "part": "drums",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Lunar bass",
-            "part": "bass",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Lunar chords",
-            "part": "chords",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Lunar percussion",
-            "part": "percussion",
-            "kitSlug": "lunar-relay",
-            "src": "/packs/140/lunar-relay/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Prism drums",
-            "part": "drums",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Prism bass",
-            "part": "bass",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Prism chords",
-            "part": "chords",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Prism percussion",
-            "part": "percussion",
-            "kitSlug": "prism-current",
-            "src": "/packs/140/prism-current/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Rust drums",
-            "part": "drums",
-            "kitSlug": "rust-arc",
-            "src": "/packs/140/rust-arc/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Rust bass",
-            "part": "bass",
-            "kitSlug": "rust-arc",
-            "src": "/packs/140/rust-arc/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Rust chords",
-            "part": "chords",
-            "kitSlug": "rust-arc",
-            "src": "/packs/140/rust-arc/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Rust percussion",
-            "part": "percussion",
-            "kitSlug": "rust-arc",
-            "src": "/packs/140/rust-arc/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Velvet drums",
-            "part": "drums",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/140/velvet-grid/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Velvet bass",
-            "part": "bass",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/140/velvet-grid/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Velvet chords",
-            "part": "chords",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/140/velvet-grid/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Velvet percussion",
-            "part": "percussion",
-            "kitSlug": "velvet-grid",
-            "src": "/packs/140/velvet-grid/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Copper drums",
-            "part": "drums",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Copper bass",
-            "part": "bass",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Copper chords",
-            "part": "chords",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Copper percussion",
-            "part": "percussion",
-            "kitSlug": "copper-step",
-            "src": "/packs/140/copper-step/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Ember drums",
-            "part": "drums",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Ember bass",
-            "part": "bass",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Ember chords",
-            "part": "chords",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Ember percussion",
-            "part": "percussion",
-            "kitSlug": "ember-weave",
-            "src": "/packs/140/ember-weave/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Glass drums",
-            "part": "drums",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Glass bass",
-            "part": "bass",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Glass chords",
-            "part": "chords",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Glass percussion",
-            "part": "percussion",
-            "kitSlug": "glass-orbit",
-            "src": "/packs/140/glass-orbit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Ion drums",
-            "part": "drums",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Ion bass",
-            "part": "bass",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Ion chords",
-            "part": "chords",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Ion percussion",
-            "part": "percussion",
-            "kitSlug": "ion-bloom",
-            "src": "/packs/140/ion-bloom/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "cueharbor-120",
-      "title": "CueHarbor 120",
-      "bpm": 120,
-      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Rock drums",
-            "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Rock bass",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Rock chords",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Rock percussion",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Top drums",
-            "part": "drums",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Top bass",
-            "part": "bass",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Top chords",
-            "part": "chords",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Top percussion",
-            "part": "percussion",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Arcade drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Arcade bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Arcade chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Arcade percussion",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Rock drums 2",
-            "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Rock bass 2",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Rock chords 2",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Rock percussion 2",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Top drums 2",
-            "part": "drums",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Top bass 2",
-            "part": "bass",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Top chords 2",
-            "part": "chords",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Top percussion 2",
-            "part": "percussion",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Arcade drums 2",
-            "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Arcade bass 2",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Arcade chords 2",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Arcade percussion 2",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Rock drums",
-            "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Rock bass",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Rock chords",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Rock percussion",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Top drums",
-            "part": "drums",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Top bass",
-            "part": "bass",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Top chords",
-            "part": "chords",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Top percussion",
-            "part": "percussion",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Arcade drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Arcade bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Arcade chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Arcade percussion",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Rock drums 2",
-            "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Rock bass 2",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Rock chords 2",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Rock percussion 2",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/120/rock-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Top drums 2",
-            "part": "drums",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Top bass 2",
-            "part": "bass",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Top chords 2",
-            "part": "chords",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Top percussion 2",
-            "part": "percussion",
-            "kitSlug": "top-kit",
-            "src": "/packs/cueharbor/120/top-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Arcade drums 2",
-            "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Arcade bass 2",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Arcade chords 2",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Arcade percussion 2",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/120/arcade-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "cueharbor-100",
-      "title": "CueHarbor 100",
-      "bpm": 100,
-      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Funk drums",
-            "part": "drums",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Funk bass",
-            "part": "bass",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Funk chords",
-            "part": "chords",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Funk percussion",
-            "part": "percussion",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Latin drums",
-            "part": "drums",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Latin bass",
-            "part": "bass",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Latin chords",
-            "part": "chords",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Latin percussion",
-            "part": "percussion",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Groove drums",
-            "part": "drums",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Groove bass",
-            "part": "bass",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Groove chords",
-            "part": "chords",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Groove percussion",
-            "part": "percussion",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Funk drums 2",
-            "part": "drums",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Funk bass 2",
-            "part": "bass",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Funk chords 2",
-            "part": "chords",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Funk percussion 2",
-            "part": "percussion",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Latin drums 2",
-            "part": "drums",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Latin bass 2",
-            "part": "bass",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Latin chords 2",
-            "part": "chords",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Latin percussion 2",
-            "part": "percussion",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Groove drums 2",
-            "part": "drums",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Groove bass 2",
-            "part": "bass",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Groove chords 2",
-            "part": "chords",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Groove percussion 2",
-            "part": "percussion",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Funk drums",
-            "part": "drums",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Funk bass",
-            "part": "bass",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Funk chords",
-            "part": "chords",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Funk percussion",
-            "part": "percussion",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Latin drums",
-            "part": "drums",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Latin bass",
-            "part": "bass",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Latin chords",
-            "part": "chords",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Latin percussion",
-            "part": "percussion",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Groove drums",
-            "part": "drums",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Groove bass",
-            "part": "bass",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Groove chords",
-            "part": "chords",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Groove percussion",
-            "part": "percussion",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Funk drums 2",
-            "part": "drums",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Funk bass 2",
-            "part": "bass",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Funk chords 2",
-            "part": "chords",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Funk percussion 2",
-            "part": "percussion",
-            "kitSlug": "funk-kit",
-            "src": "/packs/cueharbor/100/funk-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Latin drums 2",
-            "part": "drums",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Latin bass 2",
-            "part": "bass",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Latin chords 2",
-            "part": "chords",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Latin percussion 2",
-            "part": "percussion",
-            "kitSlug": "latin-kit",
-            "src": "/packs/cueharbor/100/latin-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Groove drums 2",
-            "part": "drums",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Groove bass 2",
-            "part": "bass",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Groove chords 2",
-            "part": "chords",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Groove percussion 2",
-            "part": "percussion",
-            "kitSlug": "groove-kit",
-            "src": "/packs/cueharbor/100/groove-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "cueharbor-90",
-      "title": "CueHarbor 90",
+      "id": "hiphop-dm",
+      "title": "Hip Hop Dm",
       "bpm": 90,
-      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
+      "license": "live-beat original / 音色: MuseScore_General (MIT)",
+      "layout": "blocks",
       "sides": {
         "A": [
           {
             "id": "A-0",
-            "label": "Rock drums",
+            "label": "Trap",
             "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/drums.wav"
+            "kitSlug": "hiphop-1",
+            "src": "/packs/originals/90/hiphop-1/drums.wav"
           },
           {
             "id": "A-1",
-            "label": "Rock bass",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/bass.wav"
+            "label": "Boom",
+            "part": "drums",
+            "kitSlug": "hiphop-2",
+            "src": "/packs/originals/90/hiphop-2/drums.wav"
           },
           {
             "id": "A-2",
-            "label": "Rock chords",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/chords.wav"
+            "label": "Sub Long",
+            "part": "bass",
+            "kitSlug": "hiphop-1",
+            "src": "/packs/originals/90/hiphop-1/bass.wav"
           },
           {
             "id": "A-3",
-            "label": "Rock percussion",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/percussion.wav"
+            "label": "Sub Bounce",
+            "part": "bass",
+            "kitSlug": "hiphop-2",
+            "src": "/packs/originals/90/hiphop-2/bass.wav"
           },
           {
             "id": "A-4",
-            "label": "Arcade drums",
+            "label": "Bounce",
             "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/drums.wav"
+            "kitSlug": "hiphop-3",
+            "src": "/packs/originals/90/hiphop-3/drums.wav"
           },
           {
             "id": "A-5",
-            "label": "Arcade bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/bass.wav"
+            "label": "Sparse",
+            "part": "drums",
+            "kitSlug": "hiphop-4",
+            "src": "/packs/originals/90/hiphop-4/drums.wav"
           },
           {
             "id": "A-6",
-            "label": "Arcade chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/chords.wav"
+            "label": "Octave Drop",
+            "part": "bass",
+            "kitSlug": "hiphop-3",
+            "src": "/packs/originals/90/hiphop-3/bass.wav"
           },
           {
             "id": "A-7",
-            "label": "Arcade percussion",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/percussion.wav"
+            "label": "Slide",
+            "part": "bass",
+            "kitSlug": "hiphop-4",
+            "src": "/packs/originals/90/hiphop-4/bass.wav"
           },
           {
             "id": "A-8",
-            "label": "Keys drums",
-            "part": "drums",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/drums.wav"
+            "label": "Dark Pad",
+            "part": "chords",
+            "kitSlug": "hiphop-1",
+            "src": "/packs/originals/90/hiphop-1/chords.wav"
           },
           {
             "id": "A-9",
-            "label": "Keys bass",
-            "part": "bass",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/bass.wav"
+            "label": "Piano",
+            "part": "chords",
+            "kitSlug": "hiphop-2",
+            "src": "/packs/originals/90/hiphop-2/chords.wav"
           },
           {
             "id": "A-10",
-            "label": "Keys chords",
-            "part": "chords",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/chords.wav"
+            "label": "Music Box",
+            "part": "melody",
+            "kitSlug": "hiphop-1",
+            "src": "/packs/originals/90/hiphop-1/melody.wav"
           },
           {
             "id": "A-11",
-            "label": "Keys percussion",
-            "part": "percussion",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/percussion.wav"
+            "label": "Piano Riff",
+            "part": "melody",
+            "kitSlug": "hiphop-2",
+            "src": "/packs/originals/90/hiphop-2/melody.wav"
           },
           {
             "id": "A-12",
-            "label": "Rock drums 2",
-            "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/drums.wav"
+            "label": "Strings",
+            "part": "chords",
+            "kitSlug": "hiphop-3",
+            "src": "/packs/originals/90/hiphop-3/chords.wav"
           },
           {
             "id": "A-13",
-            "label": "Rock bass 2",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/bass.wav"
+            "label": "E-Piano",
+            "part": "chords",
+            "kitSlug": "hiphop-4",
+            "src": "/packs/originals/90/hiphop-4/chords.wav"
           },
           {
             "id": "A-14",
-            "label": "Rock chords 2",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/chords.wav"
+            "label": "Flute",
+            "part": "melody",
+            "kitSlug": "hiphop-3",
+            "src": "/packs/originals/90/hiphop-3/melody.wav"
           },
           {
             "id": "A-15",
-            "label": "Rock percussion 2",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/percussion.wav"
+            "label": "Koto",
+            "part": "melody",
+            "kitSlug": "hiphop-4",
+            "src": "/packs/originals/90/hiphop-4/melody.wav"
           },
           {
             "id": "A-16",
-            "label": "Arcade drums 2",
-            "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/drums.wav"
+            "label": "Hat Roll",
+            "part": "percussion",
+            "kitSlug": "hiphop-1",
+            "src": "/packs/originals/90/hiphop-1/percussion.wav"
           },
           {
             "id": "A-17",
-            "label": "Arcade bass 2",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/bass.wav"
+            "label": "Cowbell",
+            "part": "percussion",
+            "kitSlug": "hiphop-2",
+            "src": "/packs/originals/90/hiphop-2/percussion.wav"
           },
           {
             "id": "A-18",
-            "label": "Arcade chords 2",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/chords.wav"
+            "label": "Aahs",
+            "part": "voice",
+            "kitSlug": "hiphop-1",
+            "src": "/packs/originals/90/hiphop-1/voice.wav"
           },
           {
             "id": "A-19",
-            "label": "Arcade percussion 2",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/percussion.wav"
+            "label": "Oohs",
+            "part": "voice",
+            "kitSlug": "hiphop-2",
+            "src": "/packs/originals/90/hiphop-2/voice.wav"
           },
           {
             "id": "A-20",
-            "label": "Keys drums 2",
-            "part": "drums",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/drums.wav"
+            "label": "Claves",
+            "part": "percussion",
+            "kitSlug": "hiphop-3",
+            "src": "/packs/originals/90/hiphop-3/percussion.wav"
           },
           {
             "id": "A-21",
-            "label": "Keys bass 2",
-            "part": "bass",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/bass.wav"
+            "label": "Congas",
+            "part": "percussion",
+            "kitSlug": "hiphop-4",
+            "src": "/packs/originals/90/hiphop-4/percussion.wav"
           },
           {
             "id": "A-22",
-            "label": "Keys chords 2",
-            "part": "chords",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/chords.wav"
+            "label": "Synth Voice",
+            "part": "voice",
+            "kitSlug": "hiphop-3",
+            "src": "/packs/originals/90/hiphop-3/voice.wav"
           },
           {
             "id": "A-23",
-            "label": "Keys percussion 2",
-            "part": "percussion",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/percussion.wav"
+            "label": "Aah Line",
+            "part": "voice",
+            "kitSlug": "hiphop-4",
+            "src": "/packs/originals/90/hiphop-4/voice.wav"
           }
         ],
         "B": [
           {
             "id": "B-0",
-            "label": "Rock drums",
+            "label": "Drill",
             "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/drums.wav"
+            "kitSlug": "hiphop-5",
+            "src": "/packs/originals/90/hiphop-5/drums.wav"
           },
           {
             "id": "B-1",
-            "label": "Rock bass",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/bass.wav"
+            "label": "808 Clap",
+            "part": "drums",
+            "kitSlug": "hiphop-6",
+            "src": "/packs/originals/90/hiphop-6/drums.wav"
           },
           {
             "id": "B-2",
-            "label": "Rock chords",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/chords.wav"
+            "label": "Finger",
+            "part": "bass",
+            "kitSlug": "hiphop-5",
+            "src": "/packs/originals/90/hiphop-5/bass.wav"
           },
           {
             "id": "B-3",
-            "label": "Rock percussion",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/percussion.wav"
+            "label": "Stab",
+            "part": "bass",
+            "kitSlug": "hiphop-6",
+            "src": "/packs/originals/90/hiphop-6/bass.wav"
           },
           {
             "id": "B-4",
-            "label": "Arcade drums",
+            "label": "Swing Hat",
             "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/drums.wav"
+            "kitSlug": "hiphop-7",
+            "src": "/packs/originals/90/hiphop-7/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Arcade bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/bass.wav"
+            "label": "Slow",
+            "part": "drums",
+            "kitSlug": "hiphop-8",
+            "src": "/packs/originals/90/hiphop-8/drums.wav"
           },
           {
             "id": "B-6",
-            "label": "Arcade chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/chords.wav"
+            "label": "Fretless",
+            "part": "bass",
+            "kitSlug": "hiphop-7",
+            "src": "/packs/originals/90/hiphop-7/bass.wav"
           },
           {
             "id": "B-7",
-            "label": "Arcade percussion",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/percussion.wav"
+            "label": "Pulse",
+            "part": "bass",
+            "kitSlug": "hiphop-8",
+            "src": "/packs/originals/90/hiphop-8/bass.wav"
           },
           {
             "id": "B-8",
-            "label": "Keys drums",
-            "part": "drums",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/drums.wav"
+            "label": "Organ",
+            "part": "chords",
+            "kitSlug": "hiphop-5",
+            "src": "/packs/originals/90/hiphop-5/chords.wav"
           },
           {
             "id": "B-9",
-            "label": "Keys bass",
-            "part": "bass",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/bass.wav"
+            "label": "Brass Hit",
+            "part": "chords",
+            "kitSlug": "hiphop-6",
+            "src": "/packs/originals/90/hiphop-6/chords.wav"
           },
           {
             "id": "B-10",
-            "label": "Keys chords",
-            "part": "chords",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/chords.wav"
+            "label": "Square",
+            "part": "melody",
+            "kitSlug": "hiphop-5",
+            "src": "/packs/originals/90/hiphop-5/melody.wav"
           },
           {
             "id": "B-11",
-            "label": "Keys percussion",
-            "part": "percussion",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/percussion.wav"
+            "label": "Kalimba",
+            "part": "melody",
+            "kitSlug": "hiphop-6",
+            "src": "/packs/originals/90/hiphop-6/melody.wav"
           },
           {
             "id": "B-12",
-            "label": "Rock drums 2",
-            "part": "drums",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/drums.wav"
+            "label": "Halo",
+            "part": "chords",
+            "kitSlug": "hiphop-7",
+            "src": "/packs/originals/90/hiphop-7/chords.wav"
           },
           {
             "id": "B-13",
-            "label": "Rock bass 2",
-            "part": "bass",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/bass.wav"
+            "label": "Pizzicato",
+            "part": "chords",
+            "kitSlug": "hiphop-8",
+            "src": "/packs/originals/90/hiphop-8/chords.wav"
           },
           {
             "id": "B-14",
-            "label": "Rock chords 2",
-            "part": "chords",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/chords.wav"
+            "label": "Whistle",
+            "part": "melody",
+            "kitSlug": "hiphop-7",
+            "src": "/packs/originals/90/hiphop-7/melody.wav"
           },
           {
             "id": "B-15",
-            "label": "Rock percussion 2",
-            "part": "percussion",
-            "kitSlug": "rock-kit",
-            "src": "/packs/cueharbor/90/rock-kit/percussion.wav"
+            "label": "Glocken",
+            "part": "melody",
+            "kitSlug": "hiphop-8",
+            "src": "/packs/originals/90/hiphop-8/melody.wav"
           },
           {
             "id": "B-16",
-            "label": "Arcade drums 2",
-            "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/drums.wav"
+            "label": "Maracas",
+            "part": "percussion",
+            "kitSlug": "hiphop-5",
+            "src": "/packs/originals/90/hiphop-5/percussion.wav"
           },
           {
             "id": "B-17",
-            "label": "Arcade bass 2",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/bass.wav"
+            "label": "Rim",
+            "part": "percussion",
+            "kitSlug": "hiphop-6",
+            "src": "/packs/originals/90/hiphop-6/percussion.wav"
           },
           {
             "id": "B-18",
-            "label": "Arcade chords 2",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/chords.wav"
+            "label": "Ooh Pulse",
+            "part": "voice",
+            "kitSlug": "hiphop-5",
+            "src": "/packs/originals/90/hiphop-5/voice.wav"
           },
           {
             "id": "B-19",
-            "label": "Arcade percussion 2",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/cueharbor/90/arcade-kit/percussion.wav"
+            "label": "Choir Pad",
+            "part": "voice",
+            "kitSlug": "hiphop-6",
+            "src": "/packs/originals/90/hiphop-6/voice.wav"
           },
           {
             "id": "B-20",
-            "label": "Keys drums 2",
-            "part": "drums",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/drums.wav"
+            "label": "Tom Fill",
+            "part": "percussion",
+            "kitSlug": "hiphop-7",
+            "src": "/packs/originals/90/hiphop-7/percussion.wav"
           },
           {
             "id": "B-21",
-            "label": "Keys bass 2",
-            "part": "bass",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/bass.wav"
+            "label": "Shaker",
+            "part": "percussion",
+            "kitSlug": "hiphop-8",
+            "src": "/packs/originals/90/hiphop-8/percussion.wav"
           },
           {
             "id": "B-22",
-            "label": "Keys chords 2",
-            "part": "chords",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/chords.wav"
+            "label": "Voice Arp",
+            "part": "voice",
+            "kitSlug": "hiphop-7",
+            "src": "/packs/originals/90/hiphop-7/voice.wav"
           },
           {
             "id": "B-23",
-            "label": "Keys percussion 2",
-            "part": "percussion",
-            "kitSlug": "keys-kit",
-            "src": "/packs/cueharbor/90/keys-kit/percussion.wav"
+            "label": "Ooh Sigh",
+            "part": "voice",
+            "kitSlug": "hiphop-8",
+            "src": "/packs/originals/90/hiphop-8/voice.wav"
           }
         ]
       }
     },
     {
-      "id": "cueharbor-96",
-      "title": "CueHarbor 96",
-      "bpm": 96,
-      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
+      "id": "lofi-c",
+      "title": "Lo-Fi C",
+      "bpm": 80,
+      "license": "live-beat original / 音色: MuseScore_General (MIT)",
+      "layout": "blocks",
       "sides": {
         "A": [
           {
             "id": "A-0",
-            "label": "Shuffle drums",
+            "label": "Dusty",
             "part": "drums",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/drums.wav"
+            "kitSlug": "lofi-1",
+            "src": "/packs/originals/80/lofi-1/drums.wav"
           },
           {
             "id": "A-1",
-            "label": "Shuffle bass",
-            "part": "bass",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/bass.wav"
+            "label": "Lazy",
+            "part": "drums",
+            "kitSlug": "lofi-2",
+            "src": "/packs/originals/80/lofi-2/drums.wav"
           },
           {
             "id": "A-2",
-            "label": "Shuffle chords",
-            "part": "chords",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/chords.wav"
+            "label": "Upright",
+            "part": "bass",
+            "kitSlug": "lofi-1",
+            "src": "/packs/originals/80/lofi-1/bass.wav"
           },
           {
             "id": "A-3",
-            "label": "Shuffle percussion",
-            "part": "percussion",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/percussion.wav"
+            "label": "Walk",
+            "part": "bass",
+            "kitSlug": "lofi-2",
+            "src": "/packs/originals/80/lofi-2/bass.wav"
           },
           {
             "id": "A-4",
-            "label": "Cajon drums",
+            "label": "Ride",
             "part": "drums",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/drums.wav"
+            "kitSlug": "lofi-3",
+            "src": "/packs/originals/80/lofi-3/drums.wav"
           },
           {
             "id": "A-5",
-            "label": "Cajon bass",
-            "part": "bass",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/bass.wav"
+            "label": "Bap",
+            "part": "drums",
+            "kitSlug": "lofi-4",
+            "src": "/packs/originals/80/lofi-4/drums.wav"
           },
           {
             "id": "A-6",
-            "label": "Cajon chords",
-            "part": "chords",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/chords.wav"
+            "label": "Lazy",
+            "part": "bass",
+            "kitSlug": "lofi-3",
+            "src": "/packs/originals/80/lofi-3/bass.wav"
           },
           {
             "id": "A-7",
-            "label": "Cajon percussion",
-            "part": "percussion",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/percussion.wav"
+            "label": "Fretless",
+            "part": "bass",
+            "kitSlug": "lofi-4",
+            "src": "/packs/originals/80/lofi-4/bass.wav"
           },
           {
             "id": "A-8",
-            "label": "Nylon drums",
-            "part": "drums",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/drums.wav"
+            "label": "Rhodes",
+            "part": "chords",
+            "kitSlug": "lofi-1",
+            "src": "/packs/originals/80/lofi-1/chords.wav"
           },
           {
             "id": "A-9",
-            "label": "Nylon bass",
-            "part": "bass",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/bass.wav"
+            "label": "Rhodes Stab",
+            "part": "chords",
+            "kitSlug": "lofi-2",
+            "src": "/packs/originals/80/lofi-2/chords.wav"
           },
           {
             "id": "A-10",
-            "label": "Nylon chords",
-            "part": "chords",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/chords.wav"
+            "label": "Rhodes Arp",
+            "part": "melody",
+            "kitSlug": "lofi-1",
+            "src": "/packs/originals/80/lofi-1/melody.wav"
           },
           {
             "id": "A-11",
-            "label": "Nylon percussion",
-            "part": "percussion",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/percussion.wav"
+            "label": "Guitar Lick",
+            "part": "melody",
+            "kitSlug": "lofi-2",
+            "src": "/packs/originals/80/lofi-2/melody.wav"
           },
           {
             "id": "A-12",
-            "label": "Shuffle drums 2",
-            "part": "drums",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/drums.wav"
+            "label": "Wurli",
+            "part": "chords",
+            "kitSlug": "lofi-3",
+            "src": "/packs/originals/80/lofi-3/chords.wav"
           },
           {
             "id": "A-13",
-            "label": "Shuffle bass 2",
-            "part": "bass",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/bass.wav"
+            "label": "Jazz Guitar",
+            "part": "chords",
+            "kitSlug": "lofi-4",
+            "src": "/packs/originals/80/lofi-4/chords.wav"
           },
           {
             "id": "A-14",
-            "label": "Shuffle chords 2",
-            "part": "chords",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/chords.wav"
+            "label": "Vibes Line",
+            "part": "melody",
+            "kitSlug": "lofi-3",
+            "src": "/packs/originals/80/lofi-3/melody.wav"
           },
           {
             "id": "A-15",
-            "label": "Shuffle percussion 2",
-            "part": "percussion",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/percussion.wav"
+            "label": "Flute",
+            "part": "melody",
+            "kitSlug": "lofi-4",
+            "src": "/packs/originals/80/lofi-4/melody.wav"
           },
           {
             "id": "A-16",
-            "label": "Cajon drums 2",
-            "part": "drums",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/drums.wav"
+            "label": "Shaker",
+            "part": "percussion",
+            "kitSlug": "lofi-1",
+            "src": "/packs/originals/80/lofi-1/percussion.wav"
           },
           {
             "id": "A-17",
-            "label": "Cajon bass 2",
-            "part": "bass",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/bass.wav"
+            "label": "Rim Click",
+            "part": "percussion",
+            "kitSlug": "lofi-2",
+            "src": "/packs/originals/80/lofi-2/percussion.wav"
           },
           {
             "id": "A-18",
-            "label": "Cajon chords 2",
-            "part": "chords",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/chords.wav"
+            "label": "Aahs",
+            "part": "voice",
+            "kitSlug": "lofi-1",
+            "src": "/packs/originals/80/lofi-1/voice.wav"
           },
           {
             "id": "A-19",
-            "label": "Cajon percussion 2",
-            "part": "percussion",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/percussion.wav"
+            "label": "Oohs",
+            "part": "voice",
+            "kitSlug": "lofi-2",
+            "src": "/packs/originals/80/lofi-2/voice.wav"
           },
           {
             "id": "A-20",
-            "label": "Nylon drums 2",
-            "part": "drums",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/drums.wav"
+            "label": "Foot Hat",
+            "part": "percussion",
+            "kitSlug": "lofi-3",
+            "src": "/packs/originals/80/lofi-3/percussion.wav"
           },
           {
             "id": "A-21",
-            "label": "Nylon bass 2",
-            "part": "bass",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/bass.wav"
+            "label": "Tambourine",
+            "part": "percussion",
+            "kitSlug": "lofi-4",
+            "src": "/packs/originals/80/lofi-4/percussion.wav"
           },
           {
             "id": "A-22",
-            "label": "Nylon chords 2",
-            "part": "chords",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/chords.wav"
+            "label": "Synth Voice",
+            "part": "voice",
+            "kitSlug": "lofi-3",
+            "src": "/packs/originals/80/lofi-3/voice.wav"
           },
           {
             "id": "A-23",
-            "label": "Nylon percussion 2",
-            "part": "percussion",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/percussion.wav"
+            "label": "Aah Line",
+            "part": "voice",
+            "kitSlug": "lofi-4",
+            "src": "/packs/originals/80/lofi-4/voice.wav"
           }
         ],
         "B": [
           {
             "id": "B-0",
-            "label": "Shuffle drums",
+            "label": "Shuffle",
             "part": "drums",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/drums.wav"
+            "kitSlug": "lofi-5",
+            "src": "/packs/originals/80/lofi-5/drums.wav"
           },
           {
             "id": "B-1",
-            "label": "Shuffle bass",
-            "part": "bass",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/bass.wav"
+            "label": "Soft Kick",
+            "part": "drums",
+            "kitSlug": "lofi-6",
+            "src": "/packs/originals/80/lofi-6/drums.wav"
           },
           {
             "id": "B-2",
-            "label": "Shuffle chords",
-            "part": "chords",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/chords.wav"
+            "label": "Two Feel",
+            "part": "bass",
+            "kitSlug": "lofi-5",
+            "src": "/packs/originals/80/lofi-5/bass.wav"
           },
           {
             "id": "B-3",
-            "label": "Shuffle percussion",
-            "part": "percussion",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/percussion.wav"
+            "label": "Bounce",
+            "part": "bass",
+            "kitSlug": "lofi-6",
+            "src": "/packs/originals/80/lofi-6/bass.wav"
           },
           {
             "id": "B-4",
-            "label": "Cajon drums",
+            "label": "Half",
             "part": "drums",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/drums.wav"
+            "kitSlug": "lofi-7",
+            "src": "/packs/originals/80/lofi-7/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Cajon bass",
-            "part": "bass",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/bass.wav"
+            "label": "Ghost",
+            "part": "drums",
+            "kitSlug": "lofi-8",
+            "src": "/packs/originals/80/lofi-8/drums.wav"
           },
           {
             "id": "B-6",
-            "label": "Cajon chords",
-            "part": "chords",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/chords.wav"
+            "label": "Sub",
+            "part": "bass",
+            "kitSlug": "lofi-7",
+            "src": "/packs/originals/80/lofi-7/bass.wav"
           },
           {
             "id": "B-7",
-            "label": "Cajon percussion",
-            "part": "percussion",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/percussion.wav"
+            "label": "Octaves",
+            "part": "bass",
+            "kitSlug": "lofi-8",
+            "src": "/packs/originals/80/lofi-8/bass.wav"
           },
           {
             "id": "B-8",
-            "label": "Nylon drums",
-            "part": "drums",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/drums.wav"
+            "label": "Vibes",
+            "part": "chords",
+            "kitSlug": "lofi-5",
+            "src": "/packs/originals/80/lofi-5/chords.wav"
           },
           {
             "id": "B-9",
-            "label": "Nylon bass",
-            "part": "bass",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/bass.wav"
+            "label": "Piano",
+            "part": "chords",
+            "kitSlug": "lofi-6",
+            "src": "/packs/originals/80/lofi-6/chords.wav"
           },
           {
             "id": "B-10",
-            "label": "Nylon chords",
-            "part": "chords",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/chords.wav"
+            "label": "Piano Run",
+            "part": "melody",
+            "kitSlug": "lofi-5",
+            "src": "/packs/originals/80/lofi-5/melody.wav"
           },
           {
             "id": "B-11",
-            "label": "Nylon percussion",
-            "part": "percussion",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/percussion.wav"
+            "label": "Sax",
+            "part": "melody",
+            "kitSlug": "lofi-6",
+            "src": "/packs/originals/80/lofi-6/melody.wav"
           },
           {
             "id": "B-12",
-            "label": "Shuffle drums 2",
-            "part": "drums",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/drums.wav"
+            "label": "Warm Pad",
+            "part": "chords",
+            "kitSlug": "lofi-7",
+            "src": "/packs/originals/80/lofi-7/chords.wav"
           },
           {
             "id": "B-13",
-            "label": "Shuffle bass 2",
-            "part": "bass",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/bass.wav"
+            "label": "Nylon",
+            "part": "chords",
+            "kitSlug": "lofi-8",
+            "src": "/packs/originals/80/lofi-8/chords.wav"
           },
           {
             "id": "B-14",
-            "label": "Shuffle chords 2",
-            "part": "chords",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/chords.wav"
+            "label": "Music Box",
+            "part": "melody",
+            "kitSlug": "lofi-7",
+            "src": "/packs/originals/80/lofi-7/melody.wav"
           },
           {
             "id": "B-15",
-            "label": "Shuffle percussion 2",
-            "part": "percussion",
-            "kitSlug": "shuffle-kit",
-            "src": "/packs/cueharbor/96/shuffle-kit/percussion.wav"
+            "label": "Trumpet",
+            "part": "melody",
+            "kitSlug": "lofi-8",
+            "src": "/packs/originals/80/lofi-8/melody.wav"
           },
           {
             "id": "B-16",
-            "label": "Cajon drums 2",
-            "part": "drums",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/drums.wav"
+            "label": "Bongos",
+            "part": "percussion",
+            "kitSlug": "lofi-5",
+            "src": "/packs/originals/80/lofi-5/percussion.wav"
           },
           {
             "id": "B-17",
-            "label": "Cajon bass 2",
-            "part": "bass",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/bass.wav"
+            "label": "Triangle",
+            "part": "percussion",
+            "kitSlug": "lofi-6",
+            "src": "/packs/originals/80/lofi-6/percussion.wav"
           },
           {
             "id": "B-18",
-            "label": "Cajon chords 2",
-            "part": "chords",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/chords.wav"
+            "label": "Ooh Pulse",
+            "part": "voice",
+            "kitSlug": "lofi-5",
+            "src": "/packs/originals/80/lofi-5/voice.wav"
           },
           {
             "id": "B-19",
-            "label": "Cajon percussion 2",
-            "part": "percussion",
-            "kitSlug": "cajon-kit",
-            "src": "/packs/cueharbor/96/cajon-kit/percussion.wav"
+            "label": "Choir Pad",
+            "part": "voice",
+            "kitSlug": "lofi-6",
+            "src": "/packs/originals/80/lofi-6/voice.wav"
           },
           {
             "id": "B-20",
-            "label": "Nylon drums 2",
-            "part": "drums",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/drums.wav"
+            "label": "Ride Bell",
+            "part": "percussion",
+            "kitSlug": "lofi-7",
+            "src": "/packs/originals/80/lofi-7/percussion.wav"
           },
           {
             "id": "B-21",
-            "label": "Nylon bass 2",
-            "part": "bass",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/bass.wav"
+            "label": "Woodblock",
+            "part": "percussion",
+            "kitSlug": "lofi-8",
+            "src": "/packs/originals/80/lofi-8/percussion.wav"
           },
           {
             "id": "B-22",
-            "label": "Nylon chords 2",
-            "part": "chords",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/chords.wav"
+            "label": "Voice Arp",
+            "part": "voice",
+            "kitSlug": "lofi-7",
+            "src": "/packs/originals/80/lofi-7/voice.wav"
           },
           {
             "id": "B-23",
-            "label": "Nylon percussion 2",
-            "part": "percussion",
-            "kitSlug": "nylon-kit",
-            "src": "/packs/cueharbor/96/nylon-kit/percussion.wav"
+            "label": "Ooh Sigh",
+            "part": "voice",
+            "kitSlug": "lofi-8",
+            "src": "/packs/originals/80/lofi-8/voice.wav"
           }
         ]
       }
     },
     {
-      "id": "colorosse-152",
-      "title": "Colorosse 152",
-      "bpm": 152,
-      "license": "Colorosse / CC0-1.0",
+      "id": "dance-fm",
+      "title": "Dance Fm",
+      "bpm": 126,
+      "license": "live-beat original / 音色: MuseScore_General (MIT)",
+      "layout": "blocks",
       "sides": {
         "A": [
           {
             "id": "A-0",
-            "label": "Arcade A drums",
+            "label": "Four Floor",
             "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "kitSlug": "dance-1",
+            "src": "/packs/originals/126/dance-1/drums.wav"
           },
           {
             "id": "A-1",
-            "label": "Arcade A bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Tech",
+            "part": "drums",
+            "kitSlug": "dance-2",
+            "src": "/packs/originals/126/dance-2/drums.wav"
           },
           {
             "id": "A-2",
-            "label": "Arcade A chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Offbeat",
+            "part": "bass",
+            "kitSlug": "dance-1",
+            "src": "/packs/originals/126/dance-1/bass.wav"
           },
           {
             "id": "A-3",
-            "label": "Arcade A lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Rolling",
+            "part": "bass",
+            "kitSlug": "dance-2",
+            "src": "/packs/originals/126/dance-2/bass.wav"
           },
           {
             "id": "A-4",
-            "label": "Arcade B drums",
+            "label": "Garage",
             "part": "drums",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "kitSlug": "dance-3",
+            "src": "/packs/originals/126/dance-3/drums.wav"
           },
           {
             "id": "A-5",
-            "label": "Arcade B bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Trance",
+            "part": "drums",
+            "kitSlug": "dance-4",
+            "src": "/packs/originals/126/dance-4/drums.wav"
           },
           {
             "id": "A-6",
-            "label": "Arcade B chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Octave",
+            "part": "bass",
+            "kitSlug": "dance-3",
+            "src": "/packs/originals/126/dance-3/bass.wav"
           },
           {
             "id": "A-7",
-            "label": "Arcade B lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Acid",
+            "part": "bass",
+            "kitSlug": "dance-4",
+            "src": "/packs/originals/126/dance-4/bass.wav"
           },
           {
             "id": "A-8",
-            "label": "Arcade C drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Poly Pad",
+            "part": "chords",
+            "kitSlug": "dance-1",
+            "src": "/packs/originals/126/dance-1/chords.wav"
           },
           {
             "id": "A-9",
-            "label": "Arcade C bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Saw Stab",
+            "part": "chords",
+            "kitSlug": "dance-2",
+            "src": "/packs/originals/126/dance-2/chords.wav"
           },
           {
             "id": "A-10",
-            "label": "Arcade C chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Saw Arp",
+            "part": "melody",
+            "kitSlug": "dance-1",
+            "src": "/packs/originals/126/dance-1/melody.wav"
           },
           {
             "id": "A-11",
-            "label": "Arcade C lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Square Arp",
+            "part": "melody",
+            "kitSlug": "dance-2",
+            "src": "/packs/originals/126/dance-2/melody.wav"
           },
           {
             "id": "A-12",
-            "label": "Arcade D drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Organ",
+            "part": "chords",
+            "kitSlug": "dance-3",
+            "src": "/packs/originals/126/dance-3/chords.wav"
           },
           {
             "id": "A-13",
-            "label": "Arcade D bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "House Piano",
+            "part": "chords",
+            "kitSlug": "dance-4",
+            "src": "/packs/originals/126/dance-4/chords.wav"
           },
           {
             "id": "A-14",
-            "label": "Arcade D chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Crystal",
+            "part": "melody",
+            "kitSlug": "dance-3",
+            "src": "/packs/originals/126/dance-3/melody.wav"
           },
           {
             "id": "A-15",
-            "label": "Arcade D lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Lead",
+            "part": "melody",
+            "kitSlug": "dance-4",
+            "src": "/packs/originals/126/dance-4/melody.wav"
           },
           {
             "id": "A-16",
-            "label": "Arcade E drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Hats 16",
+            "part": "percussion",
+            "kitSlug": "dance-1",
+            "src": "/packs/originals/126/dance-1/percussion.wav"
           },
           {
             "id": "A-17",
-            "label": "Arcade E bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Open Hat",
+            "part": "percussion",
+            "kitSlug": "dance-2",
+            "src": "/packs/originals/126/dance-2/percussion.wav"
           },
           {
             "id": "A-18",
-            "label": "Arcade E chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Aahs",
+            "part": "voice",
+            "kitSlug": "dance-1",
+            "src": "/packs/originals/126/dance-1/voice.wav"
           },
           {
             "id": "A-19",
-            "label": "Arcade E lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Oohs",
+            "part": "voice",
+            "kitSlug": "dance-2",
+            "src": "/packs/originals/126/dance-2/voice.wav"
           },
           {
             "id": "A-20",
-            "label": "Arcade F drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Clap",
+            "part": "percussion",
+            "kitSlug": "dance-3",
+            "src": "/packs/originals/126/dance-3/percussion.wav"
           },
           {
             "id": "A-21",
-            "label": "Arcade F bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Shaker",
+            "part": "percussion",
+            "kitSlug": "dance-4",
+            "src": "/packs/originals/126/dance-4/percussion.wav"
           },
           {
             "id": "A-22",
-            "label": "Arcade F chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Synth Voice",
+            "part": "voice",
+            "kitSlug": "dance-3",
+            "src": "/packs/originals/126/dance-3/voice.wav"
           },
           {
             "id": "A-23",
-            "label": "Arcade F lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Aah Line",
+            "part": "voice",
+            "kitSlug": "dance-4",
+            "src": "/packs/originals/126/dance-4/voice.wav"
           }
         ],
         "B": [
           {
             "id": "B-0",
-            "label": "Arcade A drums",
+            "label": "Break",
             "part": "drums",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "kitSlug": "dance-5",
+            "src": "/packs/originals/126/dance-5/drums.wav"
           },
           {
             "id": "B-1",
-            "label": "Arcade A bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Electro",
+            "part": "drums",
+            "kitSlug": "dance-6",
+            "src": "/packs/originals/126/dance-6/drums.wav"
           },
           {
             "id": "B-2",
-            "label": "Arcade A chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Sub",
+            "part": "bass",
+            "kitSlug": "dance-5",
+            "src": "/packs/originals/126/dance-5/bass.wav"
           },
           {
             "id": "B-3",
-            "label": "Arcade A lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Stab",
+            "part": "bass",
+            "kitSlug": "dance-6",
+            "src": "/packs/originals/126/dance-6/bass.wav"
           },
           {
             "id": "B-4",
-            "label": "Arcade B drums",
+            "label": "Build",
             "part": "drums",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "kitSlug": "dance-7",
+            "src": "/packs/originals/126/dance-7/drums.wav"
           },
           {
             "id": "B-5",
-            "label": "Arcade B bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Minimal",
+            "part": "drums",
+            "kitSlug": "dance-8",
+            "src": "/packs/originals/126/dance-8/drums.wav"
           },
           {
             "id": "B-6",
-            "label": "Arcade B chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Disco",
+            "part": "bass",
+            "kitSlug": "dance-7",
+            "src": "/packs/originals/126/dance-7/bass.wav"
           },
           {
             "id": "B-7",
-            "label": "Arcade B lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-b",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Gallop",
+            "part": "bass",
+            "kitSlug": "dance-8",
+            "src": "/packs/originals/126/dance-8/bass.wav"
           },
           {
             "id": "B-8",
-            "label": "Arcade C drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Strings",
+            "part": "chords",
+            "kitSlug": "dance-5",
+            "src": "/packs/originals/126/dance-5/chords.wav"
           },
           {
             "id": "B-9",
-            "label": "Arcade C bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Sweep",
+            "part": "chords",
+            "kitSlug": "dance-6",
+            "src": "/packs/originals/126/dance-6/chords.wav"
           },
           {
             "id": "B-10",
-            "label": "Arcade C chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Calliope",
+            "part": "melody",
+            "kitSlug": "dance-5",
+            "src": "/packs/originals/126/dance-5/melody.wav"
           },
           {
             "id": "B-11",
-            "label": "Arcade C lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-c",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Chiff",
+            "part": "melody",
+            "kitSlug": "dance-6",
+            "src": "/packs/originals/126/dance-6/melody.wav"
           },
           {
             "id": "B-12",
-            "label": "Arcade D drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Brass",
+            "part": "chords",
+            "kitSlug": "dance-7",
+            "src": "/packs/originals/126/dance-7/chords.wav"
           },
           {
             "id": "B-13",
-            "label": "Arcade D bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Marimba",
+            "part": "chords",
+            "kitSlug": "dance-8",
+            "src": "/packs/originals/126/dance-8/chords.wav"
           },
           {
             "id": "B-14",
-            "label": "Arcade D chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Piano Riff",
+            "part": "melody",
+            "kitSlug": "dance-7",
+            "src": "/packs/originals/126/dance-7/melody.wav"
           },
           {
             "id": "B-15",
-            "label": "Arcade D lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-d",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Charang",
+            "part": "melody",
+            "kitSlug": "dance-8",
+            "src": "/packs/originals/126/dance-8/melody.wav"
           },
           {
             "id": "B-16",
-            "label": "Arcade E drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Cowbell",
+            "part": "percussion",
+            "kitSlug": "dance-5",
+            "src": "/packs/originals/126/dance-5/percussion.wav"
           },
           {
             "id": "B-17",
-            "label": "Arcade E bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Congas",
+            "part": "percussion",
+            "kitSlug": "dance-6",
+            "src": "/packs/originals/126/dance-6/percussion.wav"
           },
           {
             "id": "B-18",
-            "label": "Arcade E chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Ooh Pulse",
+            "part": "voice",
+            "kitSlug": "dance-5",
+            "src": "/packs/originals/126/dance-5/voice.wav"
           },
           {
             "id": "B-19",
-            "label": "Arcade E lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-e",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Choir Pad",
+            "part": "voice",
+            "kitSlug": "dance-6",
+            "src": "/packs/originals/126/dance-6/voice.wav"
           },
           {
             "id": "B-20",
-            "label": "Arcade F drums",
-            "part": "drums",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+            "label": "Ride",
+            "part": "percussion",
+            "kitSlug": "dance-7",
+            "src": "/packs/originals/126/dance-7/percussion.wav"
           },
           {
             "id": "B-21",
-            "label": "Arcade F bass",
-            "part": "bass",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+            "label": "Crash",
+            "part": "percussion",
+            "kitSlug": "dance-8",
+            "src": "/packs/originals/126/dance-8/percussion.wav"
           },
           {
             "id": "B-22",
-            "label": "Arcade F chords",
-            "part": "chords",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+            "label": "Voice Arp",
+            "part": "voice",
+            "kitSlug": "dance-7",
+            "src": "/packs/originals/126/dance-7/voice.wav"
           },
           {
             "id": "B-23",
-            "label": "Arcade F lead",
-            "part": "percussion",
-            "kitSlug": "arcade-kit-f",
-            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+            "label": "Ooh Sigh",
+            "part": "voice",
+            "kitSlug": "dance-8",
+            "src": "/packs/originals/126/dance-8/voice.wav"
           }
         ]
       }
-    },
-    {
-      "id": "colorosse-128",
-      "title": "Colorosse 128",
-      "bpm": 128,
-      "license": "Colorosse / CC0-1.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Vellum A drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Vellum A bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Vellum A chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Vellum A lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Vellum B drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Vellum B bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Vellum B chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Vellum B lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Vellum C drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Vellum C bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Vellum C chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Vellum C lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Vellum D drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Vellum D bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Vellum D chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Vellum D lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Vellum E drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Vellum E bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Vellum E chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Vellum E lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Vellum F drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Vellum F bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Vellum F chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Vellum F lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Vellum A drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Vellum A bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Vellum A chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Vellum A lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Vellum B drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Vellum B bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Vellum B chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Vellum B lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-b",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Vellum C drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Vellum C bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Vellum C chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Vellum C lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-c",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Vellum D drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Vellum D bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Vellum D chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Vellum D lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-d",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Vellum E drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Vellum E bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Vellum E chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Vellum E lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-e",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Vellum F drums",
-            "part": "drums",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Vellum F bass",
-            "part": "bass",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Vellum F chords",
-            "part": "chords",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Vellum F lead",
-            "part": "percussion",
-            "kitSlug": "vellum-kit-f",
-            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "colorosse-anvil-62",
-      "title": "Colorosse Anvil 62",
-      "bpm": 62,
-      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Anvil A drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Anvil A bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Anvil A chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Anvil A lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Anvil B drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Anvil B bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Anvil B chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Anvil B lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Anvil C drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Anvil C bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Anvil C chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Anvil C lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Anvil D drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Anvil D bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Anvil D chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Anvil D lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Anvil E drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Anvil E bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Anvil E chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Anvil E lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Anvil F drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Anvil F bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Anvil F chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Anvil F lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Anvil A drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Anvil A bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Anvil A chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Anvil A lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Anvil B drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Anvil B bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Anvil B chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Anvil B lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-b",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Anvil C drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Anvil C bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Anvil C chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Anvil C lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-c",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Anvil D drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Anvil D bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Anvil D chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Anvil D lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-d",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Anvil E drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Anvil E bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Anvil E chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Anvil E lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-e",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Anvil F drums",
-            "part": "drums",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Anvil F bass",
-            "part": "bass",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Anvil F chords",
-            "part": "chords",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Anvil F lead",
-            "part": "percussion",
-            "kitSlug": "anvil-kit-f",
-            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "colorosse-prism-52",
-      "title": "Colorosse Prism 52",
-      "bpm": 52,
-      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Prism A texture",
-            "part": "drums",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Prism A bass",
-            "part": "bass",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Prism A chords",
-            "part": "chords",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Prism A bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Prism B texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Prism B bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Prism B chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Prism B bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Prism C texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Prism C bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Prism C chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Prism C bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Prism D texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Prism D bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Prism D chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Prism D bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Prism E texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Prism E bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Prism E chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Prism E bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Prism F texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Prism F bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Prism F chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Prism F bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Prism A texture",
-            "part": "drums",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Prism A bass",
-            "part": "bass",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Prism A chords",
-            "part": "chords",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Prism A bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Prism B texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Prism B bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Prism B chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Prism B bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-b",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Prism C texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Prism C bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Prism C chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Prism C bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-c",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Prism D texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Prism D bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Prism D chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Prism D bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-d",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Prism E texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Prism E bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Prism E chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Prism E bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-e",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Prism F texture",
-            "part": "drums",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Prism F bass",
-            "part": "bass",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Prism F chords",
-            "part": "chords",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Prism F bells",
-            "part": "percussion",
-            "kitSlug": "prism-kit-f",
-            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "colorosse-rust-108",
-      "title": "Colorosse Rust 108",
-      "bpm": 108,
-      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Rust A drums",
-            "part": "drums",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Rust A bass",
-            "part": "bass",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Rust A chords",
-            "part": "chords",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Rust A lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Rust B drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Rust B bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Rust B chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Rust B lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Rust C drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Rust C bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Rust C chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Rust C lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Rust D drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Rust D bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Rust D chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Rust D lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Rust E drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Rust E bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Rust E chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Rust E lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Rust F drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Rust F bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Rust F chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Rust F lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Rust A drums",
-            "part": "drums",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Rust A bass",
-            "part": "bass",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Rust A chords",
-            "part": "chords",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Rust A lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Rust B drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Rust B bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Rust B chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Rust B lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-b",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Rust C drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Rust C bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Rust C chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Rust C lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-c",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Rust D drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Rust D bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Rust D chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Rust D lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-d",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Rust E drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Rust E bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Rust E chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Rust E lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-e",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Rust F drums",
-            "part": "drums",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/drums.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Rust F bass",
-            "part": "bass",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Rust F chords",
-            "part": "chords",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Rust F lead",
-            "part": "percussion",
-            "kitSlug": "rust-kit-f",
-            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "colorosse-timber-84",
-      "title": "Colorosse Timber 84",
-      "bpm": 84,
-      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "Timber A bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "Timber A bass",
-            "part": "bass",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "Timber A chords",
-            "part": "chords",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "Timber A lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "Timber B bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "Timber B bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "Timber B chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "Timber B lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "Timber C bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "Timber C bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "Timber C chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "Timber C lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "Timber D bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "Timber D bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "Timber D chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "Timber D lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "Timber E bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "Timber E bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "Timber E chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "Timber E lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "Timber F bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "Timber F bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "Timber F chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "Timber F lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "Timber A bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "Timber A bass",
-            "part": "bass",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "Timber A chords",
-            "part": "chords",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "Timber A lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "Timber B bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "Timber B bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "Timber B chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "Timber B lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-b",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "Timber C bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "Timber C bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "Timber C chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "Timber C lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-c",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "Timber D bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "Timber D bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "Timber D chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "Timber D lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-d",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "Timber E bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "Timber E bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "Timber E chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "Timber E lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-e",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "Timber F bass (drums slot)",
-            "part": "drums",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "Timber F bass",
-            "part": "bass",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/bass.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "Timber F chords",
-            "part": "chords",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "Timber F lead",
-            "part": "percussion",
-            "kitSlug": "timber-kit-f",
-            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "oga-ofdn-140",
-      "title": "OFDN Loop Box 140",
-      "bpm": 140,
-      "license": "Of Far Different Nature / CC-BY-4.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "OFDN Just Do It",
-            "part": "chords",
-            "kitSlug": "just-do-it-kit",
-            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "OFDN Nature Loop",
-            "part": "chords",
-            "kitSlug": "nature-loop-kit",
-            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "OFDN Friendly Trap",
-            "part": "chords",
-            "kitSlug": "friendly-trap-kit",
-            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "OFDN Timed",
-            "part": "chords",
-            "kitSlug": "timed-kit",
-            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
-          }
-        ]
-      }
-    },
-    {
-      "id": "oga-ofdn-130",
-      "title": "OFDN Loop Box 130",
-      "bpm": 130,
-      "license": "Of Far Different Nature / CC-BY-4.0",
-      "sides": {
-        "A": [
-          {
-            "id": "A-0",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-1",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-2",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-3",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-4",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-5",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-6",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-7",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-8",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-9",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-10",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-11",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-12",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-13",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-14",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-15",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-16",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-17",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-18",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-19",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-20",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-21",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "A-22",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "A-23",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          }
-        ],
-        "B": [
-          {
-            "id": "B-0",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-1",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-2",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-3",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-4",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-5",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-6",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-7",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-8",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-9",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-10",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-11",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-12",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-13",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-14",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-15",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-16",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-17",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-18",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-19",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-20",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-21",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          },
-          {
-            "id": "B-22",
-            "label": "OFDN 8-Bit Hero Quest",
-            "part": "chords",
-            "kitSlug": "hero-quest-kit",
-            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
-          },
-          {
-            "id": "B-23",
-            "label": "OFDN Act and Contemplate",
-            "part": "chords",
-            "kitSlug": "act-and-contemplate-kit",
-            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
-          }
-        ]
-      }
-    }
-  ],
-  "sounds": [
-    {
-      "src": "/packs/oga-ofdn/128/choppin-kit/chords.wav",
-      "label": "Choppin chords",
-      "part": "chords",
-      "kitSlug": "choppin-kit",
-      "bpm": 128
     }
   ]
 }

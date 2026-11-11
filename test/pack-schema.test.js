@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { PADS_PER_SIDE, assertCatalog } from '../public/js/pack-schema.js';
 
 const PARTS = ['drums', 'bass', 'chords', 'percussion'];
@@ -78,16 +78,6 @@ describe('assertCatalog', () => {
     assert.throws(() => assertCatalog(withSides({ A: pads('A'), B: pads('A') })));
   });
 
-  test('rejects malformed catalog.sounds', () => {
-    const base = validCatalog();
-    const ok = { src: '/p/x.wav', label: 'X', part: 'drums', kitSlug: 'k', bpm: 120 };
-    assert.doesNotThrow(() => assertCatalog({ ...base, sounds: [ok] }));
-    assert.throws(() => assertCatalog({ ...base, sounds: 'nope' }));
-    assert.throws(() => assertCatalog({ ...base, sounds: [{ ...ok, part: 'lead' }] }));
-    assert.throws(() => assertCatalog({ ...base, sounds: [{ ...ok, bpm: 0 }] }));
-    assert.throws(() => assertCatalog({ ...base, sounds: [{ ...ok, src: '' }] }));
-  });
-
   test('rejects invalid pack fields', () => {
     const base = validCatalog().packs[0];
     assert.throws(() => assertCatalog({ packs: [{ ...base, bpm: 0 }] }));
@@ -100,128 +90,36 @@ describe('shipped catalog.json', () => {
   const catalog = JSON.parse(readFileSync(new URL('../public/packs/catalog.json', import.meta.url), 'utf8'));
   const publicFile = (src) => new URL(`../public${src}`, import.meta.url);
 
-  test('validates and lists pulse, CueHarbor, Colorosse and CC-BY packs', () => {
+  test('lists the four self-made packs, 24 pads per side', () => {
     const parsed = assertCatalog(catalog);
-    assert.deepEqual(
-      parsed.packs.map((p) => p.id).sort(),
-      [
-        'colorosse-128', 'colorosse-152', 'colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108',
-        'colorosse-timber-84', 'cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96',
-        'oga-ofdn-130', 'oga-ofdn-140', 'pulse-120', 'pulse-140', 'pulse-96',
-      ],
-    );
+    assert.deepEqual(parsed.packs.map((p) => p.id), ['originals-am', 'hiphop-dm', 'lofi-c', 'dance-fm']);
+    assert.deepEqual(Object.keys(catalog), ['packs']);
     for (const pack of parsed.packs) {
       assert.equal(pack.sides.A.length, PADS_PER_SIDE);
       assert.equal(pack.sides.B.length, PADS_PER_SIDE);
     }
   });
 
-  test('pulse packs: A has six distinct kits, B reuses four of them, same src convention', () => {
-    const kits = {
-      A: ['copper-step', 'ember-weave', 'glass-orbit', 'ion-bloom', 'lunar-relay', 'prism-current'],
-      B: ['rust-arc', 'velvet-grid', 'copper-step', 'ember-weave', 'glass-orbit', 'ion-bloom'],
-    };
-    for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('pulse-'))) {
-      for (const side of ['A', 'B']) {
-        assert.equal(new Set(pack.sides[side].map((pad) => pad.src)).size, PADS_PER_SIDE);
-        pack.sides[side].forEach((pad, i) => {
-          assert.equal(pad.kitSlug, kits[side][Math.floor(i / 4)]);
-          assert.equal(pad.part, PARTS[i % 4]);
-          assert.equal(pad.src, `/packs/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
-          assert.equal(pad.id, `${side}-${i}`);
-        });
-      }
-    }
-  });
-
-  test('CueHarbor packs repeat three kits twice per side (six kit rows) with the cueharbor src convention', () => {
-    const base = {
-      'cueharbor-120': ['rock-kit', 'top-kit', 'arcade-kit'],
-      'cueharbor-100': ['funk-kit', 'latin-kit', 'groove-kit'],
-      'cueharbor-90': ['rock-kit', 'arcade-kit', 'keys-kit'],
-      'cueharbor-96': ['shuffle-kit', 'cajon-kit', 'nylon-kit'],
-    };
-    const packs = assertCatalog(catalog).packs.filter((p) => p.id.startsWith('cueharbor-'));
-    assert.equal(packs.length, 4);
-    for (const pack of packs) {
-      const rows = [...base[pack.id], ...base[pack.id]];
-      for (const side of ['A', 'B']) {
-        pack.sides[side].forEach((pad, i) => {
-          assert.equal(pad.kitSlug, rows[Math.floor(i / 4)]);
-          assert.equal(pad.part, PARTS[i % 4]);
-          assert.equal(pad.src, `/packs/cueharbor/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
-          assert.equal(pad.id, `${side}-${i}`);
-        });
-      }
-    }
-  });
-
-  test('Colorosse packs use six kit slugs per side sharing one kit folder', () => {
-    const folders = { 'colorosse-152': 'arcade-kit', 'colorosse-128': 'vellum-kit' };
-    for (const pack of assertCatalog(catalog).packs.filter((p) => p.id in folders)) {
-      for (const side of ['A', 'B']) {
-        assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 6);
-        pack.sides[side].forEach((pad, i) => {
-          assert.equal(pad.part, PARTS[i % 4]);
-          assert.equal(pad.src, `/packs/colorosse/${pack.bpm}/${folders[pack.id]}/${pad.part}.wav`);
-          assert.equal(pad.id, `${side}-${i}`);
-        });
-      }
-    }
-  });
-
-  test('CC-BY Colorosse packs: six kit slugs per side, stems mapped honestly, license says CC-BY-4.0', () => {
-    // part -> stem file; Timber has no drums stem, so its drums slot plays bass.wav
-    const stems = {
-      'colorosse-anvil-62': { folder: 'anvil-kit', files: ['drums', 'bass', 'chords', 'percussion'] },
-      'colorosse-prism-52': { folder: 'prism-kit', files: ['drums', 'bass', 'chords', 'percussion'] },
-      'colorosse-rust-108': { folder: 'rust-kit', files: ['drums', 'bass', 'chords', 'percussion'] },
-      'colorosse-timber-84': { folder: 'timber-kit', files: ['bass', 'bass', 'chords', 'percussion'] },
-    };
-    const packs = assertCatalog(catalog).packs.filter((p) => p.id in stems);
-    assert.equal(packs.length, 4);
-    for (const pack of packs) {
-      const { folder, files } = stems[pack.id];
-      assert.match(pack.license, /CC-BY-4\.0/);
-      for (const side of ['A', 'B']) {
-        assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 6);
-        pack.sides[side].forEach((pad, i) => {
-          assert.equal(pad.part, PARTS[i % 4]);
-          assert.equal(pad.src, `/packs/colorosse/${pack.bpm}/${folder}/${files[i % 4]}.wav`);
-        });
-      }
-    }
-    assert.deepEqual(packs.map((p) => p.bpm).sort((a, b) => a - b), [52, 62, 84, 108]);
-  });
-
-  test('OFDN packs: CC-BY-4.0 license, full-mix loops under oga-ofdn/{bpm}', () => {
-    const packs = assertCatalog(catalog).packs.filter((p) => p.id.startsWith('oga-ofdn-'));
-    assert.deepEqual(packs.map((p) => p.bpm).sort(), [130, 140]);
-    for (const pack of packs) {
-      assert.match(pack.license, /CC-BY-4\.0/);
-      for (const pad of [...pack.sides.A, ...pack.sides.B]) {
-        assert.match(pad.src, new RegExp(`^/packs/oga-ofdn/${pack.bpm}/[a-z0-9-]+-kit/chords\\.wav$`));
-      }
-    }
-  });
-
-  test('every CC-BY pack has a license file for its source loop', () => {
-    const licenses = ['colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108', 'colorosse-timber-84', 'oga-ofdn-loop-box-1'];
-    for (const name of licenses) {
-      const url = new URL(`../public/packs/licenses/${name}.txt`, import.meta.url);
-      assert.match(readFileSync(url, 'utf8'), /CC-BY-4\.0|Attribution 4\.0/);
-    }
-  });
-
-  test('every indexed on-disk sound exists, matches a pack BPM and is unused by pads', () => {
+  for (const packId of ['originals-am', 'hiphop-dm', 'lofi-c', 'dance-fm']) test(`self-made pack ${packId}: six parts in 2x2 blocks, eight loops each, under its own tempo folder`, () => {
     const parsed = assertCatalog(catalog);
-    const padSrcs = new Set(parsed.packs.flatMap((p) => [...p.sides.A, ...p.sides.B].map((pad) => pad.src)));
-    assert.ok(Array.isArray(parsed.sounds));
-    for (const sound of parsed.sounds) {
-      assert.ok(existsSync(publicFile(sound.src)), `missing ${sound.src}`);
-      assert.ok(parsed.packs.some((p) => p.bpm === sound.bpm), `no pack at ${sound.bpm} BPM`);
-      assert.ok(!padSrcs.has(sound.src), `${sound.src} already used by a pad`);
+    const pack = parsed.packs.find((p) => p.id === packId);
+    assert.equal(pack.layout, 'blocks');
+    const pads = [...pack.sides.A, ...pack.sides.B];
+    assert.equal(new Set(pads.map((pad) => pad.src)).size, 48);
+    const perPart = Object.groupBy(pads, (pad) => pad.part);
+    assert.deepEqual(Object.keys(perPart).sort(), ['bass', 'chords', 'drums', 'melody', 'percussion', 'voice']);
+    for (const list of Object.values(perPart)) assert.equal(list.length, 8);
+    for (const pad of pads) {
+      assert.equal(pad.src, `/packs/originals/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
     }
+    for (const side of ['A', 'B']) {
+      pack.sides[side].forEach((pad, i) => {
+        assert.equal(pad.id, `${side}-${i}`);
+        const blockFirst = Math.floor(i / 8) * 8 + Math.floor((i % 4) / 2) * 2; // top-left pad of its 2x2 block
+        assert.equal(pad.part, pack.sides[side][blockFirst].part, `${pad.id} is not in a single-part block`);
+      });
+    }
+    assert.match(readFileSync(publicFile('/packs/licenses/musescore-general.txt'), 'utf8'), /MIT/);
   });
 
   test('every catalog src exists on disk', () => {
@@ -230,5 +128,10 @@ describe('shipped catalog.json', () => {
         assert.ok(existsSync(publicFile(pad.src)), `${pack.id} ${pad.id}: missing ${pad.src}`);
       }
     }
+  });
+
+  test('ships no audio or license files other than the self-made packs', () => {
+    assert.deepEqual(readdirSync(publicFile('/packs')).sort(), ['catalog.json', 'licenses', 'originals']);
+    assert.deepEqual(readdirSync(publicFile('/packs/licenses')), ['musescore-general.txt']);
   });
 });

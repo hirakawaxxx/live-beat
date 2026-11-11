@@ -8,42 +8,23 @@ const index = read('public/index.html');
 const notices = read('THIRD_PARTY_NOTICES.md');
 const sw = read('public/sw.js');
 
-const COLOROSSE = [
-  ['Anvil — Crypt Loop', 'anvil-music-loop'],
-  ['Prism — Void Loop', 'prism-music-loop'],
-  ['Rust — Neon Loop', 'rust-music-loop'],
-  ['Timber — Hearth Loop', 'timber-music-loop'],
-];
-const OFDN_PAGE = 'https://opengameart.org/content/loop-box-1-beats-for-rpg-platformers-visual-novels-adventure-puzzle-games-simulators-menu';
+describe('credits', () => {
+  test('credits page and notices name the SoundFont, its license and authors', () => {
+    for (const [name, doc] of [['credits', credits], ['notices', notices]]) {
+      assert.ok(doc.includes('MuseScore_General'), `${name}: missing SoundFont name`);
+      assert.match(doc, /MIT/, `${name}: missing license`);
+      assert.ok(doc.includes('Frank Wen'), `${name}: missing author`);
+    }
+    assert.ok(credits.includes('Zen Maru Gothic'));
+  });
 
-describe('CC-BY attribution', () => {
-  test('credits page and notices name every Colorosse loop, author and page URL', () => {
-    for (const [title, slug] of COLOROSSE) {
-      const url = `https://www.colorosse.com/assets/audio/music/${slug}`;
-      for (const [name, doc] of [['credits', credits], ['notices', notices]]) {
-        assert.ok(doc.includes(title), `${name}: missing ${title}`);
-        assert.ok(doc.includes(url), `${name}: missing ${url}`);
-        assert.ok(doc.includes('Oğuzhan Girgin'), `${name}: missing author`);
-      }
+  test('no fetched-loop sources are credited any more', () => {
+    for (const doc of [credits, notices, index]) {
+      assert.doesNotMatch(doc, /Pulse Open Loops|CueHarbor|Colorosse|Of Far Different Nature|CC BY/);
     }
   });
 
-  test('credits page and notices carry the OFDN attribution line and OGA page', () => {
-    for (const doc of [credits, notices]) {
-      assert.ok(doc.includes('Music by Of Far Different Nature'));
-      assert.ok(doc.includes('https://fardifferent.carrd.co/'));
-      assert.ok(doc.includes(OFDN_PAGE));
-    }
-  });
-
-  test('credits page lists the CC0 sources too', () => {
-    for (const name of ['Pulse Open Loops', 'CueHarbor Sound Library', 'Colorosse', 'Zen Maru Gothic']) {
-      assert.ok(credits.includes(name), `missing ${name}`);
-    }
-  });
-
-  test('library footer mentions CC BY and links to /credits', () => {
-    assert.match(index, /CC BY 4\.0/);
+  test('library footer links to /credits', () => {
     assert.match(index, /<a href="\/credits">/);
   });
 

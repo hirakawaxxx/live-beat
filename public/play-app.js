@@ -7,6 +7,7 @@ import {
   effectivePads,
   loadOverrides,
   saveOverrides,
+  soundsForPad,
   withOverride,
   withoutOverride,
 } from './js/pad-map.js';
@@ -23,6 +24,8 @@ const recordingResult = document.querySelector('#recording-result');
 const recordingAudio = document.querySelector('#recording-audio');
 const recordingDownload = document.querySelector('#recording-download');
 const pickerEl = document.querySelector('#sound-picker');
+const bpmRange = document.querySelector('#bpm-range');
+const bpmValue = document.querySelector('#bpm-value');
 
 const MESSAGES = {
   noPack: 'パックが指定されていません。ライブラリから選んでください。',
@@ -40,6 +43,7 @@ const LONG_PRESS_MS = 500;
 const LONG_PRESS_MOVE_PX = 10;
 const CLICK_SUPPRESS_RESET_MS = 100;
 
+const BPM_RANGE = 0.15;
 const DEFAULT_RING_BEATS = 16; // placeholder until the loaded buffer reports its beat count
 
 const setStatus = (text) => {
@@ -99,15 +103,28 @@ const init = async () => {
     return;
   }
 
-  titleEl.textContent = `${pack.title} · ${pack.bpm} BPM`;
+  titleEl.textContent = pack.title;
   document.title = `${pack.title} — live-beat`;
 
-  // BPM must be set before any loadPad (duration check) and never while pads play.
-  const engine = createAudioEngine();
-  engine.setBpm(pack.bpm);
+  // The pack's loops are rendered at pack.bpm and sound at their true pitch there. The slider
+  // is a fine adjustment (+-15%): it changes playback speed, so pitch follows tempo.
+  const baseBpm = pack.bpm;
+  bpmRange.min = String(Math.round(baseBpm * (1 - BPM_RANGE)));
+  bpmRange.max = String(Math.round(baseBpm * (1 + BPM_RANGE)));
+  const engine = createAudioEngine({ baseBpm });
+  const showBpm = (bpm) => {
+    bpmRange.value = String(bpm);
+    bpmValue.textContent = String(bpm);
+  };
+  showBpm(baseBpm);
+  bpmRange.addEventListener('input', () => {
+    const bpm = Number(bpmRange.value);
+    engine.setBpm(bpm);
+    bpmValue.textContent = String(bpm);
+  });
 
   const storage = getStorage();
-  const soundIndex = buildSoundIndex(catalog, pack.bpm); // same-BPM loops across all packs
+  const soundIndex = buildSoundIndex(catalog, baseBpm); // loops rendered at this pack's tempo
   const picker = createSoundPicker(pickerEl);
   let overrides = loadOverrides(storage, pack, soundIndex);
 
@@ -387,8 +404,8 @@ const init = async () => {
     const def = defaultPad(side, padId);
     picker.open({
       heading: '音を選ぶ',
-      caption: `${pad.label} · ${pack.bpm} BPM（同じBPMの音のみ）`,
-      sounds: soundIndex,
+      caption: pad.label,
+      sounds: soundsForPad(soundIndex, def),
       currentSrc: pad.src,
       isDefault: pad.src === def.src,
       onSelect: (sound) => {
@@ -473,6 +490,7 @@ const init = async () => {
     setStatus(sideStatus(next));
   };
 
+  if (pack.layout) gridEl.dataset.layout = pack.layout;
   renderPads(currentSide);
   updateSideButtons();
   setStatus(sideStatus(currentSide));

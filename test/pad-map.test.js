@@ -8,6 +8,7 @@ import {
   loadOverrides,
   normalizeOverrides,
   saveOverrides,
+  soundsForPad,
   withOverride,
   withoutOverride,
 } from '../public/js/pad-map.js';
@@ -45,11 +46,13 @@ class MemoryStorage {
 }
 
 describe('buildSoundIndex', () => {
-  test('keeps only same-BPM loops from every pack', () => {
+  test('keeps only loops from packs rendered at the requested tempo', () => {
     const srcs = buildSoundIndex(catalog, 120).map((s) => s.src);
     assert.ok(srcs.includes('/c/120/a0.wav'));
     assert.ok(srcs.includes('/p/120/b0.wav'));
     assert.ok(srcs.every((src) => !src.includes('/96/')));
+    assert.deepEqual(buildSoundIndex(catalog, 96).map((s) => s.src).sort(), ['/p/96/a0.wav', '/p/96/a1.wav', '/p/96/b0.wav']);
+    assert.deepEqual(buildSoundIndex(catalog, 77), []);
   });
   test('dedupes by src', () => {
     const srcs = buildSoundIndex(catalog, 120).map((s) => s.src);
@@ -60,36 +63,8 @@ describe('buildSoundIndex', () => {
     const parts = buildSoundIndex(catalog, 120).map((s) => s.part);
     assert.deepEqual(parts, ['drums', 'drums', 'bass', 'bass', 'chords', 'chords']);
   });
-  test('returns only sound fields and no match for unknown BPM', () => {
-    assert.deepEqual(Object.keys(buildSoundIndex(catalog, 96)[0]).sort(), ['kitSlug', 'label', 'part', 'src']);
-    assert.deepEqual(buildSoundIndex(catalog, 77), []);
-  });
-});
-
-describe('buildSoundIndex with catalog.sounds', () => {
-  const sound = (src, part, bpm) => ({ src, label: src, part, kitSlug: 'extra', bpm });
-  const withExtra = {
-    ...catalog,
-    sounds: [
-      sound('/x/120/z.wav', 'percussion', 120),
-      sound('/x/96/y.wav', 'drums', 96),
-      sound('/p/120/a1.wav', 'drums', 120), // already used by a pad
-    ],
-  };
-  test('adds same-BPM on-disk sounds not already in a pack, dropping bpm', () => {
-    const index = buildSoundIndex(withExtra, 120);
-    assert.equal(index.length, 7);
-    const extra = index.find((s) => s.src === '/x/120/z.wav');
-    assert.deepEqual(Object.keys(extra).sort(), ['kitSlug', 'label', 'part', 'src']);
-    assert.ok(!index.some((s) => s.src === '/x/96/y.wav'));
-  });
-  test('dedupes against pack pads and keeps part order', () => {
-    const srcs = buildSoundIndex(withExtra, 120).map((s) => s.src);
-    assert.equal(new Set(srcs).size, srcs.length);
-    assert.equal(buildSoundIndex(withExtra, 120).at(-1).part, 'percussion');
-  });
-  test('a catalog without sounds behaves as before', () => {
-    assert.equal(buildSoundIndex(catalog, 120).length, 6);
+  test('returns only sound fields', () => {
+    assert.deepEqual(Object.keys(buildSoundIndex(catalog, 120)[0]).sort(), ['kitSlug', 'label', 'part', 'src']);
   });
 });
 
@@ -121,19 +96,25 @@ describe('overrides', () => {
     assert.deepEqual(Object.keys(reset.A), ['A-1']);
     assert.deepEqual(Object.keys(next.A), ['A-0', 'A-1']);
   });
-  test('normalizeOverrides drops unknown pads, unknown srcs and non-objects', () => {
+  test('normalizeOverrides drops unknown pads, unknown srcs, other parts and non-objects', () => {
     const raw = {
       A: {
-        'A-0': { src: target.src, label: 'tampered', part: 'bass', kitSlug: 'x' },
+        'A-0': { src: target.src }, // chords sound on a bass pad
         'A-9': { src: target.src },
-        'A-1': { src: '/evil/other-bpm.wav' },
+        'A-1': { src: '/evil/unknown.wav' },
       },
-      B: 'nope',
+      B: { 'B-0': { src: target.src, label: 'tampered', part: 'bass', kitSlug: 'x' } },
     };
     const result = normalizeOverrides(raw, p120, index);
-    assert.deepEqual(result.A, { 'A-0': target });
-    assert.deepEqual(result.B, {});
+    assert.deepEqual(result.A, {});
+    assert.deepEqual(result.B, { 'B-0': target });
+    assert.deepEqual(normalizeOverrides({ A: {}, B: 'nope' }, p120, index), emptyOverrides());
     assert.deepEqual(normalizeOverrides(null, p120, index), emptyOverrides());
+  });
+  test('soundsForPad offers only sounds of the pad\'s own part', () => {
+    const offered = soundsForPad(index, p120.sides.A[1]);
+    assert.ok(offered.length > 0);
+    assert.ok(offered.every((s) => s.part === 'drums'));
   });
 });
 
@@ -143,10 +124,10 @@ describe('storage', () => {
 
   test('save then load round-trips per pack and keeps other packs', () => {
     const storage = new MemoryStorage();
-    const overrides = withOverride(emptyOverrides(), 'B', p120.sides.B[0], index[0]);
+    const overrides = withOverride(emptyOverrides(), 'B', p120.sides.B[0], target);
     assert.equal(saveOverrides(storage, 'p120', overrides), true);
     assert.equal(saveOverrides(storage, 'other', withOverride(emptyOverrides(), 'A', p120.sides.A[0], target)), true);
-    assert.deepEqual(loadOverrides(storage, p120, index).B['B-0'], index[0]);
+    assert.deepEqual(loadOverrides(storage, p120, index).B['B-0'], target);
     assert.ok('other' in JSON.parse(storage.getItem(STORAGE_KEY)));
   });
   test('saving empty overrides removes the pack entry', () => {
@@ -168,7 +149,7 @@ describe('storage', () => {
 
 describe('24-pad packs (shipped catalog)', () => {
   const shipped = assertCatalog(JSON.parse(readFileSync(new URL('../public/packs/catalog.json', import.meta.url), 'utf8')));
-  const pack = shipped.packs.find((p) => p.id === 'pulse-120');
+  const pack = shipped.packs.find((p) => p.id === 'lofi-c');
   const index = buildSoundIndex(shipped, pack.bpm);
 
   test('effectivePads yields 24 pads per side with ids 0..23', () => {
@@ -178,22 +159,26 @@ describe('24-pad packs (shipped catalog)', () => {
     }
   });
 
-  test('legacy 12-pad overrides still apply to A-0..A-11; extra pads keep defaults', () => {
-    const legacyTarget = index.find((s) => s.src !== pack.sides.A[0].src && s.part === 'drums');
+  test('the picker index holds only this pack\'s 48 loops (other packs are in other tempos and keys)', () => {
+    assert.equal(index.length, 48);
+    assert.ok(index.every((s) => s.src.startsWith(`/packs/originals/${pack.bpm}/`)));
+  });
+
+  test('stored overrides apply to pads of the same part and survive a reload', () => {
+    const other = (i) => index.find((s) => s.src !== pack.sides.A[i].src && s.part === pack.sides.A[i].part);
     const storage = new MemoryStorage({
-      [STORAGE_KEY]: JSON.stringify({ [pack.id]: { A: { 'A-0': { src: legacyTarget.src }, 'A-11': { src: legacyTarget.src } }, B: {} } }),
+      [STORAGE_KEY]: JSON.stringify({ [pack.id]: { A: { 'A-0': { src: other(0).src }, 'A-11': { src: other(11).src } }, B: {} } }),
     });
     const overrides = loadOverrides(storage, pack, index);
     assert.deepEqual(Object.keys(overrides.A).sort(), ['A-0', 'A-11']);
     const pads = effectivePads(pack, overrides, 'A');
-    assert.equal(pads.length, PADS_PER_SIDE);
-    assert.equal(pads[0].src, legacyTarget.src);
-    assert.equal(pads[11].src, legacyTarget.src);
+    assert.equal(pads[0].src, other(0).src);
+    assert.equal(pads[11].src, other(11).src);
     for (let i = 12; i < PADS_PER_SIDE; i += 1) assert.equal(pads[i].src, pack.sides.A[i].src);
   });
 
-  test('overrides can target the new pads A-12..A-23', () => {
-    const target = index.find((s) => s.src !== pack.sides.A[23].src);
+  test('overrides can target the last pad', () => {
+    const target = index.find((s) => s.src !== pack.sides.A[23].src && s.part === pack.sides.A[23].part);
     const next = withOverride(emptyOverrides(), 'A', pack.sides.A[23], target);
     assert.equal(effectivePads(pack, next, 'A')[23].src, target.src);
     assert.deepEqual(loadOverrides(new MemoryStorage({ [STORAGE_KEY]: JSON.stringify({ [pack.id]: next }) }), pack, index).A['A-23'], target);

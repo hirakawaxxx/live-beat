@@ -113,6 +113,21 @@ main {
   margin-top: var(--space-2);
 }
 
+/* "blocks" packs: six 2x2 blocks (one part each). An empty middle column and a stronger gap
+   every two rows separate the blocks. */
+#pad-grid[data-layout="blocks"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) 0 repeat(2, minmax(0, 1fr));
+}
+#pad-grid[data-layout="blocks"] > .pad:nth-child(4n + 1) { grid-column: 1; }
+#pad-grid[data-layout="blocks"] > .pad:nth-child(4n + 2) { grid-column: 2; }
+#pad-grid[data-layout="blocks"] > .pad:nth-child(4n + 3) { grid-column: 4; }
+#pad-grid[data-layout="blocks"] > .pad:nth-child(4n + 4) { grid-column: 5; }
+#pad-grid[data-layout="blocks"] > .pad:nth-child(n + 13):nth-child(-n + 16) { margin-top: 0; }
+#pad-grid[data-layout="blocks"] > .pad:nth-child(n + 9):nth-child(-n + 12),
+#pad-grid[data-layout="blocks"] > .pad:nth-child(n + 17):nth-child(-n + 20) {
+  margin-top: var(--space-3);
+}
+
 @media (max-width: 23.75rem) {
   #pad-grid {
     gap: var(--space-2);
@@ -180,6 +195,26 @@ main {
   color: var(--color-on-primary);
 }
 
+#bpm-control {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1 1 100%;
+  min-height: 44px;
+}
+
+#bpm-range {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--color-primary);
+}
+
+#bpm-value {
+  min-width: 3ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
 #recording-result {
   display: flex;
   flex-wrap: wrap;
@@ -228,6 +263,8 @@ main {
 .pad--bass { --pad-tint: #8fb8f2; }
 .pad--chords { --pad-tint: var(--color-primary); }
 .pad--percussion { --pad-tint: #f2d88f; }
+.pad--melody { --pad-tint: #c3a6f2; }
+.pad--voice { --pad-tint: #f2a3cf; }
 
 .pad[aria-pressed="true"] {
   background: color-mix(in srgb, var(--pad-tint) 80%, var(--color-surface-raised));

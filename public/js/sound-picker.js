@@ -3,7 +3,9 @@ const PART_LABELS = {
   drums: 'ドラム',
   bass: 'ベース',
   chords: 'コード',
+  melody: 'メロディ',
   percussion: 'パーカッション',
+  voice: 'ボイス',
 };
 // A touch release can land on the freshly opened dialog; ignore clicks right after open.
 const OPEN_GUARD_MS = 350;

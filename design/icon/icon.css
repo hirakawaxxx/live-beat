@@ -1,0 +1,58 @@
+/*
+ * Drawn on a 180px canvas with the UI tokens (tuned for elements of roughly this size);
+ * other sizes use `zoom`, which scales everything proportionally. --k (set by icon.js)
+ * deepens the shadows at small final sizes so the edges do not vanish.
+ * Motif: one 2x2 block of pads in a sunken tray, one pad playing (primary-strong).
+ */
+
+html,
+body {
+  margin: 0;
+  background: var(--color-bg);
+}
+
+.icon {
+  --k: 1;
+
+  display: grid;
+  place-items: center;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+/* The tray's farthest point is 70.8px from the center, inside the 72px maskable safe circle. */
+.groove {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 41px);
+  gap: 10px;
+  place-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 34px;
+  background: var(--color-surface-sunken);
+  box-shadow:
+    inset 0 calc(3px * var(--k)) calc(6px * var(--k)) hsl(var(--shadow-color) / 0.22),
+    inset 0 calc(1px * var(--k)) calc(2px * var(--k)) hsl(var(--shadow-color) / 0.16),
+    inset 0 calc(-2px * var(--k)) calc(2px * var(--k)) hsl(var(--highlight-color) / 0.63),
+    0 calc(1px * var(--k)) 0 hsl(var(--highlight-color) / 0.72);
+}
+
+.pad {
+  width: 41px;
+  height: 41px;
+  border-radius: 12px;
+  background: var(--color-surface-raised);
+  box-shadow:
+    0 calc(2px * var(--k)) calc(3px * var(--k)) hsl(var(--shadow-color) / 0.26),
+    inset 0 calc(1px * var(--k)) 0 hsl(var(--highlight-color) / 0.9);
+}
+
+.pad--on {
+  background: var(--color-primary-strong);
+  box-shadow:
+    0 calc(2px * var(--k)) calc(3px * var(--k)) hsl(var(--shadow-color) / 0.3),
+    inset 0 calc(1px * var(--k)) 0 hsl(var(--highlight-color) / 0.28);
+}

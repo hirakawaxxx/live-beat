@@ -1,4 +1,6 @@
-const PARTS = ['drums', 'bass', 'chords', 'percussion'];
+const PARTS = ['drums', 'bass', 'chords', 'melody', 'percussion', 'voice'];
+// 'blocks': the 24 pads read as six 2x2 blocks, each holding one part.
+const LAYOUTS = ['blocks'];
 const SIDES = ['A', 'B'];
 export const PADS_PER_SIDE = 24; // visual 4 columns x 6 rows
 
@@ -24,7 +26,11 @@ const assertPack = (pack, path) => {
   for (const key of ['id', 'title', 'license']) {
     if (!isNonEmptyString(pack[key])) fail(`${path}.${key}`, 'must be a non-empty string');
   }
+  // Tempo the pack's WAVs are rendered at (scripts/render-originals.py) and the tempo it opens with.
   if (!Number.isFinite(pack.bpm) || pack.bpm <= 0) fail(`${path}.bpm`, 'must be a positive number');
+  if (pack.layout !== undefined && !LAYOUTS.includes(pack.layout)) {
+    fail(`${path}.layout`, `must be one of ${LAYOUTS.join('|')}`);
+  }
   if (!isPlainObject(pack.sides)) fail(`${path}.sides`, 'must be an object');
 
   const seenIds = new Set();
@@ -37,25 +43,11 @@ const assertPack = (pack, path) => {
   }
 };
 
-// Optional flat list of extra same-BPM loops that remap can offer (not mapped to any pad).
-const assertSound = (sound, path) => {
-  if (!isPlainObject(sound)) fail(path, 'sound must be an object');
-  for (const key of ['label', 'kitSlug', 'src']) {
-    if (!isNonEmptyString(sound[key])) fail(`${path}.${key}`, 'must be a non-empty string');
-  }
-  if (!PARTS.includes(sound.part)) fail(`${path}.part`, `must be one of ${PARTS.join('|')}`);
-  if (!Number.isFinite(sound.bpm) || sound.bpm <= 0) fail(`${path}.bpm`, 'must be a positive number');
-};
-
 export function assertCatalog(catalog) {
   if (!isPlainObject(catalog)) fail('$', 'catalog must be an object');
   if (!Array.isArray(catalog.packs) || catalog.packs.length === 0) {
     fail('$.packs', 'must be a non-empty array');
   }
   catalog.packs.forEach((pack, i) => assertPack(pack, `$.packs[${i}]`));
-  if (catalog.sounds !== undefined) {
-    if (!Array.isArray(catalog.sounds)) fail('$.sounds', 'must be an array');
-    catalog.sounds.forEach((sound, i) => assertSound(sound, `$.sounds[${i}]`));
-  }
   return catalog;
 }

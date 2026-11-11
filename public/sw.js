@@ -1,10 +1,11 @@
 // PRECACHE_REVISION is derived from the precached files; `node scripts/sw-revision.mjs`
 // rewrites it, and test/pwa.test.js fails while it is stale. Changing it changes this
 // file's bytes, which is what makes browsers install the new worker after a deploy.
-const PRECACHE_REVISION = 'cf32574f6442';
+const PRECACHE_REVISION = 'fddc00a38cc9';
 const CACHE_PREFIX = 'live-beat-';
 const CACHE_NAME = `${CACHE_PREFIX}${PRECACHE_REVISION}`;
-const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}runtime`;
+// Bump the suffix whenever WAVs change in place at the same URL (e.g. a pack is re-rendered).
+const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}runtime-v2`;
 const OFFLINE_FALLBACK_URL = '/';
 const PLAY_URL = '/play';
 
@@ -23,7 +24,6 @@ const PRECACHE_URLS = [
   '/library-app.js',
   '/play-app.js',
   '/register-sw.js',
-  '/js/timing.js',
   '/js/ring.js',
   '/js/pad-map.js',
   '/js/sound-picker.js',
@@ -33,8 +33,10 @@ const PRECACHE_URLS = [
   '/packs/catalog.json',
   '/manifest.webmanifest',
   '/favicon.svg',
+  '/icons/apple-touch-icon.png',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
+  '/icons/icon-maskable-512.png',
 ];
 
 const DEV_HOSTNAMES = new Set(['localhost', '127.0.0.1', '[::1]']);
