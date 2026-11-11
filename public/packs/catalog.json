@@ -899,6 +899,366 @@
           }
         ]
       }
+    },
+    {
+      "id": "cueharbor-90",
+      "title": "CueHarbor 90",
+      "bpm": 90,
+      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Rock drums",
+            "part": "drums",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Rock bass",
+            "part": "bass",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Rock chords",
+            "part": "chords",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Rock percussion",
+            "part": "percussion",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Arcade drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Arcade bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Arcade chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Arcade percussion",
+            "part": "percussion",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Keys drums",
+            "part": "drums",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Keys bass",
+            "part": "bass",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Keys chords",
+            "part": "chords",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Keys percussion",
+            "part": "percussion",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Rock drums",
+            "part": "drums",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Rock bass",
+            "part": "bass",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Rock chords",
+            "part": "chords",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Rock percussion",
+            "part": "percussion",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/90/rock-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Arcade drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Arcade bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Arcade chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Arcade percussion",
+            "part": "percussion",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/90/arcade-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Keys drums",
+            "part": "drums",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Keys bass",
+            "part": "bass",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Keys chords",
+            "part": "chords",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Keys percussion",
+            "part": "percussion",
+            "kitSlug": "keys-kit",
+            "src": "/packs/cueharbor/90/keys-kit/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cueharbor-96",
+      "title": "CueHarbor 96",
+      "bpm": 96,
+      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Shuffle drums",
+            "part": "drums",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Shuffle bass",
+            "part": "bass",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Shuffle chords",
+            "part": "chords",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Shuffle percussion",
+            "part": "percussion",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Cajon drums",
+            "part": "drums",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Cajon bass",
+            "part": "bass",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Cajon chords",
+            "part": "chords",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Cajon percussion",
+            "part": "percussion",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Nylon drums",
+            "part": "drums",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Nylon bass",
+            "part": "bass",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Nylon chords",
+            "part": "chords",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Nylon percussion",
+            "part": "percussion",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Shuffle drums",
+            "part": "drums",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Shuffle bass",
+            "part": "bass",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Shuffle chords",
+            "part": "chords",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Shuffle percussion",
+            "part": "percussion",
+            "kitSlug": "shuffle-kit",
+            "src": "/packs/cueharbor/96/shuffle-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Cajon drums",
+            "part": "drums",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Cajon bass",
+            "part": "bass",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Cajon chords",
+            "part": "chords",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Cajon percussion",
+            "part": "percussion",
+            "kitSlug": "cajon-kit",
+            "src": "/packs/cueharbor/96/cajon-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Nylon drums",
+            "part": "drums",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Nylon bass",
+            "part": "bass",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Nylon chords",
+            "part": "chords",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Nylon percussion",
+            "part": "percussion",
+            "kitSlug": "nylon-kit",
+            "src": "/packs/cueharbor/96/nylon-kit/percussion.wav"
+          }
+        ]
+      }
     }
   ]
 }

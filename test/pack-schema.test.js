@@ -85,7 +85,7 @@ describe('shipped catalog.json', () => {
     const parsed = assertCatalog(catalog);
     assert.deepEqual(
       parsed.packs.map((p) => p.id).sort(),
-      ['cueharbor-100', 'cueharbor-120', 'pulse-120', 'pulse-140', 'pulse-96'],
+      ['cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96', 'pulse-120', 'pulse-140', 'pulse-96'],
     );
     for (const pack of parsed.packs) {
       assert.equal(pack.sides.A.length, 12);
@@ -111,9 +111,11 @@ describe('shipped catalog.json', () => {
     const expected = {
       'cueharbor-120': ['rock-kit', 'top-kit', 'arcade-kit'],
       'cueharbor-100': ['funk-kit', 'latin-kit', 'groove-kit'],
+      'cueharbor-90': ['rock-kit', 'arcade-kit', 'keys-kit'],
+      'cueharbor-96': ['shuffle-kit', 'cajon-kit', 'nylon-kit'],
     };
     const packs = assertCatalog(catalog).packs.filter((p) => p.id.startsWith('cueharbor-'));
-    assert.equal(packs.length, 2);
+    assert.equal(packs.length, 4);
     for (const pack of packs) {
       for (const side of ['A', 'B']) {
         pack.sides[side].forEach((pad, i) => {

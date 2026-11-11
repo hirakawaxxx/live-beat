@@ -27,7 +27,7 @@ footer.
 Loop samples under `public/packs/cueharbor/` are vendored from the
 [CueHarbor Sound Library](https://huggingface.co/datasets/cueharbor/sound-library)
 dataset on Hugging Face. The dataset is licensed CC0 1.0; the melodic loops
-(felt piano arpeggio, nylon guitar strum) are public domain. No attribution is
+(felt piano arpeggio, nylon guitar strum/arpeggio) are public domain. No attribution is
 required. This app still names the source in the library footer.
 
 - Fetched: 2026-11-11
@@ -35,5 +35,8 @@ required. This app still names the source in the library footer.
   `https://huggingface.co/datasets/cueharbor/sound-library/resolve/main/{path}`
   (paths under `loops/drums/`, `loops/melodic/`, `loops/percussion/`)
 - Fetch script: `scripts/fetch-cueharbor.mjs`
-- Layout: `public/packs/cueharbor/{bpm}/{kit}/{part}.wav` (BPM 100 and 120;
-  some kit parts are copies of another kit's loop)
+- Layout: `public/packs/cueharbor/{bpm}/{kit}/{part}.wav` (BPM 90, 96, 100 and
+  120; some kit parts are copies of another kit's loop, and parts with no
+  same-BPM loop (90 percussion, 96 bass) reuse a drum loop)
+- 90 BPM: rock-beat, arcade-game-drum-loop-14, felt-piano-arpeggio (d-min).
+  96 BPM: shuffle, cajon-groove, nylon-guitar-arpeggio (e-min).
