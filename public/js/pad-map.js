@@ -14,17 +14,22 @@ export const toSound = ({ src, label, part, kitSlug }) => ({ src, label, part, k
 
 const allPads = (pack) => SIDES.flatMap((side) => pack.sides[side]);
 
-// Every distinct loop (deduped by src) across all packs whose bpm matches, in part order.
+// Every distinct loop (deduped by src) with a matching bpm, in part order: pack pads first, then
+// catalog.sounds (on-disk kit loops no pack pad uses; see scripts/index-kits.mjs).
 export function buildSoundIndex(catalog, bpm) {
   const seen = new Set();
   const sounds = [];
+  const add = (sound) => {
+    if (seen.has(sound.src)) return;
+    seen.add(sound.src);
+    sounds.push(toSound(sound));
+  };
   for (const pack of catalog.packs) {
     if (pack.bpm !== bpm) continue;
-    for (const pad of allPads(pack)) {
-      if (seen.has(pad.src)) continue;
-      seen.add(pad.src);
-      sounds.push(toSound(pad));
-    }
+    allPads(pack).forEach(add);
+  }
+  for (const sound of catalog.sounds ?? []) {
+    if (sound.bpm === bpm) add(sound);
   }
   const rank = (part) => {
     const i = PART_ORDER.indexOf(part);

@@ -1620,5 +1620,175 @@
         ]
       }
     }
+  ],
+  "sounds": [
+    {
+      "src": "/packs/120/lunar-relay/drums.wav",
+      "label": "Lunar drums",
+      "part": "drums",
+      "kitSlug": "lunar-relay",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/lunar-relay/bass.wav",
+      "label": "Lunar bass",
+      "part": "bass",
+      "kitSlug": "lunar-relay",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/lunar-relay/chords.wav",
+      "label": "Lunar chords",
+      "part": "chords",
+      "kitSlug": "lunar-relay",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/lunar-relay/percussion.wav",
+      "label": "Lunar percussion",
+      "part": "percussion",
+      "kitSlug": "lunar-relay",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/prism-current/drums.wav",
+      "label": "Prism drums",
+      "part": "drums",
+      "kitSlug": "prism-current",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/prism-current/bass.wav",
+      "label": "Prism bass",
+      "part": "bass",
+      "kitSlug": "prism-current",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/prism-current/chords.wav",
+      "label": "Prism chords",
+      "part": "chords",
+      "kitSlug": "prism-current",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/120/prism-current/percussion.wav",
+      "label": "Prism percussion",
+      "part": "percussion",
+      "kitSlug": "prism-current",
+      "bpm": 120
+    },
+    {
+      "src": "/packs/140/lunar-relay/drums.wav",
+      "label": "Lunar drums",
+      "part": "drums",
+      "kitSlug": "lunar-relay",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/lunar-relay/bass.wav",
+      "label": "Lunar bass",
+      "part": "bass",
+      "kitSlug": "lunar-relay",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/lunar-relay/chords.wav",
+      "label": "Lunar chords",
+      "part": "chords",
+      "kitSlug": "lunar-relay",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/lunar-relay/percussion.wav",
+      "label": "Lunar percussion",
+      "part": "percussion",
+      "kitSlug": "lunar-relay",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/prism-current/drums.wav",
+      "label": "Prism drums",
+      "part": "drums",
+      "kitSlug": "prism-current",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/prism-current/bass.wav",
+      "label": "Prism bass",
+      "part": "bass",
+      "kitSlug": "prism-current",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/prism-current/chords.wav",
+      "label": "Prism chords",
+      "part": "chords",
+      "kitSlug": "prism-current",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/140/prism-current/percussion.wav",
+      "label": "Prism percussion",
+      "part": "percussion",
+      "kitSlug": "prism-current",
+      "bpm": 140
+    },
+    {
+      "src": "/packs/96/lunar-relay/drums.wav",
+      "label": "Lunar drums",
+      "part": "drums",
+      "kitSlug": "lunar-relay",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/lunar-relay/bass.wav",
+      "label": "Lunar bass",
+      "part": "bass",
+      "kitSlug": "lunar-relay",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/lunar-relay/chords.wav",
+      "label": "Lunar chords",
+      "part": "chords",
+      "kitSlug": "lunar-relay",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/lunar-relay/percussion.wav",
+      "label": "Lunar percussion",
+      "part": "percussion",
+      "kitSlug": "lunar-relay",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/prism-current/drums.wav",
+      "label": "Prism drums",
+      "part": "drums",
+      "kitSlug": "prism-current",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/prism-current/bass.wav",
+      "label": "Prism bass",
+      "part": "bass",
+      "kitSlug": "prism-current",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/prism-current/chords.wav",
+      "label": "Prism chords",
+      "part": "chords",
+      "kitSlug": "prism-current",
+      "bpm": 96
+    },
+    {
+      "src": "/packs/96/prism-current/percussion.wav",
+      "label": "Prism percussion",
+      "part": "percussion",
+      "kitSlug": "prism-current",
+      "bpm": 96
+    }
   ]
 }

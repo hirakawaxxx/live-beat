@@ -69,6 +69,16 @@ describe('assertCatalog', () => {
     assert.throws(() => assertCatalog(withSides({ A: pads('A'), B: pads('A') })));
   });
 
+  test('rejects malformed catalog.sounds', () => {
+    const base = validCatalog();
+    const ok = { src: '/p/x.wav', label: 'X', part: 'drums', kitSlug: 'k', bpm: 120 };
+    assert.doesNotThrow(() => assertCatalog({ ...base, sounds: [ok] }));
+    assert.throws(() => assertCatalog({ ...base, sounds: 'nope' }));
+    assert.throws(() => assertCatalog({ ...base, sounds: [{ ...ok, part: 'lead' }] }));
+    assert.throws(() => assertCatalog({ ...base, sounds: [{ ...ok, bpm: 0 }] }));
+    assert.throws(() => assertCatalog({ ...base, sounds: [{ ...ok, src: '' }] }));
+  });
+
   test('rejects invalid pack fields', () => {
     const base = validCatalog().packs[0];
     assert.throws(() => assertCatalog({ packs: [{ ...base, bpm: 0 }] }));
@@ -139,6 +149,17 @@ describe('shipped catalog.json', () => {
           assert.equal(pad.id, `${side}-${i}`);
         });
       }
+    }
+  });
+
+  test('every indexed on-disk sound exists, matches a pack BPM and is unused by pads', () => {
+    const parsed = assertCatalog(catalog);
+    const padSrcs = new Set(parsed.packs.flatMap((p) => [...p.sides.A, ...p.sides.B].map((pad) => pad.src)));
+    assert.ok(parsed.sounds.length > 0);
+    for (const sound of parsed.sounds) {
+      assert.ok(existsSync(publicFile(sound.src)), `missing ${sound.src}`);
+      assert.ok(parsed.packs.some((p) => p.bpm === sound.bpm), `no pack at ${sound.bpm} BPM`);
+      assert.ok(!padSrcs.has(sound.src), `${sound.src} already used by a pad`);
     }
   });
 

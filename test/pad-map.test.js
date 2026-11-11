@@ -64,6 +64,33 @@ describe('buildSoundIndex', () => {
   });
 });
 
+describe('buildSoundIndex with catalog.sounds', () => {
+  const sound = (src, part, bpm) => ({ src, label: src, part, kitSlug: 'extra', bpm });
+  const withExtra = {
+    ...catalog,
+    sounds: [
+      sound('/x/120/z.wav', 'percussion', 120),
+      sound('/x/96/y.wav', 'drums', 96),
+      sound('/p/120/a1.wav', 'drums', 120), // already used by a pad
+    ],
+  };
+  test('adds same-BPM on-disk sounds not already in a pack, dropping bpm', () => {
+    const index = buildSoundIndex(withExtra, 120);
+    assert.equal(index.length, 7);
+    const extra = index.find((s) => s.src === '/x/120/z.wav');
+    assert.deepEqual(Object.keys(extra).sort(), ['kitSlug', 'label', 'part', 'src']);
+    assert.ok(!index.some((s) => s.src === '/x/96/y.wav'));
+  });
+  test('dedupes against pack pads and keeps part order', () => {
+    const srcs = buildSoundIndex(withExtra, 120).map((s) => s.src);
+    assert.equal(new Set(srcs).size, srcs.length);
+    assert.equal(buildSoundIndex(withExtra, 120).at(-1).part, 'percussion');
+  });
+  test('a catalog without sounds behaves as before', () => {
+    assert.equal(buildSoundIndex(catalog, 120).length, 6);
+  });
+});
+
 describe('overrides', () => {
   const index = buildSoundIndex(catalog, 120);
   const target = index.find((s) => s.src === '/c/120/b0.wav');

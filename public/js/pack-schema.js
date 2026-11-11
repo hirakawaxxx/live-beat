@@ -37,11 +37,25 @@ const assertPack = (pack, path) => {
   }
 };
 
+// Optional flat list of extra same-BPM loops that remap can offer (not mapped to any pad).
+const assertSound = (sound, path) => {
+  if (!isPlainObject(sound)) fail(path, 'sound must be an object');
+  for (const key of ['label', 'kitSlug', 'src']) {
+    if (!isNonEmptyString(sound[key])) fail(`${path}.${key}`, 'must be a non-empty string');
+  }
+  if (!PARTS.includes(sound.part)) fail(`${path}.part`, `must be one of ${PARTS.join('|')}`);
+  if (!Number.isFinite(sound.bpm) || sound.bpm <= 0) fail(`${path}.bpm`, 'must be a positive number');
+};
+
 export function assertCatalog(catalog) {
   if (!isPlainObject(catalog)) fail('$', 'catalog must be an object');
   if (!Array.isArray(catalog.packs) || catalog.packs.length === 0) {
     fail('$.packs', 'must be a non-empty array');
   }
   catalog.packs.forEach((pack, i) => assertPack(pack, `$.packs[${i}]`));
+  if (catalog.sounds !== undefined) {
+    if (!Array.isArray(catalog.sounds)) fail('$.sounds', 'must be an array');
+    catalog.sounds.forEach((sound, i) => assertSound(sound, `$.sounds[${i}]`));
+  }
   return catalog;
 }
