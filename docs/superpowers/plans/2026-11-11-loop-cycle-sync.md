@@ -1,5 +1,7 @@
 # Loop Cycle Sync + Ring Indicators Implementation Plan
 
+> **この文書は古い内容を含みます。** 音源・パッド構成・同期ルール・BPM の現行仕様は `docs/superpowers/specs/2026-11-11-self-made-packs-design.md` を正とします。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Quantize pad joins to the longest active loop cycle and show Soft Mint circular beat rings on each pad.
