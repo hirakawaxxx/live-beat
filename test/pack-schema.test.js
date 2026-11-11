@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { assertCatalog } from '../public/js/pack-schema.js';
 
 const PARTS = ['drums', 'bass', 'chords', 'percussion'];
@@ -79,19 +79,23 @@ describe('assertCatalog', () => {
 
 describe('shipped catalog.json', () => {
   const catalog = JSON.parse(readFileSync(new URL('../public/packs/catalog.json', import.meta.url), 'utf8'));
+  const publicFile = (src) => new URL(`../public${src}`, import.meta.url);
 
-  test('validates and has three BPM packs', () => {
+  test('validates and lists pulse and CueHarbor packs', () => {
     const parsed = assertCatalog(catalog);
-    assert.deepEqual(parsed.packs.map((p) => p.id).sort(), ['pulse-120', 'pulse-140', 'pulse-96']);
+    assert.deepEqual(
+      parsed.packs.map((p) => p.id).sort(),
+      ['cueharbor-100', 'cueharbor-120', 'pulse-120', 'pulse-140', 'pulse-96'],
+    );
     for (const pack of parsed.packs) {
       assert.equal(pack.sides.A.length, 12);
       assert.equal(pack.sides.B.length, 12);
     }
   });
 
-  test('follows kit assignment, part order and src convention', () => {
+  test('pulse packs follow kit assignment, part order and src convention', () => {
     const kits = { A: ['copper-step', 'ember-weave', 'glass-orbit'], B: ['ion-bloom', 'lunar-relay', 'prism-current'] };
-    for (const pack of assertCatalog(catalog).packs) {
+    for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('pulse-'))) {
       for (const side of ['A', 'B']) {
         pack.sides[side].forEach((pad, i) => {
           assert.equal(pad.kitSlug, kits[side][Math.floor(i / 4)]);
@@ -99,6 +103,33 @@ describe('shipped catalog.json', () => {
           assert.equal(pad.src, `/packs/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
           assert.equal(pad.id, `${side}-${i}`);
         });
+      }
+    }
+  });
+
+  test('CueHarbor packs use three kits per side and the cueharbor src convention', () => {
+    const expected = {
+      'cueharbor-120': ['rock-kit', 'top-kit', 'arcade-kit'],
+      'cueharbor-100': ['funk-kit', 'latin-kit', 'groove-kit'],
+    };
+    const packs = assertCatalog(catalog).packs.filter((p) => p.id.startsWith('cueharbor-'));
+    assert.equal(packs.length, 2);
+    for (const pack of packs) {
+      for (const side of ['A', 'B']) {
+        pack.sides[side].forEach((pad, i) => {
+          assert.equal(pad.kitSlug, expected[pack.id][Math.floor(i / 4)]);
+          assert.equal(pad.part, PARTS[i % 4]);
+          assert.equal(pad.src, `/packs/cueharbor/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
+          assert.equal(pad.id, `${side}-${i}`);
+        });
+      }
+    }
+  });
+
+  test('every catalog src exists on disk', () => {
+    for (const pack of assertCatalog(catalog).packs) {
+      for (const pad of [...pack.sides.A, ...pack.sides.B]) {
+        assert.ok(existsSync(publicFile(pad.src)), `${pack.id} ${pad.id}: missing ${pad.src}`);
       }
     }
   });

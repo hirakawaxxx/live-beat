@@ -25,7 +25,7 @@ const MESSAGES = {
   recordFailed: '録音に失敗しました。',
 };
 
-const DEFAULT_RING_BEATS = 16; // Pulse loops are 4 bars of 4 beats
+const DEFAULT_RING_BEATS = 16; // placeholder until the loaded buffer reports its beat count
 
 const setStatus = (text) => {
   statusEl.textContent = text;

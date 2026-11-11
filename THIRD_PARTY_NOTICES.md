@@ -21,3 +21,19 @@ footer.
   prism-current; BPM: 96, 120, 140)
 - Fetch script: `scripts/fetch-pulse-kits.mjs`
 - Per-kit license text: `public/packs/licenses/{slug}-{bpm}.txt` (CC0-1.0)
+
+## CueHarbor Sound Library
+
+Loop samples under `public/packs/cueharbor/` are vendored from the
+[CueHarbor Sound Library](https://huggingface.co/datasets/cueharbor/sound-library)
+dataset on Hugging Face. The dataset is licensed CC0 1.0; the melodic loops
+(felt piano arpeggio, nylon guitar strum) are public domain. No attribution is
+required. This app still names the source in the library footer.
+
+- Fetched: 2026-11-11
+- Source URL pattern:
+  `https://huggingface.co/datasets/cueharbor/sound-library/resolve/main/{path}`
+  (paths under `loops/drums/`, `loops/melodic/`, `loops/percussion/`)
+- Fetch script: `scripts/fetch-cueharbor.mjs`
+- Layout: `public/packs/cueharbor/{bpm}/{kit}/{part}.wav` (BPM 100 and 120;
+  some kit parts are copies of another kit's loop)

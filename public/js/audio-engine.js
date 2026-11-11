@@ -1,8 +1,8 @@
-import { barDurationSec, beatsForDuration, quantizeOnTime } from './timing.js';
+import { barDurationSec, beatDurationSec, beatsForDuration, quantizeOnTime } from './timing.js';
 
 const DEFAULT_BPM = 120;
-const LOOP_BARS = 4;
-const DURATION_TOLERANCE_SEC = 0.1;
+// Loops may be any whole number of beats (e.g. 8 or 16); warn only when off-grid.
+const BEAT_TOLERANCE = 0.1;
 const MIN_LEAD_SEC = 0.02;
 
 function positiveMod(value, modulus) {
@@ -84,10 +84,10 @@ export function createAudioEngine() {
     }
     const data = await response.arrayBuffer();
     const buffer = await ctx.decodeAudioData(data);
-    const expected = barDurationSec(bpm) * LOOP_BARS;
-    if (Math.abs(buffer.duration - expected) > DURATION_TOLERANCE_SEC) {
+    const beats = buffer.duration / beatDurationSec(bpm);
+    if (beats < 1 || Math.abs(beats - Math.round(beats)) > BEAT_TOLERANCE) {
       console.warn(
-        `AudioEngine: pad "${padId}" duration ${buffer.duration.toFixed(3)}s differs from expected ${expected.toFixed(3)}s at ${bpm} BPM`,
+        `AudioEngine: pad "${padId}" duration ${buffer.duration.toFixed(3)}s is ${beats.toFixed(2)} beats at ${bpm} BPM (expected a whole number of beats)`,
       );
     }
     buffers.set(padId, buffer);

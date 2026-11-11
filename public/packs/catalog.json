@@ -539,6 +539,366 @@
           }
         ]
       }
+    },
+    {
+      "id": "cueharbor-120",
+      "title": "CueHarbor 120",
+      "bpm": 120,
+      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Rock drums",
+            "part": "drums",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Rock bass",
+            "part": "bass",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Rock chords",
+            "part": "chords",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Rock percussion",
+            "part": "percussion",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Top drums",
+            "part": "drums",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Top bass",
+            "part": "bass",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Top chords",
+            "part": "chords",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Top percussion",
+            "part": "percussion",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Arcade drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Arcade bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Arcade chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Arcade percussion",
+            "part": "percussion",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Rock drums",
+            "part": "drums",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Rock bass",
+            "part": "bass",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Rock chords",
+            "part": "chords",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Rock percussion",
+            "part": "percussion",
+            "kitSlug": "rock-kit",
+            "src": "/packs/cueharbor/120/rock-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Top drums",
+            "part": "drums",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Top bass",
+            "part": "bass",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Top chords",
+            "part": "chords",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Top percussion",
+            "part": "percussion",
+            "kitSlug": "top-kit",
+            "src": "/packs/cueharbor/120/top-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Arcade drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Arcade bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Arcade chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Arcade percussion",
+            "part": "percussion",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/cueharbor/120/arcade-kit/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cueharbor-100",
+      "title": "CueHarbor 100",
+      "bpm": 100,
+      "license": "CueHarbor Sound Library / CC0-1.0 (+ Public Domain melodic)",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Funk drums",
+            "part": "drums",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Funk bass",
+            "part": "bass",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Funk chords",
+            "part": "chords",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Funk percussion",
+            "part": "percussion",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Latin drums",
+            "part": "drums",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Latin bass",
+            "part": "bass",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Latin chords",
+            "part": "chords",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Latin percussion",
+            "part": "percussion",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Groove drums",
+            "part": "drums",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Groove bass",
+            "part": "bass",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Groove chords",
+            "part": "chords",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Groove percussion",
+            "part": "percussion",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Funk drums",
+            "part": "drums",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Funk bass",
+            "part": "bass",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Funk chords",
+            "part": "chords",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Funk percussion",
+            "part": "percussion",
+            "kitSlug": "funk-kit",
+            "src": "/packs/cueharbor/100/funk-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Latin drums",
+            "part": "drums",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Latin bass",
+            "part": "bass",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Latin chords",
+            "part": "chords",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Latin percussion",
+            "part": "percussion",
+            "kitSlug": "latin-kit",
+            "src": "/packs/cueharbor/100/latin-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Groove drums",
+            "part": "drums",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Groove bass",
+            "part": "bass",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Groove chords",
+            "part": "chords",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Groove percussion",
+            "part": "percussion",
+            "kitSlug": "groove-kit",
+            "src": "/packs/cueharbor/100/groove-kit/percussion.wav"
+          }
+        ]
+      }
     }
   ]
 }
