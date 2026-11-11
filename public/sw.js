@@ -1,7 +1,7 @@
 // PRECACHE_REVISION is derived from the precached files; `node scripts/sw-revision.mjs`
 // rewrites it, and test/pwa.test.js fails while it is stale. Changing it changes this
 // file's bytes, which is what makes browsers install the new worker after a deploy.
-const PRECACHE_REVISION = '52884c473c86';
+const PRECACHE_REVISION = '2e424c808949';
 const CACHE_PREFIX = 'live-beat-';
 const CACHE_NAME = `${CACHE_PREFIX}${PRECACHE_REVISION}`;
 const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}runtime`;
@@ -24,6 +24,8 @@ const PRECACHE_URLS = [
   '/register-sw.js',
   '/js/timing.js',
   '/js/ring.js',
+  '/js/pad-map.js',
+  '/js/sound-picker.js',
   '/js/pack-schema.js',
   '/js/audio-engine.js',
   '/js/recorder.js',

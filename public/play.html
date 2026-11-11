@@ -30,6 +30,7 @@
           <button type="button" class="ui-button" id="btn-record" disabled>録音</button>
         </div>
         <div id="pad-grid"></div>
+        <p id="pad-hint" class="ui-text-caption">タップで再生・停止 / 長押し（右クリック）で同じBPMの音に差し替え</p>
         <p id="status" role="status" class="ui-text-body ui-text-muted"></p>
         <div id="recording-result" hidden>
           <audio id="recording-audio" controls></audio>
@@ -37,6 +38,7 @@
         </div>
       </main>
     </div>
+    <dialog id="sound-picker" class="sound-picker"></dialog>
     <script type="module" src="/play-app.js"></script>
     <script src="/register-sw.js"></script>
   </body>

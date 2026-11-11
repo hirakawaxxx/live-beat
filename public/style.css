@@ -162,6 +162,19 @@ main {
   overflow-wrap: anywhere;
 }
 
+/* Long-press / context menu opens the picker: no native callout or text selection. */
+.pad {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.pad[aria-busy="true"] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
 .pad--drums { --pad-tint: #f2a88f; }
 .pad--bass { --pad-tint: #8fb8f2; }
 .pad--chords { --pad-tint: var(--color-primary); }
@@ -246,4 +259,90 @@ main {
 @media (prefers-reduced-motion: reduce) {
   .pad-ring__seg { transition: none; }
   .pad[data-state="waiting"] .pad-ring { animation: none; }
+}
+
+/* Sound picker (Soft Mint) */
+.sound-picker {
+  width: min(28rem, calc(100vw - var(--space-6)));
+  max-height: min(80dvh, 40rem);
+  margin: auto;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--drop-5), var(--bevel-lg);
+  overflow: hidden;
+}
+
+.sound-picker[open] {
+  display: flex;
+}
+
+.sound-picker::backdrop {
+  background: color-mix(in srgb, var(--color-bg) 70%, transparent);
+}
+
+.sound-picker__panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 0;
+  padding: var(--space-6) var(--space-5) calc(var(--space-5) + env(safe-area-inset-bottom));
+}
+
+.sound-picker__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-1);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-sunken);
+  box-shadow: var(--shadow-inset);
+}
+
+.sound-picker__part {
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-muted);
+}
+
+.sound-picker__items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sound-picker__item {
+  width: 100%;
+  padding: 0 var(--space-3);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.sound-picker__item[aria-current="true"] {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.sound-picker__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: flex-end;
+}
+
+.sound-picker__actions .ui-button {
+  padding: 0 var(--space-5);
+}
+
+.sound-picker__group {
+  padding: var(--space-2) var(--space-2) var(--space-1);
 }

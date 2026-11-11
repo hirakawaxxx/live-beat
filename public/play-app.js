@@ -2,6 +2,15 @@ import { assertCatalog } from './js/pack-schema.js';
 import { createAudioEngine } from './js/audio-engine.js';
 import { createRecorder } from './js/recorder.js';
 import { createRing, updateRing } from './js/ring.js';
+import {
+  buildSoundIndex,
+  effectivePads,
+  loadOverrides,
+  saveOverrides,
+  withOverride,
+  withoutOverride,
+} from './js/pad-map.js';
+import { createSoundPicker } from './js/sound-picker.js';
 
 const gridEl = document.querySelector('#pad-grid');
 const statusEl = document.querySelector('#status');
@@ -13,6 +22,7 @@ const recordBtn = document.querySelector('#btn-record');
 const recordingResult = document.querySelector('#recording-result');
 const recordingAudio = document.querySelector('#recording-audio');
 const recordingDownload = document.querySelector('#recording-download');
+const pickerEl = document.querySelector('#sound-picker');
 
 const MESSAGES = {
   noPack: 'パックが指定されていません。ライブラリから選んでください。',
@@ -23,7 +33,12 @@ const MESSAGES = {
   partial: '一部の音が読み込めませんでした。',
   recordUnsupported: 'このブラウザでは録音できません',
   recordFailed: '録音に失敗しました。',
+  remapFailed: '音を読み込めなかったため、元の音に戻しました。',
 };
+
+const LONG_PRESS_MS = 500;
+const LONG_PRESS_MOVE_PX = 10;
+const CLICK_SUPPRESS_RESET_MS = 100;
 
 const DEFAULT_RING_BEATS = 16; // placeholder until the loaded buffer reports its beat count
 
@@ -38,6 +53,8 @@ const createPadButton = (pad) => {
   btn.dataset.padId = pad.id;
   btn.dataset.state = 'off';
   btn.setAttribute('aria-pressed', 'false');
+  btn.setAttribute('aria-label', pad.label);
+  btn.setAttribute('aria-describedby', 'pad-hint');
   const ring = createRing(DEFAULT_RING_BEATS);
   const label = document.createElement('span');
   label.className = 'pad__label';
@@ -50,7 +67,15 @@ const loadCatalogPack = async (packId) => {
   const res = await fetch('/packs/catalog.json');
   if (!res.ok) throw new Error(`catalog fetch failed: ${res.status}`);
   const catalog = assertCatalog(await res.json());
-  return catalog.packs.find((p) => p.id === packId) ?? null;
+  return { catalog, pack: catalog.packs.find((p) => p.id === packId) ?? null };
+};
+
+const getStorage = () => {
+  try {
+    return window.localStorage;
+  } catch {
+    return null; // blocked (privacy mode / disabled storage): remapping stays in memory
+  }
 };
 
 const init = async () => {
@@ -61,8 +86,9 @@ const init = async () => {
   }
 
   let pack;
+  let catalog;
   try {
-    pack = await loadCatalogPack(packId);
+    ({ catalog, pack } = await loadCatalogPack(packId));
   } catch (err) {
     console.error(err);
     setStatus(MESSAGES.catalog);
@@ -79,6 +105,11 @@ const init = async () => {
   // BPM must be set before any loadPad (duration check) and never while pads play.
   const engine = createAudioEngine();
   engine.setBpm(pack.bpm);
+
+  const storage = getStorage();
+  const soundIndex = buildSoundIndex(catalog, pack.bpm); // same-BPM loops across all packs
+  const picker = createSoundPicker(pickerEl);
+  let overrides = loadOverrides(storage, pack, soundIndex);
 
   const sideButtons = { A: sideABtn, B: sideBBtn };
   recordBtn.disabled = true; // enabled once audio is ready and MediaRecorder exists
@@ -149,12 +180,22 @@ const init = async () => {
   // Bumped by STOP and side switches; stale in-flight taps compare against it.
   let generation = 0;
 
-  const sidePads = (side) => pack.sides[side];
+  const loadedSrc = new Map(); // padId -> src currently decoded in the engine
+  const remapping = new Set(); // padIds whose new sound is still loading
+  let remapChain = Promise.resolve(); // serializes remap loads so a stale decode never wins
+  let press = null; // active touch/pen press: { padId, timer, x, y }
+  let touchDown = false;
+  let suppressClick = false; // a long-press just opened the picker; swallow its click
+
+  const sidePads = (side) => effectivePads(pack, overrides, side);
+  const defaultPad = (side, padId) => pack.sides[side].find((pad) => pad.id === padId);
+  const currentPad = (side, padId) => sidePads(side).find((pad) => pad.id === padId);
 
   const renderPads = (side) => {
     const built = sidePads(side).map((pad) => {
       const { btn, ring } = createPadButton(pad);
       if (failed.has(pad.id)) btn.disabled = true;
+      if (remapping.has(pad.id)) btn.setAttribute('aria-busy', 'true');
       return { id: pad.id, btn, ring };
     });
     buttons = new Map(built.map(({ id, btn }) => [id, btn]));
@@ -181,7 +222,10 @@ const init = async () => {
     const pads = sidePads(side);
     const results = await Promise.allSettled(pads.map((pad) => engine.loadPad(pad.id, pad.src)));
     results.forEach((result, i) => {
-      if (result.status === 'fulfilled') return;
+      if (result.status === 'fulfilled') {
+        loadedSrc.set(pads[i].id, pads[i].src);
+        return;
+      }
       console.error(result.reason);
       failed.add(pads[i].id);
       const btn = side === currentSide ? buttons.get(pads[i].id) : null;
@@ -244,7 +288,7 @@ const init = async () => {
     // STOP or a side switch happened while loading: drop this tap.
     if (gen !== generation) return;
     setStatus(sideStatus(side));
-    if (failed.has(padId)) return;
+    if (failed.has(padId) || remapping.has(padId)) return;
     const on = !active.has(padId);
     try {
       engine.togglePad(padId, on);
@@ -256,6 +300,153 @@ const init = async () => {
     if (on) active.add(padId);
     else active.delete(padId);
     renderPressed(padId);
+  };
+
+  // Remapping ------------------------------------------------------------
+
+  const refreshPadButton = (padId, pad) => {
+    const btn = buttons.get(padId);
+    if (!btn) return;
+    btn.className = `ui-button pad pad--${pad.part}`;
+    btn.setAttribute('aria-label', pad.label);
+    btn.querySelector('.pad__label').textContent = pad.label;
+  };
+
+  const setBusy = (padId, busy) => {
+    const btn = buttons.get(padId);
+    if (!btn) return;
+    if (busy) btn.setAttribute('aria-busy', 'true');
+    else btn.removeAttribute('aria-busy');
+  };
+
+  const setOverrides = (next) => {
+    overrides = next;
+    saveOverrides(storage, pack.id, overrides);
+  };
+
+  // OFF is immediate (also cancels a pending start) before the new buffer is loaded.
+  const stopPadNow = (padId) => {
+    if (!active.has(padId)) return;
+    try {
+      engine.togglePad(padId, false);
+    } catch (err) {
+      console.error(err);
+    }
+    active.delete(padId);
+    renderPressed(padId);
+  };
+
+  const loadRemapped = async (side, padId, src, previous) => {
+    const isCurrent = () => currentPad(side, padId)?.src === src;
+    try {
+      await ensureReady(side); // picker selection is a user gesture; starts audio if needed
+      audioReady = true;
+      enableRecording();
+      if (!isCurrent()) return; // superseded by a later remap
+      if (loadedSrc.get(padId) !== src) {
+        await engine.loadPad(padId, src);
+        loadedSrc.set(padId, src);
+      }
+      if (!isCurrent()) return;
+      failed.delete(padId);
+      const btn = buttons.get(padId);
+      if (btn) btn.disabled = false;
+      if (statusEl.textContent === MESSAGES.loading) setStatus(sideStatus(side));
+    } catch (err) {
+      console.error(err);
+      if (!isCurrent()) return;
+      // The engine keeps the previous buffer on a failed load, so go back to the previous sound.
+      setOverrides(previous
+        ? withOverride(overrides, side, defaultPad(side, padId), previous)
+        : withoutOverride(overrides, side, padId));
+      if (side === currentSide) refreshPadButton(padId, currentPad(side, padId));
+      setStatus(MESSAGES.remapFailed);
+    } finally {
+      remapping.delete(padId);
+      if (side === currentSide) setBusy(padId, false);
+    }
+  };
+
+  const applyRemap = (side, padId, nextOverrides) => {
+    const previous = overrides[side][padId];
+    stopPadNow(padId);
+    setOverrides(nextOverrides);
+    const pad = currentPad(side, padId);
+    refreshPadButton(padId, pad);
+    remapping.add(padId);
+    setBusy(padId, true);
+    setStatus(`${pad.label} に変更しました`);
+    // Ring beats are rebuilt by renderRings once the new buffer reports its length.
+    remapChain = remapChain.then(() => loadRemapped(side, padId, pad.src, previous));
+  };
+
+  const openPicker = (padId) => {
+    if (picker.isOpen() || !buttons.has(padId)) return;
+    const side = currentSide;
+    const pad = currentPad(side, padId);
+    const def = defaultPad(side, padId);
+    picker.open({
+      heading: '音を選ぶ',
+      caption: `${pad.label} · ${pack.bpm} BPM（同じBPMの音のみ）`,
+      sounds: soundIndex,
+      currentSrc: pad.src,
+      isDefault: pad.src === def.src,
+      onSelect: (sound) => {
+        if (sound.src === pad.src) return;
+        applyRemap(side, padId, withOverride(overrides, side, def, sound));
+      },
+      onReset: () => {
+        if (pad.src === def.src) return;
+        applyRemap(side, padId, withoutOverride(overrides, side, padId));
+      },
+    });
+  };
+
+  const cancelPress = () => {
+    if (!press) return;
+    clearTimeout(press.timer);
+    press = null;
+  };
+
+  // Click that follows a long-press must not toggle play; clear the flag once it has passed.
+  const endTouch = () => {
+    touchDown = false;
+    cancelPress();
+    if (suppressClick) setTimeout(() => { suppressClick = false; }, CLICK_SUPPRESS_RESET_MS);
+  };
+
+  const onPointerDown = (event) => {
+    const btn = event.target.closest('button[data-pad-id]');
+    suppressClick = false;
+    if (!btn || btn.disabled || event.pointerType === 'mouse' || !event.isPrimary) return;
+    touchDown = true;
+    cancelPress();
+    const padId = btn.dataset.padId;
+    press = {
+      padId,
+      x: event.clientX,
+      y: event.clientY,
+      timer: setTimeout(() => {
+        press = null;
+        suppressClick = true;
+        openPicker(padId);
+      }, LONG_PRESS_MS),
+    };
+  };
+
+  const onPointerMove = (event) => {
+    if (!press) return;
+    if (Math.hypot(event.clientX - press.x, event.clientY - press.y) > LONG_PRESS_MOVE_PX) cancelPress();
+  };
+
+  const onContextMenu = (event) => {
+    const btn = event.target.closest('button[data-pad-id]');
+    if (!btn) return;
+    event.preventDefault();
+    if (btn.disabled) return;
+    if (touchDown) suppressClick = true; // touch long-press surfaced as a context menu
+    cancelPress();
+    openPicker(btn.dataset.padId);
   };
 
   const switchSide = async (next) => {
@@ -287,7 +478,18 @@ const init = async () => {
   setStatus(sideStatus(currentSide));
   requestAnimationFrame(renderRings);
 
+  gridEl.addEventListener('pointerdown', onPointerDown);
+  gridEl.addEventListener('pointermove', onPointerMove);
+  gridEl.addEventListener('pointerup', endTouch);
+  gridEl.addEventListener('pointercancel', endTouch);
+  gridEl.addEventListener('contextmenu', onContextMenu);
+
   gridEl.addEventListener('click', (event) => {
+    if (suppressClick) {
+      suppressClick = false;
+      event.preventDefault();
+      return;
+    }
     const btn = event.target.closest('button[data-pad-id]');
     if (!btn || btn.disabled) return;
     void onPadClick(btn.dataset.padId);
