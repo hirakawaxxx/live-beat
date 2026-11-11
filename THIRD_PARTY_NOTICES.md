@@ -40,3 +40,23 @@ required. This app still names the source in the library footer.
   same-BPM loop (90 percussion, 96 bass) reuse a drum loop)
 - 90 BPM: rock-beat, arcade-game-drum-loop-14, felt-piano-arpeggio (d-min).
   96 BPM: shuffle, cajon-groove, nylon-guitar-arpeggio (e-min).
+
+## Colorosse music loops
+
+Loop stems under `public/packs/colorosse/` are vendored from the CC0 music
+loops by [Colorosse](https://www.colorosse.com): Arcade Loop (A Aeolian,
+151.999 BPM) and Market Loop "Vellum" (G Mixolydian, 127.999 BPM). Both are
+CC0 1.0 (procedural synthesis, no samples). No attribution is required; the app
+still names the source in the library footer.
+
+- Fetched: 2026-11-11
+- Source URLs:
+  `https://cdn.colorosse.com/downloads/arcade-music-loop/arcade-music-loop.zip`
+  and
+  `https://cdn.colorosse.com/downloads/vellum-music-loop/vellum-music-loop.zip`
+- Fetch script: `scripts/fetch-colorosse.mjs`
+- Layout: `public/packs/colorosse/{bpm}/{kit}/{drums,bass,chords,percussion}.wav`
+  (the `lead` stem is stored as `percussion.wav`; catalog packs repeat the one
+  kit as three labelled kit slugs sharing the same files)
+- Per-loop license text: `public/packs/licenses/colorosse-{name}-{bpm}.txt`
+  (CC0-1.0)

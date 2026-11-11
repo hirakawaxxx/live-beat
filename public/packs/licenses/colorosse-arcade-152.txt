@@ -1,0 +1,18 @@
+Arcade — Arcade Loop
+====================
+
+License: Creative Commons Zero 1.0 (CC0-1.0)
+Full terms: https://creativecommons.org/publicdomain/zero/1.0/
+Plain-language summary: https://www.colorosse.com/license
+
+No attribution required. Credit is welcome but not a condition.
+
+You may use these files in free and commercial projects, modify them, ship
+them inside a compiled build, and redistribute them. No extra conditions are
+attached beyond the license named above.
+
+A request, not a condition: please make something with these rather than
+rehosting the pack, and please do not train a generative model on them.
+The license lets you do both; I am asking anyway.
+
+Source: https://www.colorosse.com/assets/audio/music/arcade-music-loop

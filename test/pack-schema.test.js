@@ -81,11 +81,11 @@ describe('shipped catalog.json', () => {
   const catalog = JSON.parse(readFileSync(new URL('../public/packs/catalog.json', import.meta.url), 'utf8'));
   const publicFile = (src) => new URL(`../public${src}`, import.meta.url);
 
-  test('validates and lists pulse and CueHarbor packs', () => {
+  test('validates and lists pulse, CueHarbor and Colorosse packs', () => {
     const parsed = assertCatalog(catalog);
     assert.deepEqual(
       parsed.packs.map((p) => p.id).sort(),
-      ['cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96', 'pulse-120', 'pulse-140', 'pulse-96'],
+      ['colorosse-128', 'colorosse-152', 'cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96', 'pulse-120', 'pulse-140', 'pulse-96'],
     );
     for (const pack of parsed.packs) {
       assert.equal(pack.sides.A.length, 12);
@@ -122,6 +122,20 @@ describe('shipped catalog.json', () => {
           assert.equal(pad.kitSlug, expected[pack.id][Math.floor(i / 4)]);
           assert.equal(pad.part, PARTS[i % 4]);
           assert.equal(pad.src, `/packs/cueharbor/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
+          assert.equal(pad.id, `${side}-${i}`);
+        });
+      }
+    }
+  });
+
+  test('Colorosse packs use three kit slugs per side sharing one kit folder', () => {
+    const folders = { 'colorosse-152': 'arcade-kit', 'colorosse-128': 'vellum-kit' };
+    for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('colorosse-'))) {
+      for (const side of ['A', 'B']) {
+        assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 3);
+        pack.sides[side].forEach((pad, i) => {
+          assert.equal(pad.part, PARTS[i % 4]);
+          assert.equal(pad.src, `/packs/colorosse/${pack.bpm}/${folders[pack.id]}/${pad.part}.wav`);
           assert.equal(pad.id, `${side}-${i}`);
         });
       }

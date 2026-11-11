@@ -1259,6 +1259,366 @@
           }
         ]
       }
+    },
+    {
+      "id": "colorosse-152",
+      "title": "Colorosse 152",
+      "bpm": 152,
+      "license": "Colorosse / CC0-1.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Arcade A drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Arcade A bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Arcade A chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Arcade A lead",
+            "part": "percussion",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Arcade B drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Arcade B bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Arcade B chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Arcade B lead",
+            "part": "percussion",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Arcade C drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Arcade C bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Arcade C chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Arcade C lead",
+            "part": "percussion",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Arcade A drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Arcade A bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Arcade A chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Arcade A lead",
+            "part": "percussion",
+            "kitSlug": "arcade-kit",
+            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Arcade B drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Arcade B bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Arcade B chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Arcade B lead",
+            "part": "percussion",
+            "kitSlug": "arcade-kit-b",
+            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Arcade C drums",
+            "part": "drums",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Arcade C bass",
+            "part": "bass",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Arcade C chords",
+            "part": "chords",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Arcade C lead",
+            "part": "percussion",
+            "kitSlug": "arcade-kit-c",
+            "src": "/packs/colorosse/152/arcade-kit/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "colorosse-128",
+      "title": "Colorosse 128",
+      "bpm": 128,
+      "license": "Colorosse / CC0-1.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Vellum A drums",
+            "part": "drums",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Vellum A bass",
+            "part": "bass",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Vellum A chords",
+            "part": "chords",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Vellum A lead",
+            "part": "percussion",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Vellum B drums",
+            "part": "drums",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Vellum B bass",
+            "part": "bass",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Vellum B chords",
+            "part": "chords",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Vellum B lead",
+            "part": "percussion",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Vellum C drums",
+            "part": "drums",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Vellum C bass",
+            "part": "bass",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Vellum C chords",
+            "part": "chords",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Vellum C lead",
+            "part": "percussion",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Vellum A drums",
+            "part": "drums",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Vellum A bass",
+            "part": "bass",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Vellum A chords",
+            "part": "chords",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Vellum A lead",
+            "part": "percussion",
+            "kitSlug": "vellum-kit",
+            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Vellum B drums",
+            "part": "drums",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Vellum B bass",
+            "part": "bass",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Vellum B chords",
+            "part": "chords",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Vellum B lead",
+            "part": "percussion",
+            "kitSlug": "vellum-kit-b",
+            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Vellum C drums",
+            "part": "drums",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Vellum C bass",
+            "part": "bass",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Vellum C chords",
+            "part": "chords",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Vellum C lead",
+            "part": "percussion",
+            "kitSlug": "vellum-kit-c",
+            "src": "/packs/colorosse/128/vellum-kit/percussion.wav"
+          }
+        ]
+      }
     }
   ]
 }
