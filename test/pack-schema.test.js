@@ -100,11 +100,15 @@ describe('shipped catalog.json', () => {
   const catalog = JSON.parse(readFileSync(new URL('../public/packs/catalog.json', import.meta.url), 'utf8'));
   const publicFile = (src) => new URL(`../public${src}`, import.meta.url);
 
-  test('validates and lists pulse, CueHarbor and Colorosse packs', () => {
+  test('validates and lists pulse, CueHarbor, Colorosse and CC-BY packs', () => {
     const parsed = assertCatalog(catalog);
     assert.deepEqual(
       parsed.packs.map((p) => p.id).sort(),
-      ['colorosse-128', 'colorosse-152', 'cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96', 'pulse-120', 'pulse-140', 'pulse-96'],
+      [
+        'colorosse-128', 'colorosse-152', 'colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108',
+        'colorosse-timber-84', 'cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96',
+        'pulse-120', 'pulse-140', 'pulse-96',
+      ],
     );
     for (const pack of parsed.packs) {
       assert.equal(pack.sides.A.length, PADS_PER_SIDE);
@@ -154,7 +158,7 @@ describe('shipped catalog.json', () => {
 
   test('Colorosse packs use six kit slugs per side sharing one kit folder', () => {
     const folders = { 'colorosse-152': 'arcade-kit', 'colorosse-128': 'vellum-kit' };
-    for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('colorosse-'))) {
+    for (const pack of assertCatalog(catalog).packs.filter((p) => p.id in folders)) {
       for (const side of ['A', 'B']) {
         assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 6);
         pack.sides[side].forEach((pad, i) => {
@@ -163,6 +167,38 @@ describe('shipped catalog.json', () => {
           assert.equal(pad.id, `${side}-${i}`);
         });
       }
+    }
+  });
+
+  test('CC-BY Colorosse packs: six kit slugs per side, stems mapped honestly, license says CC-BY-4.0', () => {
+    // part -> stem file; Timber has no drums stem, so its drums slot plays bass.wav
+    const stems = {
+      'colorosse-anvil-62': { folder: 'anvil-kit', files: ['drums', 'bass', 'chords', 'percussion'] },
+      'colorosse-prism-52': { folder: 'prism-kit', files: ['drums', 'bass', 'chords', 'percussion'] },
+      'colorosse-rust-108': { folder: 'rust-kit', files: ['drums', 'bass', 'chords', 'percussion'] },
+      'colorosse-timber-84': { folder: 'timber-kit', files: ['bass', 'bass', 'chords', 'percussion'] },
+    };
+    const packs = assertCatalog(catalog).packs.filter((p) => p.id in stems);
+    assert.equal(packs.length, 4);
+    for (const pack of packs) {
+      const { folder, files } = stems[pack.id];
+      assert.match(pack.license, /CC-BY-4\.0/);
+      for (const side of ['A', 'B']) {
+        assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 6);
+        pack.sides[side].forEach((pad, i) => {
+          assert.equal(pad.part, PARTS[i % 4]);
+          assert.equal(pad.src, `/packs/colorosse/${pack.bpm}/${folder}/${files[i % 4]}.wav`);
+        });
+      }
+    }
+    assert.deepEqual(packs.map((p) => p.bpm).sort((a, b) => a - b), [52, 62, 84, 108]);
+  });
+
+  test('every CC-BY pack has a license file for its source loop', () => {
+    const licenses = ['colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108', 'colorosse-timber-84'];
+    for (const name of licenses) {
+      const url = new URL(`../public/packs/licenses/${name}.txt`, import.meta.url);
+      assert.match(readFileSync(url, 'utf8'), /CC-BY-4\.0|Attribution 4\.0/);
     }
   });
 

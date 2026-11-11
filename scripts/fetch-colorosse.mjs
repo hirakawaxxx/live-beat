@@ -1,6 +1,9 @@
-// Downloads Colorosse CC0 music-loop ZIPs and lays out the stems as
-// public/packs/colorosse/{bpm}/{kit}/{drums,bass,chords,percussion}.wav.
+// Downloads Colorosse music-loop ZIPs (CC0: arcade, vellum; CC-BY-4.0: anvil, prism, rust, timber)
+// and lays out the stems as public/packs/colorosse/{bpm}/{kit}/{part}.wav.
 // stem-lead.wav is stored as percussion.wav (the catalog part set has no "lead").
+// Per-loop STEMS override the default mapping: Prism has no drums/lead (texture -> drums,
+// bells -> percussion); Timber has no drums, so only bass/chords/percussion(lead) are stored and
+// the catalog points its drums slot at bass.wav (see scripts/add-ccby-packs.mjs).
 // ZIP URL: https://cdn.colorosse.com/downloads/{name}-music-loop/{name}-music-loop.zip
 // Each kit LICENSE goes to public/packs/licenses/colorosse-{name}-{bpm}.txt.
 // Run: node scripts/fetch-colorosse.mjs
@@ -10,12 +13,16 @@ import { tmpdir } from 'node:os';
 import { join, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+// catalog part -> stem file in the ZIP
+const DEFAULT_STEMS = { drums: 'stem-drums', bass: 'stem-bass', chords: 'stem-chords', percussion: 'stem-lead' };
 const LOOPS = [
   { name: 'arcade', bpm: 152, kit: 'arcade-kit' },
   { name: 'vellum', bpm: 128, kit: 'vellum-kit' },
+  { name: 'anvil', bpm: 62, kit: 'anvil-kit' },
+  { name: 'prism', bpm: 52, kit: 'prism-kit', stems: { ...DEFAULT_STEMS, drums: 'stem-texture', percussion: 'stem-bells' } },
+  { name: 'rust', bpm: 108, kit: 'rust-kit' },
+  { name: 'timber', bpm: 84, kit: 'timber-kit', stems: { bass: 'stem-bass', chords: 'stem-chords', percussion: 'stem-lead' } },
 ];
-// catalog part -> stem file in the ZIP
-const STEMS = { drums: 'stem-drums', bass: 'stem-bass', chords: 'stem-chords', percussion: 'stem-lead' };
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -44,10 +51,10 @@ async function fetchWithRetry(url, attempts = 6) {
   throw new Error(`${url}: retries exhausted`);
 }
 
-async function fetchLoop({ name, bpm, kit }) {
+async function fetchLoop({ name, bpm, kit, stems = DEFAULT_STEMS }) {
   const dir = join(root, 'public', 'packs', 'colorosse', String(bpm), kit);
   const licenseDir = join(root, 'public', 'packs', 'licenses');
-  const dests = Object.keys(STEMS).map((part) => join(dir, `${part}.wav`));
+  const dests = Object.keys(stems).map((part) => join(dir, `${part}.wav`));
   if ((await Promise.all(dests.map(exists))).every(Boolean)) return;
 
   const url = `https://cdn.colorosse.com/downloads/${name}-music-loop/${name}-music-loop.zip`;
@@ -62,7 +69,7 @@ async function fetchLoop({ name, bpm, kit }) {
     const files = await listFiles(extractDir);
     await mkdir(dir, { recursive: true });
     await mkdir(licenseDir, { recursive: true });
-    for (const [part, stem] of Object.entries(STEMS)) {
+    for (const [part, stem] of Object.entries(stems)) {
       const found = files.find((f) => f.includes('/wav/') && basename(f).toLowerCase() === `${stem}.wav`);
       if (!found) throw new Error(`${stem}.wav not found in ${name} ZIP`);
       await copyFile(found, join(dir, `${part}.wav`));

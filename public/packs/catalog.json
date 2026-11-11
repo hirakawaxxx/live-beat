@@ -3131,6 +3131,1398 @@
           }
         ]
       }
+    },
+    {
+      "id": "colorosse-anvil-62",
+      "title": "Colorosse Anvil 62",
+      "bpm": 62,
+      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Anvil A drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Anvil A bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Anvil A chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Anvil A lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Anvil B drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Anvil B bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Anvil B chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Anvil B lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Anvil C drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Anvil C bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Anvil C chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Anvil C lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "A-12",
+            "label": "Anvil D drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "A-13",
+            "label": "Anvil D bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "A-14",
+            "label": "Anvil D chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "A-15",
+            "label": "Anvil D lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "A-16",
+            "label": "Anvil E drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "A-17",
+            "label": "Anvil E bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "A-18",
+            "label": "Anvil E chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "A-19",
+            "label": "Anvil E lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "A-20",
+            "label": "Anvil F drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "A-21",
+            "label": "Anvil F bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "A-22",
+            "label": "Anvil F chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "A-23",
+            "label": "Anvil F lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Anvil A drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Anvil A bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Anvil A chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Anvil A lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Anvil B drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Anvil B bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Anvil B chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Anvil B lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-b",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Anvil C drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Anvil C bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Anvil C chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Anvil C lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-c",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "B-12",
+            "label": "Anvil D drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "B-13",
+            "label": "Anvil D bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "B-14",
+            "label": "Anvil D chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "B-15",
+            "label": "Anvil D lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-d",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "B-16",
+            "label": "Anvil E drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "B-17",
+            "label": "Anvil E bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "B-18",
+            "label": "Anvil E chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "B-19",
+            "label": "Anvil E lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-e",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          },
+          {
+            "id": "B-20",
+            "label": "Anvil F drums",
+            "part": "drums",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/drums.wav"
+          },
+          {
+            "id": "B-21",
+            "label": "Anvil F bass",
+            "part": "bass",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/bass.wav"
+          },
+          {
+            "id": "B-22",
+            "label": "Anvil F chords",
+            "part": "chords",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/chords.wav"
+          },
+          {
+            "id": "B-23",
+            "label": "Anvil F lead",
+            "part": "percussion",
+            "kitSlug": "anvil-kit-f",
+            "src": "/packs/colorosse/62/anvil-kit/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "colorosse-prism-52",
+      "title": "Colorosse Prism 52",
+      "bpm": 52,
+      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Prism A texture",
+            "part": "drums",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Prism A bass",
+            "part": "bass",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Prism A chords",
+            "part": "chords",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Prism A bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Prism B texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Prism B bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Prism B chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Prism B bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Prism C texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Prism C bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Prism C chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Prism C bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "A-12",
+            "label": "Prism D texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "A-13",
+            "label": "Prism D bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "A-14",
+            "label": "Prism D chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "A-15",
+            "label": "Prism D bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "A-16",
+            "label": "Prism E texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "A-17",
+            "label": "Prism E bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "A-18",
+            "label": "Prism E chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "A-19",
+            "label": "Prism E bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "A-20",
+            "label": "Prism F texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "A-21",
+            "label": "Prism F bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "A-22",
+            "label": "Prism F chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "A-23",
+            "label": "Prism F bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Prism A texture",
+            "part": "drums",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Prism A bass",
+            "part": "bass",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Prism A chords",
+            "part": "chords",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Prism A bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Prism B texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Prism B bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Prism B chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Prism B bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-b",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Prism C texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Prism C bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Prism C chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Prism C bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-c",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "B-12",
+            "label": "Prism D texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "B-13",
+            "label": "Prism D bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "B-14",
+            "label": "Prism D chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "B-15",
+            "label": "Prism D bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-d",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "B-16",
+            "label": "Prism E texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "B-17",
+            "label": "Prism E bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "B-18",
+            "label": "Prism E chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "B-19",
+            "label": "Prism E bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-e",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          },
+          {
+            "id": "B-20",
+            "label": "Prism F texture",
+            "part": "drums",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/drums.wav"
+          },
+          {
+            "id": "B-21",
+            "label": "Prism F bass",
+            "part": "bass",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/bass.wav"
+          },
+          {
+            "id": "B-22",
+            "label": "Prism F chords",
+            "part": "chords",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/chords.wav"
+          },
+          {
+            "id": "B-23",
+            "label": "Prism F bells",
+            "part": "percussion",
+            "kitSlug": "prism-kit-f",
+            "src": "/packs/colorosse/52/prism-kit/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "colorosse-rust-108",
+      "title": "Colorosse Rust 108",
+      "bpm": 108,
+      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Rust A drums",
+            "part": "drums",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Rust A bass",
+            "part": "bass",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Rust A chords",
+            "part": "chords",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Rust A lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Rust B drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Rust B bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Rust B chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Rust B lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Rust C drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Rust C bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Rust C chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Rust C lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "A-12",
+            "label": "Rust D drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "A-13",
+            "label": "Rust D bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "A-14",
+            "label": "Rust D chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "A-15",
+            "label": "Rust D lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "A-16",
+            "label": "Rust E drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "A-17",
+            "label": "Rust E bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "A-18",
+            "label": "Rust E chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "A-19",
+            "label": "Rust E lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "A-20",
+            "label": "Rust F drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "A-21",
+            "label": "Rust F bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "A-22",
+            "label": "Rust F chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "A-23",
+            "label": "Rust F lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Rust A drums",
+            "part": "drums",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Rust A bass",
+            "part": "bass",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Rust A chords",
+            "part": "chords",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Rust A lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Rust B drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Rust B bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Rust B chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Rust B lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-b",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Rust C drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Rust C bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Rust C chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Rust C lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-c",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "B-12",
+            "label": "Rust D drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "B-13",
+            "label": "Rust D bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "B-14",
+            "label": "Rust D chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "B-15",
+            "label": "Rust D lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-d",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "B-16",
+            "label": "Rust E drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "B-17",
+            "label": "Rust E bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "B-18",
+            "label": "Rust E chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "B-19",
+            "label": "Rust E lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-e",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          },
+          {
+            "id": "B-20",
+            "label": "Rust F drums",
+            "part": "drums",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/drums.wav"
+          },
+          {
+            "id": "B-21",
+            "label": "Rust F bass",
+            "part": "bass",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/bass.wav"
+          },
+          {
+            "id": "B-22",
+            "label": "Rust F chords",
+            "part": "chords",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/chords.wav"
+          },
+          {
+            "id": "B-23",
+            "label": "Rust F lead",
+            "part": "percussion",
+            "kitSlug": "rust-kit-f",
+            "src": "/packs/colorosse/108/rust-kit/percussion.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "colorosse-timber-84",
+      "title": "Colorosse Timber 84",
+      "bpm": 84,
+      "license": "Colorosse (Oğuzhan Girgin) / CC-BY-4.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "Timber A bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "Timber A bass",
+            "part": "bass",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "Timber A chords",
+            "part": "chords",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "Timber A lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "Timber B bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "Timber B bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "Timber B chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "Timber B lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "Timber C bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "Timber C bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "Timber C chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "Timber C lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "A-12",
+            "label": "Timber D bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-13",
+            "label": "Timber D bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-14",
+            "label": "Timber D chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "A-15",
+            "label": "Timber D lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "A-16",
+            "label": "Timber E bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-17",
+            "label": "Timber E bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-18",
+            "label": "Timber E chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "A-19",
+            "label": "Timber E lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "A-20",
+            "label": "Timber F bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-21",
+            "label": "Timber F bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "A-22",
+            "label": "Timber F chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "A-23",
+            "label": "Timber F lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "Timber A bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "Timber A bass",
+            "part": "bass",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "Timber A chords",
+            "part": "chords",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "Timber A lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "Timber B bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "Timber B bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "Timber B chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "Timber B lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-b",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "Timber C bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "Timber C bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "Timber C chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "Timber C lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-c",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "B-12",
+            "label": "Timber D bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-13",
+            "label": "Timber D bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-14",
+            "label": "Timber D chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "B-15",
+            "label": "Timber D lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-d",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "B-16",
+            "label": "Timber E bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-17",
+            "label": "Timber E bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-18",
+            "label": "Timber E chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "B-19",
+            "label": "Timber E lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-e",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          },
+          {
+            "id": "B-20",
+            "label": "Timber F bass (drums slot)",
+            "part": "drums",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-21",
+            "label": "Timber F bass",
+            "part": "bass",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/bass.wav"
+          },
+          {
+            "id": "B-22",
+            "label": "Timber F chords",
+            "part": "chords",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/chords.wav"
+          },
+          {
+            "id": "B-23",
+            "label": "Timber F lead",
+            "part": "percussion",
+            "kitSlug": "timber-kit-f",
+            "src": "/packs/colorosse/84/timber-kit/percussion.wav"
+          }
+        ]
+      }
     }
   ],
   "sounds": []
