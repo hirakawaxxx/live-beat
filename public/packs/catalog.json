@@ -4523,7 +4523,711 @@
           }
         ]
       }
+    },
+    {
+      "id": "oga-ofdn-140",
+      "title": "OFDN Loop Box 140",
+      "bpm": 140,
+      "license": "Of Far Different Nature / CC-BY-4.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "A-12",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "A-13",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "A-14",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "A-15",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "A-16",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "A-17",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "A-18",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "A-19",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "A-20",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "A-21",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "A-22",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "A-23",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "B-12",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "B-13",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "B-14",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "B-15",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "B-16",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "B-17",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "B-18",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "B-19",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          },
+          {
+            "id": "B-20",
+            "label": "OFDN Just Do It",
+            "part": "chords",
+            "kitSlug": "just-do-it-kit",
+            "src": "/packs/oga-ofdn/140/just-do-it-kit/chords.wav"
+          },
+          {
+            "id": "B-21",
+            "label": "OFDN Nature Loop",
+            "part": "chords",
+            "kitSlug": "nature-loop-kit",
+            "src": "/packs/oga-ofdn/140/nature-loop-kit/chords.wav"
+          },
+          {
+            "id": "B-22",
+            "label": "OFDN Friendly Trap",
+            "part": "chords",
+            "kitSlug": "friendly-trap-kit",
+            "src": "/packs/oga-ofdn/140/friendly-trap-kit/chords.wav"
+          },
+          {
+            "id": "B-23",
+            "label": "OFDN Timed",
+            "part": "chords",
+            "kitSlug": "timed-kit",
+            "src": "/packs/oga-ofdn/140/timed-kit/chords.wav"
+          }
+        ]
+      }
+    },
+    {
+      "id": "oga-ofdn-130",
+      "title": "OFDN Loop Box 130",
+      "bpm": 130,
+      "license": "Of Far Different Nature / CC-BY-4.0",
+      "sides": {
+        "A": [
+          {
+            "id": "A-0",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-1",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-2",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-3",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-4",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-5",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-6",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-7",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-8",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-9",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-10",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-11",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-12",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-13",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-14",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-15",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-16",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-17",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-18",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-19",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-20",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-21",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "A-22",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "A-23",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          }
+        ],
+        "B": [
+          {
+            "id": "B-0",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-1",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-2",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-3",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-4",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-5",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-6",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-7",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-8",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-9",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-10",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-11",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-12",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-13",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-14",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-15",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-16",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-17",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-18",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-19",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-20",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-21",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          },
+          {
+            "id": "B-22",
+            "label": "OFDN 8-Bit Hero Quest",
+            "part": "chords",
+            "kitSlug": "hero-quest-kit",
+            "src": "/packs/oga-ofdn/130/hero-quest-kit/chords.wav"
+          },
+          {
+            "id": "B-23",
+            "label": "OFDN Act and Contemplate",
+            "part": "chords",
+            "kitSlug": "act-and-contemplate-kit",
+            "src": "/packs/oga-ofdn/130/act-and-contemplate-kit/chords.wav"
+          }
+        ]
+      }
     }
   ],
-  "sounds": []
+  "sounds": [
+    {
+      "src": "/packs/oga-ofdn/128/choppin-kit/chords.wav",
+      "label": "Choppin chords",
+      "part": "chords",
+      "kitSlug": "choppin-kit",
+      "bpm": 128
+    }
+  ]
 }

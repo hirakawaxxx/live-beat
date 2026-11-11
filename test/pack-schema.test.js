@@ -107,7 +107,7 @@ describe('shipped catalog.json', () => {
       [
         'colorosse-128', 'colorosse-152', 'colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108',
         'colorosse-timber-84', 'cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96',
-        'pulse-120', 'pulse-140', 'pulse-96',
+        'oga-ofdn-130', 'oga-ofdn-140', 'pulse-120', 'pulse-140', 'pulse-96',
       ],
     );
     for (const pack of parsed.packs) {
@@ -194,8 +194,19 @@ describe('shipped catalog.json', () => {
     assert.deepEqual(packs.map((p) => p.bpm).sort((a, b) => a - b), [52, 62, 84, 108]);
   });
 
+  test('OFDN packs: CC-BY-4.0 license, full-mix loops under oga-ofdn/{bpm}', () => {
+    const packs = assertCatalog(catalog).packs.filter((p) => p.id.startsWith('oga-ofdn-'));
+    assert.deepEqual(packs.map((p) => p.bpm).sort(), [130, 140]);
+    for (const pack of packs) {
+      assert.match(pack.license, /CC-BY-4\.0/);
+      for (const pad of [...pack.sides.A, ...pack.sides.B]) {
+        assert.match(pad.src, new RegExp(`^/packs/oga-ofdn/${pack.bpm}/[a-z0-9-]+-kit/chords\\.wav$`));
+      }
+    }
+  });
+
   test('every CC-BY pack has a license file for its source loop', () => {
-    const licenses = ['colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108', 'colorosse-timber-84'];
+    const licenses = ['colorosse-anvil-62', 'colorosse-prism-52', 'colorosse-rust-108', 'colorosse-timber-84', 'oga-ofdn-loop-box-1'];
     for (const name of licenses) {
       const url = new URL(`../public/packs/licenses/${name}.txt`, import.meta.url);
       assert.match(readFileSync(url, 'utf8'), /CC-BY-4\.0|Attribution 4\.0/);
