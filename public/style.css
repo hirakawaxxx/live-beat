@@ -136,6 +136,40 @@ main {
   margin-top: auto;
 }
 
+.footer a,
+.credits a {
+  color: var(--color-text);
+}
+
+/* Credits page */
+.credits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.credits__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.credits__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credits__list li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  overflow-wrap: anywhere;
+}
+
 /* Play page */
 #transport .ui-button {
   padding: 0 var(--space-5);
