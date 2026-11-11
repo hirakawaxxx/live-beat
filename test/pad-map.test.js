@@ -11,6 +11,8 @@ import {
   withOverride,
   withoutOverride,
 } from '../public/js/pad-map.js';
+import { readFileSync } from 'node:fs';
+import { PADS_PER_SIDE, assertCatalog } from '../public/js/pack-schema.js';
 
 const pad = (id, part, src, label = id) => ({ id, label, part, kitSlug: 'kit', src });
 const makePack = (id, bpm, prefix) => ({
@@ -161,5 +163,39 @@ describe('storage', () => {
   test('setItem failure returns false', () => {
     const storage = { getItem: () => null, setItem: () => { throw new Error('quota'); } };
     assert.equal(saveOverrides(storage, 'p120', withOverride(emptyOverrides(), 'A', p120.sides.A[0], target)), false);
+  });
+});
+
+describe('24-pad packs (shipped catalog)', () => {
+  const shipped = assertCatalog(JSON.parse(readFileSync(new URL('../public/packs/catalog.json', import.meta.url), 'utf8')));
+  const pack = shipped.packs.find((p) => p.id === 'pulse-120');
+  const index = buildSoundIndex(shipped, pack.bpm);
+
+  test('effectivePads yields 24 pads per side with ids 0..23', () => {
+    for (const side of ['A', 'B']) {
+      const pads = effectivePads(pack, emptyOverrides(), side);
+      assert.deepEqual(pads.map((p) => p.id), Array.from({ length: PADS_PER_SIDE }, (_, i) => `${side}-${i}`));
+    }
+  });
+
+  test('legacy 12-pad overrides still apply to A-0..A-11; extra pads keep defaults', () => {
+    const legacyTarget = index.find((s) => s.src !== pack.sides.A[0].src && s.part === 'drums');
+    const storage = new MemoryStorage({
+      [STORAGE_KEY]: JSON.stringify({ [pack.id]: { A: { 'A-0': { src: legacyTarget.src }, 'A-11': { src: legacyTarget.src } }, B: {} } }),
+    });
+    const overrides = loadOverrides(storage, pack, index);
+    assert.deepEqual(Object.keys(overrides.A).sort(), ['A-0', 'A-11']);
+    const pads = effectivePads(pack, overrides, 'A');
+    assert.equal(pads.length, PADS_PER_SIDE);
+    assert.equal(pads[0].src, legacyTarget.src);
+    assert.equal(pads[11].src, legacyTarget.src);
+    for (let i = 12; i < PADS_PER_SIDE; i += 1) assert.equal(pads[i].src, pack.sides.A[i].src);
+  });
+
+  test('overrides can target the new pads A-12..A-23', () => {
+    const target = index.find((s) => s.src !== pack.sides.A[23].src);
+    const next = withOverride(emptyOverrides(), 'A', pack.sides.A[23], target);
+    assert.equal(effectivePads(pack, next, 'A')[23].src, target.src);
+    assert.deepEqual(loadOverrides(new MemoryStorage({ [STORAGE_KEY]: JSON.stringify({ [pack.id]: next }) }), pack, index).A['A-23'], target);
   });
 });

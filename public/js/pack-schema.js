@@ -1,6 +1,6 @@
 const PARTS = ['drums', 'bass', 'chords', 'percussion'];
 const SIDES = ['A', 'B'];
-const PADS_PER_SIDE = 12;
+export const PADS_PER_SIDE = 24; // visual 4 columns x 6 rows
 
 const fail = (path, message) => {
   throw new Error(`Invalid catalog at ${path}: ${message}`);

@@ -1,7 +1,7 @@
 import { describe, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { assertCatalog } from '../public/js/pack-schema.js';
+import { PADS_PER_SIDE, assertCatalog } from '../public/js/pack-schema.js';
 
 const PARTS = ['drums', 'bass', 'chords', 'percussion'];
 
@@ -13,7 +13,7 @@ const minimalPad = (i, side) => ({
   src: `/packs/120/copper-step/drums.wav`,
 });
 
-const pads = (side) => Array.from({ length: 12 }, (_, i) => minimalPad(i, side));
+const pads = (side) => Array.from({ length: PADS_PER_SIDE }, (_, i) => minimalPad(i, side));
 
 const validCatalog = () => ({
   packs: [{
@@ -32,11 +32,20 @@ describe('assertCatalog', () => {
     assert.equal(assertCatalog(validCatalog()).packs.length, 1);
   });
 
-  test('rejects a side that is not 12 pads', () => {
+  test('PADS_PER_SIDE is 24 (4 columns x 6 rows)', () => {
+    assert.equal(PADS_PER_SIDE, 24);
+  });
+
+  test('rejects a legacy 12-pad side', () => {
+    const twelve = (side) => Array.from({ length: 12 }, (_, i) => minimalPad(i, side));
+    assert.throws(() => assertCatalog(withSides({ A: twelve('A'), B: twelve('B') })), /24 pads/);
+  });
+
+  test('rejects a side that is not 24 pads', () => {
     assert.throws(() => assertCatalog({
       packs: [{
         id: 'x', title: 'x', bpm: 120, license: 'CC0',
-        sides: { A: [minimalPad(0, 'A')], B: Array.from({ length: 12 }, (_, i) => minimalPad(i, 'B')) },
+        sides: { A: [minimalPad(0, 'A')], B: Array.from({ length: PADS_PER_SIDE }, (_, i) => minimalPad(i, 'B')) },
       }],
     }));
   });
@@ -98,15 +107,19 @@ describe('shipped catalog.json', () => {
       ['colorosse-128', 'colorosse-152', 'cueharbor-100', 'cueharbor-120', 'cueharbor-90', 'cueharbor-96', 'pulse-120', 'pulse-140', 'pulse-96'],
     );
     for (const pack of parsed.packs) {
-      assert.equal(pack.sides.A.length, 12);
-      assert.equal(pack.sides.B.length, 12);
+      assert.equal(pack.sides.A.length, PADS_PER_SIDE);
+      assert.equal(pack.sides.B.length, PADS_PER_SIDE);
     }
   });
 
-  test('pulse packs follow kit assignment, part order and src convention', () => {
-    const kits = { A: ['copper-step', 'ember-weave', 'glass-orbit'], B: ['ion-bloom', 'rust-arc', 'velvet-grid'] };
+  test('pulse packs: A has six distinct kits, B reuses four of them, same src convention', () => {
+    const kits = {
+      A: ['copper-step', 'ember-weave', 'glass-orbit', 'ion-bloom', 'lunar-relay', 'prism-current'],
+      B: ['rust-arc', 'velvet-grid', 'copper-step', 'ember-weave', 'glass-orbit', 'ion-bloom'],
+    };
     for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('pulse-'))) {
       for (const side of ['A', 'B']) {
+        assert.equal(new Set(pack.sides[side].map((pad) => pad.src)).size, PADS_PER_SIDE);
         pack.sides[side].forEach((pad, i) => {
           assert.equal(pad.kitSlug, kits[side][Math.floor(i / 4)]);
           assert.equal(pad.part, PARTS[i % 4]);
@@ -117,8 +130,8 @@ describe('shipped catalog.json', () => {
     }
   });
 
-  test('CueHarbor packs use three kits per side and the cueharbor src convention', () => {
-    const expected = {
+  test('CueHarbor packs repeat three kits twice per side (six kit rows) with the cueharbor src convention', () => {
+    const base = {
       'cueharbor-120': ['rock-kit', 'top-kit', 'arcade-kit'],
       'cueharbor-100': ['funk-kit', 'latin-kit', 'groove-kit'],
       'cueharbor-90': ['rock-kit', 'arcade-kit', 'keys-kit'],
@@ -127,9 +140,10 @@ describe('shipped catalog.json', () => {
     const packs = assertCatalog(catalog).packs.filter((p) => p.id.startsWith('cueharbor-'));
     assert.equal(packs.length, 4);
     for (const pack of packs) {
+      const rows = [...base[pack.id], ...base[pack.id]];
       for (const side of ['A', 'B']) {
         pack.sides[side].forEach((pad, i) => {
-          assert.equal(pad.kitSlug, expected[pack.id][Math.floor(i / 4)]);
+          assert.equal(pad.kitSlug, rows[Math.floor(i / 4)]);
           assert.equal(pad.part, PARTS[i % 4]);
           assert.equal(pad.src, `/packs/cueharbor/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
           assert.equal(pad.id, `${side}-${i}`);
@@ -138,11 +152,11 @@ describe('shipped catalog.json', () => {
     }
   });
 
-  test('Colorosse packs use three kit slugs per side sharing one kit folder', () => {
+  test('Colorosse packs use six kit slugs per side sharing one kit folder', () => {
     const folders = { 'colorosse-152': 'arcade-kit', 'colorosse-128': 'vellum-kit' };
     for (const pack of assertCatalog(catalog).packs.filter((p) => p.id.startsWith('colorosse-'))) {
       for (const side of ['A', 'B']) {
-        assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 3);
+        assert.equal(new Set(pack.sides[side].map((pad) => pad.kitSlug)).size, 6);
         pack.sides[side].forEach((pad, i) => {
           assert.equal(pad.part, PARTS[i % 4]);
           assert.equal(pad.src, `/packs/colorosse/${pack.bpm}/${folders[pack.id]}/${pad.part}.wav`);
@@ -155,7 +169,7 @@ describe('shipped catalog.json', () => {
   test('every indexed on-disk sound exists, matches a pack BPM and is unused by pads', () => {
     const parsed = assertCatalog(catalog);
     const padSrcs = new Set(parsed.packs.flatMap((p) => [...p.sides.A, ...p.sides.B].map((pad) => pad.src)));
-    assert.ok(parsed.sounds.length > 0);
+    assert.ok(Array.isArray(parsed.sounds));
     for (const sound of parsed.sounds) {
       assert.ok(existsSync(publicFile(sound.src)), `missing ${sound.src}`);
       assert.ok(parsed.packs.some((p) => p.bpm === sound.bpm), `no pack at ${sound.bpm} BPM`);
