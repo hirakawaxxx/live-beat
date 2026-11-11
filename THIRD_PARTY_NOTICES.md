@@ -9,7 +9,7 @@ License, Version 1.1. See `public/fonts/OFL.txt`.
 ## Loops — MuseScore_General SoundFont (MIT)
 
 Every loop under `public/packs/originals/` is an original note pattern written
-for live-beat (`scripts/render-originals.py`) and rendered to WAV with
+for live-beat (`scripts/render-originals.py`) and rendered to FLAC with
 FluidSynth using the MuseScore_General SoundFont. The SoundFont itself is not
 shipped; only the rendered audio is.
 
@@ -20,7 +20,7 @@ shipped; only the rendered audio is.
 - Source URL:
   `https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/MuseScore_General.sf3`
 - License text: `public/packs/licenses/musescore-general.txt`
-- Layout: `public/packs/originals/{tempo}/{kit}/{part}.wav`
+- Layout: `public/packs/originals/{tempo}/{kit}/{part}.flac`
 
 ## Credits page
 

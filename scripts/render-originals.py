@@ -11,7 +11,7 @@
 # Needs: fluidsynth on PATH, and the SoundFont at .soundfonts/MuseScore_General.sf3
 #   (https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/MuseScore_General.sf3, MIT)
 # Run:   uv run scripts/render-originals.py
-# Output: public/packs/originals/{tempo}/{kit}/{part}.wav and public/packs/catalog.json
+# Output: public/packs/originals/{tempo}/{kit}/{part}.flac and public/packs/catalog.json
 import json
 import shutil
 import subprocess
@@ -541,7 +541,7 @@ def side_pads(pack: dict, loops: dict, side: str, first: int) -> list:
                 "label": loops[part][first + k][0],
                 "part": part,
                 "kitSlug": kit,
-                "src": f"/packs/originals/{pack['bpm']}/{kit}/{part}.wav",
+                "src": f"/packs/originals/{pack['bpm']}/{kit}/{part}.flac",
             }
     return pads
 
@@ -560,7 +560,7 @@ def main() -> None:
         for part, items in loops.items():
             assert len(items) == len(pack["kits"]), (pack["id"], part)
             for kit, (label, program, (notes, loop_steps)) in zip(pack["kits"], items):
-                out = OUT_DIR / str(pack["bpm"]) / kit / f"{part}.wav"
+                out = OUT_DIR / str(pack["bpm"]) / kit / f"{part}.flac"
                 render(notes, loop_steps, program, part, pack, out)
                 print(f"{out.relative_to(ROOT)}: {label}, {loop_steps / 4:g} beats")
         entries.append({

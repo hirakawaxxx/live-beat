@@ -13,168 +13,168 @@
             "label": "House",
             "part": "drums",
             "kitSlug": "dawn",
-            "src": "/packs/originals/120/dawn/drums.wav"
+            "src": "/packs/originals/120/dawn/drums.flac"
           },
           {
             "id": "A-1",
             "label": "Boom Bap",
             "part": "drums",
             "kitSlug": "harbor",
-            "src": "/packs/originals/120/harbor/drums.wav"
+            "src": "/packs/originals/120/harbor/drums.flac"
           },
           {
             "id": "A-2",
             "label": "Octave",
             "part": "bass",
             "kitSlug": "dawn",
-            "src": "/packs/originals/120/dawn/bass.wav"
+            "src": "/packs/originals/120/dawn/bass.flac"
           },
           {
             "id": "A-3",
             "label": "Finger",
             "part": "bass",
             "kitSlug": "harbor",
-            "src": "/packs/originals/120/harbor/bass.wav"
+            "src": "/packs/originals/120/harbor/bass.flac"
           },
           {
             "id": "A-4",
             "label": "Rock",
             "part": "drums",
             "kitSlug": "lantern",
-            "src": "/packs/originals/120/lantern/drums.wav"
+            "src": "/packs/originals/120/lantern/drums.flac"
           },
           {
             "id": "A-5",
             "label": "Half Time",
             "part": "drums",
             "kitSlug": "meadow",
-            "src": "/packs/originals/120/meadow/drums.wav"
+            "src": "/packs/originals/120/meadow/drums.flac"
           },
           {
             "id": "A-6",
             "label": "Pick 8ths",
             "part": "bass",
             "kitSlug": "lantern",
-            "src": "/packs/originals/120/lantern/bass.wav"
+            "src": "/packs/originals/120/lantern/bass.flac"
           },
           {
             "id": "A-7",
             "label": "Sub",
             "part": "bass",
             "kitSlug": "meadow",
-            "src": "/packs/originals/120/meadow/bass.wav"
+            "src": "/packs/originals/120/meadow/bass.flac"
           },
           {
             "id": "A-8",
             "label": "Warm Pad",
             "part": "chords",
             "kitSlug": "dawn",
-            "src": "/packs/originals/120/dawn/chords.wav"
+            "src": "/packs/originals/120/dawn/chords.flac"
           },
           {
             "id": "A-9",
             "label": "E-Piano",
             "part": "chords",
             "kitSlug": "harbor",
-            "src": "/packs/originals/120/harbor/chords.wav"
+            "src": "/packs/originals/120/harbor/chords.flac"
           },
           {
             "id": "A-10",
             "label": "Piano Arp",
             "part": "melody",
             "kitSlug": "dawn",
-            "src": "/packs/originals/120/dawn/melody.wav"
+            "src": "/packs/originals/120/dawn/melody.flac"
           },
           {
             "id": "A-11",
             "label": "Guitar Arp",
             "part": "melody",
             "kitSlug": "harbor",
-            "src": "/packs/originals/120/harbor/melody.wav"
+            "src": "/packs/originals/120/harbor/melody.flac"
           },
           {
             "id": "A-12",
             "label": "Organ",
             "part": "chords",
             "kitSlug": "lantern",
-            "src": "/packs/originals/120/lantern/chords.wav"
+            "src": "/packs/originals/120/lantern/chords.flac"
           },
           {
             "id": "A-13",
             "label": "Strings",
             "part": "chords",
             "kitSlug": "meadow",
-            "src": "/packs/originals/120/meadow/chords.wav"
+            "src": "/packs/originals/120/meadow/chords.flac"
           },
           {
             "id": "A-14",
             "label": "Saw Arp",
             "part": "melody",
             "kitSlug": "lantern",
-            "src": "/packs/originals/120/lantern/melody.wav"
+            "src": "/packs/originals/120/lantern/melody.flac"
           },
           {
             "id": "A-15",
             "label": "Harp",
             "part": "melody",
             "kitSlug": "meadow",
-            "src": "/packs/originals/120/meadow/melody.wav"
+            "src": "/packs/originals/120/meadow/melody.flac"
           },
           {
             "id": "A-16",
             "label": "Shaker",
             "part": "percussion",
             "kitSlug": "dawn",
-            "src": "/packs/originals/120/dawn/percussion.wav"
+            "src": "/packs/originals/120/dawn/percussion.flac"
           },
           {
             "id": "A-17",
             "label": "Tambourine",
             "part": "percussion",
             "kitSlug": "harbor",
-            "src": "/packs/originals/120/harbor/percussion.wav"
+            "src": "/packs/originals/120/harbor/percussion.flac"
           },
           {
             "id": "A-18",
             "label": "Aahs",
             "part": "voice",
             "kitSlug": "dawn",
-            "src": "/packs/originals/120/dawn/voice.wav"
+            "src": "/packs/originals/120/dawn/voice.flac"
           },
           {
             "id": "A-19",
             "label": "Oohs",
             "part": "voice",
             "kitSlug": "harbor",
-            "src": "/packs/originals/120/harbor/voice.wav"
+            "src": "/packs/originals/120/harbor/voice.flac"
           },
           {
             "id": "A-20",
             "label": "Congas",
             "part": "percussion",
             "kitSlug": "lantern",
-            "src": "/packs/originals/120/lantern/percussion.wav"
+            "src": "/packs/originals/120/lantern/percussion.flac"
           },
           {
             "id": "A-21",
             "label": "Bongos",
             "part": "percussion",
             "kitSlug": "meadow",
-            "src": "/packs/originals/120/meadow/percussion.wav"
+            "src": "/packs/originals/120/meadow/percussion.flac"
           },
           {
             "id": "A-22",
             "label": "Synth Voice",
             "part": "voice",
             "kitSlug": "lantern",
-            "src": "/packs/originals/120/lantern/voice.wav"
+            "src": "/packs/originals/120/lantern/voice.flac"
           },
           {
             "id": "A-23",
             "label": "Aah Line",
             "part": "voice",
             "kitSlug": "meadow",
-            "src": "/packs/originals/120/meadow/voice.wav"
+            "src": "/packs/originals/120/meadow/voice.flac"
           }
         ],
         "B": [
@@ -183,168 +183,168 @@
             "label": "Funk",
             "part": "drums",
             "kitSlug": "nimbus",
-            "src": "/packs/originals/120/nimbus/drums.wav"
+            "src": "/packs/originals/120/nimbus/drums.flac"
           },
           {
             "id": "B-1",
             "label": "Disco",
             "part": "drums",
             "kitSlug": "orchard",
-            "src": "/packs/originals/120/orchard/drums.wav"
+            "src": "/packs/originals/120/orchard/drums.flac"
           },
           {
             "id": "B-2",
             "label": "Slap",
             "part": "bass",
             "kitSlug": "nimbus",
-            "src": "/packs/originals/120/nimbus/bass.wav"
+            "src": "/packs/originals/120/nimbus/bass.flac"
           },
           {
             "id": "B-3",
             "label": "Pump",
             "part": "bass",
             "kitSlug": "orchard",
-            "src": "/packs/originals/120/orchard/bass.wav"
+            "src": "/packs/originals/120/orchard/bass.flac"
           },
           {
             "id": "B-4",
             "label": "Break",
             "part": "drums",
             "kitSlug": "pebble",
-            "src": "/packs/originals/120/pebble/drums.wav"
+            "src": "/packs/originals/120/pebble/drums.flac"
           },
           {
             "id": "B-5",
             "label": "Electro",
             "part": "drums",
             "kitSlug": "quartz",
-            "src": "/packs/originals/120/quartz/drums.wav"
+            "src": "/packs/originals/120/quartz/drums.flac"
           },
           {
             "id": "B-6",
             "label": "Walking",
             "part": "bass",
             "kitSlug": "pebble",
-            "src": "/packs/originals/120/pebble/bass.wav"
+            "src": "/packs/originals/120/pebble/bass.flac"
           },
           {
             "id": "B-7",
             "label": "Pulse",
             "part": "bass",
             "kitSlug": "quartz",
-            "src": "/packs/originals/120/quartz/bass.wav"
+            "src": "/packs/originals/120/quartz/bass.flac"
           },
           {
             "id": "B-8",
             "label": "Vibes",
             "part": "chords",
             "kitSlug": "nimbus",
-            "src": "/packs/originals/120/nimbus/chords.wav"
+            "src": "/packs/originals/120/nimbus/chords.flac"
           },
           {
             "id": "B-9",
             "label": "Rhodes",
             "part": "chords",
             "kitSlug": "orchard",
-            "src": "/packs/originals/120/orchard/chords.wav"
+            "src": "/packs/originals/120/orchard/chords.flac"
           },
           {
             "id": "B-10",
             "label": "Marimba",
             "part": "melody",
             "kitSlug": "nimbus",
-            "src": "/packs/originals/120/nimbus/melody.wav"
+            "src": "/packs/originals/120/nimbus/melody.flac"
           },
           {
             "id": "B-11",
             "label": "Flute",
             "part": "melody",
             "kitSlug": "orchard",
-            "src": "/packs/originals/120/orchard/melody.wav"
+            "src": "/packs/originals/120/orchard/melody.flac"
           },
           {
             "id": "B-12",
             "label": "Skank",
             "part": "chords",
             "kitSlug": "pebble",
-            "src": "/packs/originals/120/pebble/chords.wav"
+            "src": "/packs/originals/120/pebble/chords.flac"
           },
           {
             "id": "B-13",
             "label": "Brass",
             "part": "chords",
             "kitSlug": "quartz",
-            "src": "/packs/originals/120/quartz/chords.wav"
+            "src": "/packs/originals/120/quartz/chords.flac"
           },
           {
             "id": "B-14",
             "label": "Glocken",
             "part": "melody",
             "kitSlug": "pebble",
-            "src": "/packs/originals/120/pebble/melody.wav"
+            "src": "/packs/originals/120/pebble/melody.flac"
           },
           {
             "id": "B-15",
             "label": "Square",
             "part": "melody",
             "kitSlug": "quartz",
-            "src": "/packs/originals/120/quartz/melody.wav"
+            "src": "/packs/originals/120/quartz/melody.flac"
           },
           {
             "id": "B-16",
             "label": "Cowbell",
             "part": "percussion",
             "kitSlug": "nimbus",
-            "src": "/packs/originals/120/nimbus/percussion.wav"
+            "src": "/packs/originals/120/nimbus/percussion.flac"
           },
           {
             "id": "B-17",
             "label": "Claves",
             "part": "percussion",
             "kitSlug": "orchard",
-            "src": "/packs/originals/120/orchard/percussion.wav"
+            "src": "/packs/originals/120/orchard/percussion.flac"
           },
           {
             "id": "B-18",
             "label": "Ooh Pulse",
             "part": "voice",
             "kitSlug": "nimbus",
-            "src": "/packs/originals/120/nimbus/voice.wav"
+            "src": "/packs/originals/120/nimbus/voice.flac"
           },
           {
             "id": "B-19",
             "label": "Choir Pad",
             "part": "voice",
             "kitSlug": "orchard",
-            "src": "/packs/originals/120/orchard/voice.wav"
+            "src": "/packs/originals/120/orchard/voice.flac"
           },
           {
             "id": "B-20",
             "label": "Cabasa",
             "part": "percussion",
             "kitSlug": "pebble",
-            "src": "/packs/originals/120/pebble/percussion.wav"
+            "src": "/packs/originals/120/pebble/percussion.flac"
           },
           {
             "id": "B-21",
             "label": "Blocks",
             "part": "percussion",
             "kitSlug": "quartz",
-            "src": "/packs/originals/120/quartz/percussion.wav"
+            "src": "/packs/originals/120/quartz/percussion.flac"
           },
           {
             "id": "B-22",
             "label": "Voice Arp",
             "part": "voice",
             "kitSlug": "pebble",
-            "src": "/packs/originals/120/pebble/voice.wav"
+            "src": "/packs/originals/120/pebble/voice.flac"
           },
           {
             "id": "B-23",
             "label": "Ooh Sigh",
             "part": "voice",
             "kitSlug": "quartz",
-            "src": "/packs/originals/120/quartz/voice.wav"
+            "src": "/packs/originals/120/quartz/voice.flac"
           }
         ]
       }
@@ -362,168 +362,168 @@
             "label": "Trap",
             "part": "drums",
             "kitSlug": "hiphop-1",
-            "src": "/packs/originals/90/hiphop-1/drums.wav"
+            "src": "/packs/originals/90/hiphop-1/drums.flac"
           },
           {
             "id": "A-1",
             "label": "Boom",
             "part": "drums",
             "kitSlug": "hiphop-2",
-            "src": "/packs/originals/90/hiphop-2/drums.wav"
+            "src": "/packs/originals/90/hiphop-2/drums.flac"
           },
           {
             "id": "A-2",
             "label": "Sub Long",
             "part": "bass",
             "kitSlug": "hiphop-1",
-            "src": "/packs/originals/90/hiphop-1/bass.wav"
+            "src": "/packs/originals/90/hiphop-1/bass.flac"
           },
           {
             "id": "A-3",
             "label": "Sub Bounce",
             "part": "bass",
             "kitSlug": "hiphop-2",
-            "src": "/packs/originals/90/hiphop-2/bass.wav"
+            "src": "/packs/originals/90/hiphop-2/bass.flac"
           },
           {
             "id": "A-4",
             "label": "Bounce",
             "part": "drums",
             "kitSlug": "hiphop-3",
-            "src": "/packs/originals/90/hiphop-3/drums.wav"
+            "src": "/packs/originals/90/hiphop-3/drums.flac"
           },
           {
             "id": "A-5",
             "label": "Sparse",
             "part": "drums",
             "kitSlug": "hiphop-4",
-            "src": "/packs/originals/90/hiphop-4/drums.wav"
+            "src": "/packs/originals/90/hiphop-4/drums.flac"
           },
           {
             "id": "A-6",
             "label": "Octave Drop",
             "part": "bass",
             "kitSlug": "hiphop-3",
-            "src": "/packs/originals/90/hiphop-3/bass.wav"
+            "src": "/packs/originals/90/hiphop-3/bass.flac"
           },
           {
             "id": "A-7",
             "label": "Slide",
             "part": "bass",
             "kitSlug": "hiphop-4",
-            "src": "/packs/originals/90/hiphop-4/bass.wav"
+            "src": "/packs/originals/90/hiphop-4/bass.flac"
           },
           {
             "id": "A-8",
             "label": "Dark Pad",
             "part": "chords",
             "kitSlug": "hiphop-1",
-            "src": "/packs/originals/90/hiphop-1/chords.wav"
+            "src": "/packs/originals/90/hiphop-1/chords.flac"
           },
           {
             "id": "A-9",
             "label": "Piano",
             "part": "chords",
             "kitSlug": "hiphop-2",
-            "src": "/packs/originals/90/hiphop-2/chords.wav"
+            "src": "/packs/originals/90/hiphop-2/chords.flac"
           },
           {
             "id": "A-10",
             "label": "Music Box",
             "part": "melody",
             "kitSlug": "hiphop-1",
-            "src": "/packs/originals/90/hiphop-1/melody.wav"
+            "src": "/packs/originals/90/hiphop-1/melody.flac"
           },
           {
             "id": "A-11",
             "label": "Piano Riff",
             "part": "melody",
             "kitSlug": "hiphop-2",
-            "src": "/packs/originals/90/hiphop-2/melody.wav"
+            "src": "/packs/originals/90/hiphop-2/melody.flac"
           },
           {
             "id": "A-12",
             "label": "Strings",
             "part": "chords",
             "kitSlug": "hiphop-3",
-            "src": "/packs/originals/90/hiphop-3/chords.wav"
+            "src": "/packs/originals/90/hiphop-3/chords.flac"
           },
           {
             "id": "A-13",
             "label": "E-Piano",
             "part": "chords",
             "kitSlug": "hiphop-4",
-            "src": "/packs/originals/90/hiphop-4/chords.wav"
+            "src": "/packs/originals/90/hiphop-4/chords.flac"
           },
           {
             "id": "A-14",
             "label": "Flute",
             "part": "melody",
             "kitSlug": "hiphop-3",
-            "src": "/packs/originals/90/hiphop-3/melody.wav"
+            "src": "/packs/originals/90/hiphop-3/melody.flac"
           },
           {
             "id": "A-15",
             "label": "Koto",
             "part": "melody",
             "kitSlug": "hiphop-4",
-            "src": "/packs/originals/90/hiphop-4/melody.wav"
+            "src": "/packs/originals/90/hiphop-4/melody.flac"
           },
           {
             "id": "A-16",
             "label": "Hat Roll",
             "part": "percussion",
             "kitSlug": "hiphop-1",
-            "src": "/packs/originals/90/hiphop-1/percussion.wav"
+            "src": "/packs/originals/90/hiphop-1/percussion.flac"
           },
           {
             "id": "A-17",
             "label": "Cowbell",
             "part": "percussion",
             "kitSlug": "hiphop-2",
-            "src": "/packs/originals/90/hiphop-2/percussion.wav"
+            "src": "/packs/originals/90/hiphop-2/percussion.flac"
           },
           {
             "id": "A-18",
             "label": "Aahs",
             "part": "voice",
             "kitSlug": "hiphop-1",
-            "src": "/packs/originals/90/hiphop-1/voice.wav"
+            "src": "/packs/originals/90/hiphop-1/voice.flac"
           },
           {
             "id": "A-19",
             "label": "Oohs",
             "part": "voice",
             "kitSlug": "hiphop-2",
-            "src": "/packs/originals/90/hiphop-2/voice.wav"
+            "src": "/packs/originals/90/hiphop-2/voice.flac"
           },
           {
             "id": "A-20",
             "label": "Claves",
             "part": "percussion",
             "kitSlug": "hiphop-3",
-            "src": "/packs/originals/90/hiphop-3/percussion.wav"
+            "src": "/packs/originals/90/hiphop-3/percussion.flac"
           },
           {
             "id": "A-21",
             "label": "Congas",
             "part": "percussion",
             "kitSlug": "hiphop-4",
-            "src": "/packs/originals/90/hiphop-4/percussion.wav"
+            "src": "/packs/originals/90/hiphop-4/percussion.flac"
           },
           {
             "id": "A-22",
             "label": "Synth Voice",
             "part": "voice",
             "kitSlug": "hiphop-3",
-            "src": "/packs/originals/90/hiphop-3/voice.wav"
+            "src": "/packs/originals/90/hiphop-3/voice.flac"
           },
           {
             "id": "A-23",
             "label": "Aah Line",
             "part": "voice",
             "kitSlug": "hiphop-4",
-            "src": "/packs/originals/90/hiphop-4/voice.wav"
+            "src": "/packs/originals/90/hiphop-4/voice.flac"
           }
         ],
         "B": [
@@ -532,168 +532,168 @@
             "label": "Drill",
             "part": "drums",
             "kitSlug": "hiphop-5",
-            "src": "/packs/originals/90/hiphop-5/drums.wav"
+            "src": "/packs/originals/90/hiphop-5/drums.flac"
           },
           {
             "id": "B-1",
             "label": "808 Clap",
             "part": "drums",
             "kitSlug": "hiphop-6",
-            "src": "/packs/originals/90/hiphop-6/drums.wav"
+            "src": "/packs/originals/90/hiphop-6/drums.flac"
           },
           {
             "id": "B-2",
             "label": "Finger",
             "part": "bass",
             "kitSlug": "hiphop-5",
-            "src": "/packs/originals/90/hiphop-5/bass.wav"
+            "src": "/packs/originals/90/hiphop-5/bass.flac"
           },
           {
             "id": "B-3",
             "label": "Stab",
             "part": "bass",
             "kitSlug": "hiphop-6",
-            "src": "/packs/originals/90/hiphop-6/bass.wav"
+            "src": "/packs/originals/90/hiphop-6/bass.flac"
           },
           {
             "id": "B-4",
             "label": "Swing Hat",
             "part": "drums",
             "kitSlug": "hiphop-7",
-            "src": "/packs/originals/90/hiphop-7/drums.wav"
+            "src": "/packs/originals/90/hiphop-7/drums.flac"
           },
           {
             "id": "B-5",
             "label": "Slow",
             "part": "drums",
             "kitSlug": "hiphop-8",
-            "src": "/packs/originals/90/hiphop-8/drums.wav"
+            "src": "/packs/originals/90/hiphop-8/drums.flac"
           },
           {
             "id": "B-6",
             "label": "Fretless",
             "part": "bass",
             "kitSlug": "hiphop-7",
-            "src": "/packs/originals/90/hiphop-7/bass.wav"
+            "src": "/packs/originals/90/hiphop-7/bass.flac"
           },
           {
             "id": "B-7",
             "label": "Pulse",
             "part": "bass",
             "kitSlug": "hiphop-8",
-            "src": "/packs/originals/90/hiphop-8/bass.wav"
+            "src": "/packs/originals/90/hiphop-8/bass.flac"
           },
           {
             "id": "B-8",
             "label": "Organ",
             "part": "chords",
             "kitSlug": "hiphop-5",
-            "src": "/packs/originals/90/hiphop-5/chords.wav"
+            "src": "/packs/originals/90/hiphop-5/chords.flac"
           },
           {
             "id": "B-9",
             "label": "Brass Hit",
             "part": "chords",
             "kitSlug": "hiphop-6",
-            "src": "/packs/originals/90/hiphop-6/chords.wav"
+            "src": "/packs/originals/90/hiphop-6/chords.flac"
           },
           {
             "id": "B-10",
             "label": "Square",
             "part": "melody",
             "kitSlug": "hiphop-5",
-            "src": "/packs/originals/90/hiphop-5/melody.wav"
+            "src": "/packs/originals/90/hiphop-5/melody.flac"
           },
           {
             "id": "B-11",
             "label": "Kalimba",
             "part": "melody",
             "kitSlug": "hiphop-6",
-            "src": "/packs/originals/90/hiphop-6/melody.wav"
+            "src": "/packs/originals/90/hiphop-6/melody.flac"
           },
           {
             "id": "B-12",
             "label": "Halo",
             "part": "chords",
             "kitSlug": "hiphop-7",
-            "src": "/packs/originals/90/hiphop-7/chords.wav"
+            "src": "/packs/originals/90/hiphop-7/chords.flac"
           },
           {
             "id": "B-13",
             "label": "Pizzicato",
             "part": "chords",
             "kitSlug": "hiphop-8",
-            "src": "/packs/originals/90/hiphop-8/chords.wav"
+            "src": "/packs/originals/90/hiphop-8/chords.flac"
           },
           {
             "id": "B-14",
             "label": "Whistle",
             "part": "melody",
             "kitSlug": "hiphop-7",
-            "src": "/packs/originals/90/hiphop-7/melody.wav"
+            "src": "/packs/originals/90/hiphop-7/melody.flac"
           },
           {
             "id": "B-15",
             "label": "Glocken",
             "part": "melody",
             "kitSlug": "hiphop-8",
-            "src": "/packs/originals/90/hiphop-8/melody.wav"
+            "src": "/packs/originals/90/hiphop-8/melody.flac"
           },
           {
             "id": "B-16",
             "label": "Maracas",
             "part": "percussion",
             "kitSlug": "hiphop-5",
-            "src": "/packs/originals/90/hiphop-5/percussion.wav"
+            "src": "/packs/originals/90/hiphop-5/percussion.flac"
           },
           {
             "id": "B-17",
             "label": "Rim",
             "part": "percussion",
             "kitSlug": "hiphop-6",
-            "src": "/packs/originals/90/hiphop-6/percussion.wav"
+            "src": "/packs/originals/90/hiphop-6/percussion.flac"
           },
           {
             "id": "B-18",
             "label": "Ooh Pulse",
             "part": "voice",
             "kitSlug": "hiphop-5",
-            "src": "/packs/originals/90/hiphop-5/voice.wav"
+            "src": "/packs/originals/90/hiphop-5/voice.flac"
           },
           {
             "id": "B-19",
             "label": "Choir Pad",
             "part": "voice",
             "kitSlug": "hiphop-6",
-            "src": "/packs/originals/90/hiphop-6/voice.wav"
+            "src": "/packs/originals/90/hiphop-6/voice.flac"
           },
           {
             "id": "B-20",
             "label": "Tom Fill",
             "part": "percussion",
             "kitSlug": "hiphop-7",
-            "src": "/packs/originals/90/hiphop-7/percussion.wav"
+            "src": "/packs/originals/90/hiphop-7/percussion.flac"
           },
           {
             "id": "B-21",
             "label": "Shaker",
             "part": "percussion",
             "kitSlug": "hiphop-8",
-            "src": "/packs/originals/90/hiphop-8/percussion.wav"
+            "src": "/packs/originals/90/hiphop-8/percussion.flac"
           },
           {
             "id": "B-22",
             "label": "Voice Arp",
             "part": "voice",
             "kitSlug": "hiphop-7",
-            "src": "/packs/originals/90/hiphop-7/voice.wav"
+            "src": "/packs/originals/90/hiphop-7/voice.flac"
           },
           {
             "id": "B-23",
             "label": "Ooh Sigh",
             "part": "voice",
             "kitSlug": "hiphop-8",
-            "src": "/packs/originals/90/hiphop-8/voice.wav"
+            "src": "/packs/originals/90/hiphop-8/voice.flac"
           }
         ]
       }
@@ -711,168 +711,168 @@
             "label": "Dusty",
             "part": "drums",
             "kitSlug": "lofi-1",
-            "src": "/packs/originals/80/lofi-1/drums.wav"
+            "src": "/packs/originals/80/lofi-1/drums.flac"
           },
           {
             "id": "A-1",
             "label": "Lazy",
             "part": "drums",
             "kitSlug": "lofi-2",
-            "src": "/packs/originals/80/lofi-2/drums.wav"
+            "src": "/packs/originals/80/lofi-2/drums.flac"
           },
           {
             "id": "A-2",
             "label": "Upright",
             "part": "bass",
             "kitSlug": "lofi-1",
-            "src": "/packs/originals/80/lofi-1/bass.wav"
+            "src": "/packs/originals/80/lofi-1/bass.flac"
           },
           {
             "id": "A-3",
             "label": "Walk",
             "part": "bass",
             "kitSlug": "lofi-2",
-            "src": "/packs/originals/80/lofi-2/bass.wav"
+            "src": "/packs/originals/80/lofi-2/bass.flac"
           },
           {
             "id": "A-4",
             "label": "Ride",
             "part": "drums",
             "kitSlug": "lofi-3",
-            "src": "/packs/originals/80/lofi-3/drums.wav"
+            "src": "/packs/originals/80/lofi-3/drums.flac"
           },
           {
             "id": "A-5",
             "label": "Bap",
             "part": "drums",
             "kitSlug": "lofi-4",
-            "src": "/packs/originals/80/lofi-4/drums.wav"
+            "src": "/packs/originals/80/lofi-4/drums.flac"
           },
           {
             "id": "A-6",
             "label": "Lazy",
             "part": "bass",
             "kitSlug": "lofi-3",
-            "src": "/packs/originals/80/lofi-3/bass.wav"
+            "src": "/packs/originals/80/lofi-3/bass.flac"
           },
           {
             "id": "A-7",
             "label": "Fretless",
             "part": "bass",
             "kitSlug": "lofi-4",
-            "src": "/packs/originals/80/lofi-4/bass.wav"
+            "src": "/packs/originals/80/lofi-4/bass.flac"
           },
           {
             "id": "A-8",
             "label": "Rhodes",
             "part": "chords",
             "kitSlug": "lofi-1",
-            "src": "/packs/originals/80/lofi-1/chords.wav"
+            "src": "/packs/originals/80/lofi-1/chords.flac"
           },
           {
             "id": "A-9",
             "label": "Rhodes Stab",
             "part": "chords",
             "kitSlug": "lofi-2",
-            "src": "/packs/originals/80/lofi-2/chords.wav"
+            "src": "/packs/originals/80/lofi-2/chords.flac"
           },
           {
             "id": "A-10",
             "label": "Rhodes Arp",
             "part": "melody",
             "kitSlug": "lofi-1",
-            "src": "/packs/originals/80/lofi-1/melody.wav"
+            "src": "/packs/originals/80/lofi-1/melody.flac"
           },
           {
             "id": "A-11",
             "label": "Guitar Lick",
             "part": "melody",
             "kitSlug": "lofi-2",
-            "src": "/packs/originals/80/lofi-2/melody.wav"
+            "src": "/packs/originals/80/lofi-2/melody.flac"
           },
           {
             "id": "A-12",
             "label": "Wurli",
             "part": "chords",
             "kitSlug": "lofi-3",
-            "src": "/packs/originals/80/lofi-3/chords.wav"
+            "src": "/packs/originals/80/lofi-3/chords.flac"
           },
           {
             "id": "A-13",
             "label": "Jazz Guitar",
             "part": "chords",
             "kitSlug": "lofi-4",
-            "src": "/packs/originals/80/lofi-4/chords.wav"
+            "src": "/packs/originals/80/lofi-4/chords.flac"
           },
           {
             "id": "A-14",
             "label": "Vibes Line",
             "part": "melody",
             "kitSlug": "lofi-3",
-            "src": "/packs/originals/80/lofi-3/melody.wav"
+            "src": "/packs/originals/80/lofi-3/melody.flac"
           },
           {
             "id": "A-15",
             "label": "Flute",
             "part": "melody",
             "kitSlug": "lofi-4",
-            "src": "/packs/originals/80/lofi-4/melody.wav"
+            "src": "/packs/originals/80/lofi-4/melody.flac"
           },
           {
             "id": "A-16",
             "label": "Shaker",
             "part": "percussion",
             "kitSlug": "lofi-1",
-            "src": "/packs/originals/80/lofi-1/percussion.wav"
+            "src": "/packs/originals/80/lofi-1/percussion.flac"
           },
           {
             "id": "A-17",
             "label": "Rim Click",
             "part": "percussion",
             "kitSlug": "lofi-2",
-            "src": "/packs/originals/80/lofi-2/percussion.wav"
+            "src": "/packs/originals/80/lofi-2/percussion.flac"
           },
           {
             "id": "A-18",
             "label": "Aahs",
             "part": "voice",
             "kitSlug": "lofi-1",
-            "src": "/packs/originals/80/lofi-1/voice.wav"
+            "src": "/packs/originals/80/lofi-1/voice.flac"
           },
           {
             "id": "A-19",
             "label": "Oohs",
             "part": "voice",
             "kitSlug": "lofi-2",
-            "src": "/packs/originals/80/lofi-2/voice.wav"
+            "src": "/packs/originals/80/lofi-2/voice.flac"
           },
           {
             "id": "A-20",
             "label": "Foot Hat",
             "part": "percussion",
             "kitSlug": "lofi-3",
-            "src": "/packs/originals/80/lofi-3/percussion.wav"
+            "src": "/packs/originals/80/lofi-3/percussion.flac"
           },
           {
             "id": "A-21",
             "label": "Tambourine",
             "part": "percussion",
             "kitSlug": "lofi-4",
-            "src": "/packs/originals/80/lofi-4/percussion.wav"
+            "src": "/packs/originals/80/lofi-4/percussion.flac"
           },
           {
             "id": "A-22",
             "label": "Synth Voice",
             "part": "voice",
             "kitSlug": "lofi-3",
-            "src": "/packs/originals/80/lofi-3/voice.wav"
+            "src": "/packs/originals/80/lofi-3/voice.flac"
           },
           {
             "id": "A-23",
             "label": "Aah Line",
             "part": "voice",
             "kitSlug": "lofi-4",
-            "src": "/packs/originals/80/lofi-4/voice.wav"
+            "src": "/packs/originals/80/lofi-4/voice.flac"
           }
         ],
         "B": [
@@ -881,168 +881,168 @@
             "label": "Shuffle",
             "part": "drums",
             "kitSlug": "lofi-5",
-            "src": "/packs/originals/80/lofi-5/drums.wav"
+            "src": "/packs/originals/80/lofi-5/drums.flac"
           },
           {
             "id": "B-1",
             "label": "Soft Kick",
             "part": "drums",
             "kitSlug": "lofi-6",
-            "src": "/packs/originals/80/lofi-6/drums.wav"
+            "src": "/packs/originals/80/lofi-6/drums.flac"
           },
           {
             "id": "B-2",
             "label": "Two Feel",
             "part": "bass",
             "kitSlug": "lofi-5",
-            "src": "/packs/originals/80/lofi-5/bass.wav"
+            "src": "/packs/originals/80/lofi-5/bass.flac"
           },
           {
             "id": "B-3",
             "label": "Bounce",
             "part": "bass",
             "kitSlug": "lofi-6",
-            "src": "/packs/originals/80/lofi-6/bass.wav"
+            "src": "/packs/originals/80/lofi-6/bass.flac"
           },
           {
             "id": "B-4",
             "label": "Half",
             "part": "drums",
             "kitSlug": "lofi-7",
-            "src": "/packs/originals/80/lofi-7/drums.wav"
+            "src": "/packs/originals/80/lofi-7/drums.flac"
           },
           {
             "id": "B-5",
             "label": "Ghost",
             "part": "drums",
             "kitSlug": "lofi-8",
-            "src": "/packs/originals/80/lofi-8/drums.wav"
+            "src": "/packs/originals/80/lofi-8/drums.flac"
           },
           {
             "id": "B-6",
             "label": "Sub",
             "part": "bass",
             "kitSlug": "lofi-7",
-            "src": "/packs/originals/80/lofi-7/bass.wav"
+            "src": "/packs/originals/80/lofi-7/bass.flac"
           },
           {
             "id": "B-7",
             "label": "Octaves",
             "part": "bass",
             "kitSlug": "lofi-8",
-            "src": "/packs/originals/80/lofi-8/bass.wav"
+            "src": "/packs/originals/80/lofi-8/bass.flac"
           },
           {
             "id": "B-8",
             "label": "Vibes",
             "part": "chords",
             "kitSlug": "lofi-5",
-            "src": "/packs/originals/80/lofi-5/chords.wav"
+            "src": "/packs/originals/80/lofi-5/chords.flac"
           },
           {
             "id": "B-9",
             "label": "Piano",
             "part": "chords",
             "kitSlug": "lofi-6",
-            "src": "/packs/originals/80/lofi-6/chords.wav"
+            "src": "/packs/originals/80/lofi-6/chords.flac"
           },
           {
             "id": "B-10",
             "label": "Piano Run",
             "part": "melody",
             "kitSlug": "lofi-5",
-            "src": "/packs/originals/80/lofi-5/melody.wav"
+            "src": "/packs/originals/80/lofi-5/melody.flac"
           },
           {
             "id": "B-11",
             "label": "Sax",
             "part": "melody",
             "kitSlug": "lofi-6",
-            "src": "/packs/originals/80/lofi-6/melody.wav"
+            "src": "/packs/originals/80/lofi-6/melody.flac"
           },
           {
             "id": "B-12",
             "label": "Warm Pad",
             "part": "chords",
             "kitSlug": "lofi-7",
-            "src": "/packs/originals/80/lofi-7/chords.wav"
+            "src": "/packs/originals/80/lofi-7/chords.flac"
           },
           {
             "id": "B-13",
             "label": "Nylon",
             "part": "chords",
             "kitSlug": "lofi-8",
-            "src": "/packs/originals/80/lofi-8/chords.wav"
+            "src": "/packs/originals/80/lofi-8/chords.flac"
           },
           {
             "id": "B-14",
             "label": "Music Box",
             "part": "melody",
             "kitSlug": "lofi-7",
-            "src": "/packs/originals/80/lofi-7/melody.wav"
+            "src": "/packs/originals/80/lofi-7/melody.flac"
           },
           {
             "id": "B-15",
             "label": "Trumpet",
             "part": "melody",
             "kitSlug": "lofi-8",
-            "src": "/packs/originals/80/lofi-8/melody.wav"
+            "src": "/packs/originals/80/lofi-8/melody.flac"
           },
           {
             "id": "B-16",
             "label": "Bongos",
             "part": "percussion",
             "kitSlug": "lofi-5",
-            "src": "/packs/originals/80/lofi-5/percussion.wav"
+            "src": "/packs/originals/80/lofi-5/percussion.flac"
           },
           {
             "id": "B-17",
             "label": "Triangle",
             "part": "percussion",
             "kitSlug": "lofi-6",
-            "src": "/packs/originals/80/lofi-6/percussion.wav"
+            "src": "/packs/originals/80/lofi-6/percussion.flac"
           },
           {
             "id": "B-18",
             "label": "Ooh Pulse",
             "part": "voice",
             "kitSlug": "lofi-5",
-            "src": "/packs/originals/80/lofi-5/voice.wav"
+            "src": "/packs/originals/80/lofi-5/voice.flac"
           },
           {
             "id": "B-19",
             "label": "Choir Pad",
             "part": "voice",
             "kitSlug": "lofi-6",
-            "src": "/packs/originals/80/lofi-6/voice.wav"
+            "src": "/packs/originals/80/lofi-6/voice.flac"
           },
           {
             "id": "B-20",
             "label": "Ride Bell",
             "part": "percussion",
             "kitSlug": "lofi-7",
-            "src": "/packs/originals/80/lofi-7/percussion.wav"
+            "src": "/packs/originals/80/lofi-7/percussion.flac"
           },
           {
             "id": "B-21",
             "label": "Woodblock",
             "part": "percussion",
             "kitSlug": "lofi-8",
-            "src": "/packs/originals/80/lofi-8/percussion.wav"
+            "src": "/packs/originals/80/lofi-8/percussion.flac"
           },
           {
             "id": "B-22",
             "label": "Voice Arp",
             "part": "voice",
             "kitSlug": "lofi-7",
-            "src": "/packs/originals/80/lofi-7/voice.wav"
+            "src": "/packs/originals/80/lofi-7/voice.flac"
           },
           {
             "id": "B-23",
             "label": "Ooh Sigh",
             "part": "voice",
             "kitSlug": "lofi-8",
-            "src": "/packs/originals/80/lofi-8/voice.wav"
+            "src": "/packs/originals/80/lofi-8/voice.flac"
           }
         ]
       }
@@ -1060,168 +1060,168 @@
             "label": "Four Floor",
             "part": "drums",
             "kitSlug": "dance-1",
-            "src": "/packs/originals/126/dance-1/drums.wav"
+            "src": "/packs/originals/126/dance-1/drums.flac"
           },
           {
             "id": "A-1",
             "label": "Tech",
             "part": "drums",
             "kitSlug": "dance-2",
-            "src": "/packs/originals/126/dance-2/drums.wav"
+            "src": "/packs/originals/126/dance-2/drums.flac"
           },
           {
             "id": "A-2",
             "label": "Offbeat",
             "part": "bass",
             "kitSlug": "dance-1",
-            "src": "/packs/originals/126/dance-1/bass.wav"
+            "src": "/packs/originals/126/dance-1/bass.flac"
           },
           {
             "id": "A-3",
             "label": "Rolling",
             "part": "bass",
             "kitSlug": "dance-2",
-            "src": "/packs/originals/126/dance-2/bass.wav"
+            "src": "/packs/originals/126/dance-2/bass.flac"
           },
           {
             "id": "A-4",
             "label": "Garage",
             "part": "drums",
             "kitSlug": "dance-3",
-            "src": "/packs/originals/126/dance-3/drums.wav"
+            "src": "/packs/originals/126/dance-3/drums.flac"
           },
           {
             "id": "A-5",
             "label": "Trance",
             "part": "drums",
             "kitSlug": "dance-4",
-            "src": "/packs/originals/126/dance-4/drums.wav"
+            "src": "/packs/originals/126/dance-4/drums.flac"
           },
           {
             "id": "A-6",
             "label": "Octave",
             "part": "bass",
             "kitSlug": "dance-3",
-            "src": "/packs/originals/126/dance-3/bass.wav"
+            "src": "/packs/originals/126/dance-3/bass.flac"
           },
           {
             "id": "A-7",
             "label": "Acid",
             "part": "bass",
             "kitSlug": "dance-4",
-            "src": "/packs/originals/126/dance-4/bass.wav"
+            "src": "/packs/originals/126/dance-4/bass.flac"
           },
           {
             "id": "A-8",
             "label": "Poly Pad",
             "part": "chords",
             "kitSlug": "dance-1",
-            "src": "/packs/originals/126/dance-1/chords.wav"
+            "src": "/packs/originals/126/dance-1/chords.flac"
           },
           {
             "id": "A-9",
             "label": "Saw Stab",
             "part": "chords",
             "kitSlug": "dance-2",
-            "src": "/packs/originals/126/dance-2/chords.wav"
+            "src": "/packs/originals/126/dance-2/chords.flac"
           },
           {
             "id": "A-10",
             "label": "Saw Arp",
             "part": "melody",
             "kitSlug": "dance-1",
-            "src": "/packs/originals/126/dance-1/melody.wav"
+            "src": "/packs/originals/126/dance-1/melody.flac"
           },
           {
             "id": "A-11",
             "label": "Square Arp",
             "part": "melody",
             "kitSlug": "dance-2",
-            "src": "/packs/originals/126/dance-2/melody.wav"
+            "src": "/packs/originals/126/dance-2/melody.flac"
           },
           {
             "id": "A-12",
             "label": "Organ",
             "part": "chords",
             "kitSlug": "dance-3",
-            "src": "/packs/originals/126/dance-3/chords.wav"
+            "src": "/packs/originals/126/dance-3/chords.flac"
           },
           {
             "id": "A-13",
             "label": "House Piano",
             "part": "chords",
             "kitSlug": "dance-4",
-            "src": "/packs/originals/126/dance-4/chords.wav"
+            "src": "/packs/originals/126/dance-4/chords.flac"
           },
           {
             "id": "A-14",
             "label": "Crystal",
             "part": "melody",
             "kitSlug": "dance-3",
-            "src": "/packs/originals/126/dance-3/melody.wav"
+            "src": "/packs/originals/126/dance-3/melody.flac"
           },
           {
             "id": "A-15",
             "label": "Lead",
             "part": "melody",
             "kitSlug": "dance-4",
-            "src": "/packs/originals/126/dance-4/melody.wav"
+            "src": "/packs/originals/126/dance-4/melody.flac"
           },
           {
             "id": "A-16",
             "label": "Hats 16",
             "part": "percussion",
             "kitSlug": "dance-1",
-            "src": "/packs/originals/126/dance-1/percussion.wav"
+            "src": "/packs/originals/126/dance-1/percussion.flac"
           },
           {
             "id": "A-17",
             "label": "Open Hat",
             "part": "percussion",
             "kitSlug": "dance-2",
-            "src": "/packs/originals/126/dance-2/percussion.wav"
+            "src": "/packs/originals/126/dance-2/percussion.flac"
           },
           {
             "id": "A-18",
             "label": "Aahs",
             "part": "voice",
             "kitSlug": "dance-1",
-            "src": "/packs/originals/126/dance-1/voice.wav"
+            "src": "/packs/originals/126/dance-1/voice.flac"
           },
           {
             "id": "A-19",
             "label": "Oohs",
             "part": "voice",
             "kitSlug": "dance-2",
-            "src": "/packs/originals/126/dance-2/voice.wav"
+            "src": "/packs/originals/126/dance-2/voice.flac"
           },
           {
             "id": "A-20",
             "label": "Clap",
             "part": "percussion",
             "kitSlug": "dance-3",
-            "src": "/packs/originals/126/dance-3/percussion.wav"
+            "src": "/packs/originals/126/dance-3/percussion.flac"
           },
           {
             "id": "A-21",
             "label": "Shaker",
             "part": "percussion",
             "kitSlug": "dance-4",
-            "src": "/packs/originals/126/dance-4/percussion.wav"
+            "src": "/packs/originals/126/dance-4/percussion.flac"
           },
           {
             "id": "A-22",
             "label": "Synth Voice",
             "part": "voice",
             "kitSlug": "dance-3",
-            "src": "/packs/originals/126/dance-3/voice.wav"
+            "src": "/packs/originals/126/dance-3/voice.flac"
           },
           {
             "id": "A-23",
             "label": "Aah Line",
             "part": "voice",
             "kitSlug": "dance-4",
-            "src": "/packs/originals/126/dance-4/voice.wav"
+            "src": "/packs/originals/126/dance-4/voice.flac"
           }
         ],
         "B": [
@@ -1230,168 +1230,168 @@
             "label": "Break",
             "part": "drums",
             "kitSlug": "dance-5",
-            "src": "/packs/originals/126/dance-5/drums.wav"
+            "src": "/packs/originals/126/dance-5/drums.flac"
           },
           {
             "id": "B-1",
             "label": "Electro",
             "part": "drums",
             "kitSlug": "dance-6",
-            "src": "/packs/originals/126/dance-6/drums.wav"
+            "src": "/packs/originals/126/dance-6/drums.flac"
           },
           {
             "id": "B-2",
             "label": "Sub",
             "part": "bass",
             "kitSlug": "dance-5",
-            "src": "/packs/originals/126/dance-5/bass.wav"
+            "src": "/packs/originals/126/dance-5/bass.flac"
           },
           {
             "id": "B-3",
             "label": "Stab",
             "part": "bass",
             "kitSlug": "dance-6",
-            "src": "/packs/originals/126/dance-6/bass.wav"
+            "src": "/packs/originals/126/dance-6/bass.flac"
           },
           {
             "id": "B-4",
             "label": "Build",
             "part": "drums",
             "kitSlug": "dance-7",
-            "src": "/packs/originals/126/dance-7/drums.wav"
+            "src": "/packs/originals/126/dance-7/drums.flac"
           },
           {
             "id": "B-5",
             "label": "Minimal",
             "part": "drums",
             "kitSlug": "dance-8",
-            "src": "/packs/originals/126/dance-8/drums.wav"
+            "src": "/packs/originals/126/dance-8/drums.flac"
           },
           {
             "id": "B-6",
             "label": "Disco",
             "part": "bass",
             "kitSlug": "dance-7",
-            "src": "/packs/originals/126/dance-7/bass.wav"
+            "src": "/packs/originals/126/dance-7/bass.flac"
           },
           {
             "id": "B-7",
             "label": "Gallop",
             "part": "bass",
             "kitSlug": "dance-8",
-            "src": "/packs/originals/126/dance-8/bass.wav"
+            "src": "/packs/originals/126/dance-8/bass.flac"
           },
           {
             "id": "B-8",
             "label": "Strings",
             "part": "chords",
             "kitSlug": "dance-5",
-            "src": "/packs/originals/126/dance-5/chords.wav"
+            "src": "/packs/originals/126/dance-5/chords.flac"
           },
           {
             "id": "B-9",
             "label": "Sweep",
             "part": "chords",
             "kitSlug": "dance-6",
-            "src": "/packs/originals/126/dance-6/chords.wav"
+            "src": "/packs/originals/126/dance-6/chords.flac"
           },
           {
             "id": "B-10",
             "label": "Calliope",
             "part": "melody",
             "kitSlug": "dance-5",
-            "src": "/packs/originals/126/dance-5/melody.wav"
+            "src": "/packs/originals/126/dance-5/melody.flac"
           },
           {
             "id": "B-11",
             "label": "Chiff",
             "part": "melody",
             "kitSlug": "dance-6",
-            "src": "/packs/originals/126/dance-6/melody.wav"
+            "src": "/packs/originals/126/dance-6/melody.flac"
           },
           {
             "id": "B-12",
             "label": "Brass",
             "part": "chords",
             "kitSlug": "dance-7",
-            "src": "/packs/originals/126/dance-7/chords.wav"
+            "src": "/packs/originals/126/dance-7/chords.flac"
           },
           {
             "id": "B-13",
             "label": "Marimba",
             "part": "chords",
             "kitSlug": "dance-8",
-            "src": "/packs/originals/126/dance-8/chords.wav"
+            "src": "/packs/originals/126/dance-8/chords.flac"
           },
           {
             "id": "B-14",
             "label": "Piano Riff",
             "part": "melody",
             "kitSlug": "dance-7",
-            "src": "/packs/originals/126/dance-7/melody.wav"
+            "src": "/packs/originals/126/dance-7/melody.flac"
           },
           {
             "id": "B-15",
             "label": "Charang",
             "part": "melody",
             "kitSlug": "dance-8",
-            "src": "/packs/originals/126/dance-8/melody.wav"
+            "src": "/packs/originals/126/dance-8/melody.flac"
           },
           {
             "id": "B-16",
             "label": "Cowbell",
             "part": "percussion",
             "kitSlug": "dance-5",
-            "src": "/packs/originals/126/dance-5/percussion.wav"
+            "src": "/packs/originals/126/dance-5/percussion.flac"
           },
           {
             "id": "B-17",
             "label": "Congas",
             "part": "percussion",
             "kitSlug": "dance-6",
-            "src": "/packs/originals/126/dance-6/percussion.wav"
+            "src": "/packs/originals/126/dance-6/percussion.flac"
           },
           {
             "id": "B-18",
             "label": "Ooh Pulse",
             "part": "voice",
             "kitSlug": "dance-5",
-            "src": "/packs/originals/126/dance-5/voice.wav"
+            "src": "/packs/originals/126/dance-5/voice.flac"
           },
           {
             "id": "B-19",
             "label": "Choir Pad",
             "part": "voice",
             "kitSlug": "dance-6",
-            "src": "/packs/originals/126/dance-6/voice.wav"
+            "src": "/packs/originals/126/dance-6/voice.flac"
           },
           {
             "id": "B-20",
             "label": "Ride",
             "part": "percussion",
             "kitSlug": "dance-7",
-            "src": "/packs/originals/126/dance-7/percussion.wav"
+            "src": "/packs/originals/126/dance-7/percussion.flac"
           },
           {
             "id": "B-21",
             "label": "Crash",
             "part": "percussion",
             "kitSlug": "dance-8",
-            "src": "/packs/originals/126/dance-8/percussion.wav"
+            "src": "/packs/originals/126/dance-8/percussion.flac"
           },
           {
             "id": "B-22",
             "label": "Voice Arp",
             "part": "voice",
             "kitSlug": "dance-7",
-            "src": "/packs/originals/126/dance-7/voice.wav"
+            "src": "/packs/originals/126/dance-7/voice.flac"
           },
           {
             "id": "B-23",
             "label": "Ooh Sigh",
             "part": "voice",
             "kitSlug": "dance-8",
-            "src": "/packs/originals/126/dance-8/voice.wav"
+            "src": "/packs/originals/126/dance-8/voice.flac"
           }
         ]
       }

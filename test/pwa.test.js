@@ -23,11 +23,11 @@ describe('service worker precache', () => {
     assert.match(swSource, /const CACHE_PREFIX = 'live-beat-';/);
   });
 
-  test('lists the shell and catalog but no WAV files', () => {
+  test('lists the shell and catalog but no loop files', () => {
     for (const url of ['/', '/play', '/packs/catalog.json', '/js/audio-engine.js']) {
       assert.ok(precacheUrls.includes(url), `${url} missing from precache`);
     }
-    assert.ok(precacheUrls.every((url) => !url.endsWith('.wav')));
+    assert.ok(precacheUrls.every((url) => !url.endsWith('.flac')));
   });
 
   test('has no duplicate entries and no redirected .html URLs', () => {
@@ -40,8 +40,8 @@ describe('service worker precache', () => {
     assert.deepEqual(missing, []);
   });
 
-  test('caches WAVs at runtime cache-first (immutable assets)', () => {
-    assert.match(swSource, /\.wav/);
+  test('caches loops at runtime cache-first (immutable assets)', () => {
+    assert.match(swSource, /\.flac/);
     assert.match(swSource, /cacheFirst\(request, RUNTIME_CACHE_NAME\)/);
     assert.doesNotMatch(swSource, /staleWhileRevalidate\(event, RUNTIME_CACHE_NAME\)/);
   });

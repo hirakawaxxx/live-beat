@@ -110,7 +110,7 @@ describe('shipped catalog.json', () => {
     assert.deepEqual(Object.keys(perPart).sort(), ['bass', 'chords', 'drums', 'melody', 'percussion', 'voice']);
     for (const list of Object.values(perPart)) assert.equal(list.length, 8);
     for (const pad of pads) {
-      assert.equal(pad.src, `/packs/originals/${pack.bpm}/${pad.kitSlug}/${pad.part}.wav`);
+      assert.equal(pad.src, `/packs/originals/${pack.bpm}/${pad.kitSlug}/${pad.part}.flac`);
     }
     for (const side of ['A', 'B']) {
       pack.sides[side].forEach((pad, i) => {

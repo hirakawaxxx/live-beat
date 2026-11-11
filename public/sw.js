@@ -1,16 +1,16 @@
 // PRECACHE_REVISION is derived from the precached files; `node scripts/sw-revision.mjs`
 // rewrites it, and test/pwa.test.js fails while it is stale. Changing it changes this
 // file's bytes, which is what makes browsers install the new worker after a deploy.
-const PRECACHE_REVISION = 'fddc00a38cc9';
+const PRECACHE_REVISION = '54ad3388b2e1';
 const CACHE_PREFIX = 'live-beat-';
 const CACHE_NAME = `${CACHE_PREFIX}${PRECACHE_REVISION}`;
-// Bump the suffix whenever WAVs change in place at the same URL (e.g. a pack is re-rendered).
-const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}runtime-v2`;
+// Bump the suffix whenever loops change in place at the same URL (e.g. a pack is re-rendered).
+const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}runtime-v3`;
 const OFFLINE_FALLBACK_URL = '/';
 const PLAY_URL = '/play';
 
 // Only URLs that the host serves without a redirect ("/play", not "/play.html").
-// WAV loops are intentionally not precached (too large); they are cached at runtime.
+// FLAC loops are intentionally not precached (too large); they are cached at runtime.
 const PRECACHE_URLS = [
   '/',
   '/play',
@@ -133,7 +133,7 @@ self.addEventListener('fetch', (event) => {
   }
   // Audio loops: immutable, so serve from cache after the first listen (cache-first).
   // Range requests (206) are not cacheable, so let the browser handle them directly.
-  if (url.pathname.endsWith('.wav')) {
+  if (url.pathname.endsWith('.flac')) {
     if (request.headers.has('range')) {
       return;
     }
