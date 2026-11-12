@@ -22,7 +22,7 @@ describe('Instagram square post image', () => {
   test('public/instagram.png exists at 1080×1080', () => {
     assert.ok(
       existsSync(INSTAGRAM_PNG),
-      'missing public/instagram.png — run `node scripts/build-instagram.mjs`',
+      'missing public/instagram.png — run `node ../design-kit/bin/design-kit.mjs instagram`',
     );
     const { width, height } = readPngSize(INSTAGRAM_PNG);
     assert.deepEqual([width, height], [1080, 1080]);

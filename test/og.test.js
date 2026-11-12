@@ -32,7 +32,7 @@ const metaContent = (html, attr, key) => {
 
 describe('Open Graph image', () => {
   test('public/og.png exists at 1200×630', () => {
-    assert.ok(existsSync(OG_PNG), 'missing public/og.png — run `node scripts/build-og.mjs`');
+    assert.ok(existsSync(OG_PNG), 'missing public/og.png — run `node ../design-kit/bin/design-kit.mjs og`');
     const { width, height } = readPngSize(OG_PNG);
     assert.deepEqual([width, height], [1200, 630]);
   });

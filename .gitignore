@@ -3,6 +3,6 @@
 .cursor/tmp/
 .wrangler/
 .soundfonts/
-# Source fonts for scripts/build-fonts.mjs (several MB each); only the glyph list is tracked.
+# Source fonts for `design-kit fonts` (several MB each); only the glyph list is tracked.
 design/fonts/*
 !design/fonts/glyphs.txt

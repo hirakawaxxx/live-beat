@@ -1,26 +1,7 @@
 /*
- * Drawn on a 180px canvas with the UI tokens (tuned for elements of roughly this size);
- * other sizes use `zoom`, which scales everything proportionally. --k (set by icon.js)
- * deepens the shadows at small final sizes so the edges do not vanish.
  * Motif: one 2x2 block of pads in a sunken tray, one pad playing (primary-strong).
+ * Drawn on the 180px icon canvas; --k deepens the shadows at small sizes.
  */
-
-html,
-body {
-  margin: 0;
-  background: var(--color-bg);
-}
-
-.icon {
-  --k: 1;
-
-  display: grid;
-  place-items: center;
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
-  background: var(--color-bg);
-}
 
 /* The tray's farthest point is 70.8px from the center, inside the 72px maskable safe circle. */
 .groove {
