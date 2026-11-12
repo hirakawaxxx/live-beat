@@ -23,7 +23,7 @@ export const FONT_FACES = [
 const FIRST_PRINTABLE_ASCII = 0x20;
 const LAST_PRINTABLE_ASCII = 0x7e;
 const WHOLE_TEXT_EXTENSIONS = new Set(['.html', '.js', '.json']);
-// Text drawn with the app font outside public/ (the share card rendered by build-og.mjs).
+// Text drawn with the app font outside public/ (share cards rendered by build-og.mjs and build-instagram.mjs).
 const EXTRA_SOURCES = [join(ROOT_DIR, 'design', 'og', 'og.html')];
 const CSS_CONTENT_PATTERN = /\bcontent\s*:\s*(["'])((?:\\.|(?!\1).)*)\1/g;
 const NON_PRINTING_PATTERN = /[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/u;
